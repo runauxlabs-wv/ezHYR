@@ -36,7 +36,7 @@ header .head {
 }
 
 header .logo {
-    background: url(/Gallery/img/Gallery_logo.svg) no-repeat;
+    background: url(../img/Gallery_logo.svg) no-repeat;
     background-size: 100%;
     width: 150px;
     height: 55px;
@@ -150,12 +150,12 @@ header .nav a:hover {
 }
 
 .main .button .left {
-    background: url(/Gallery/img/left.svg) no-repeat;
+    background: url(../img/left.svg) no-repeat;
     background-position: left;
 }
 
 .main .button .right {
-    background: url(/Gallery/img/right.svg) no-repeat;
+    background: url(../img/right.svg) no-repeat;
     background-position: right;
 }
 

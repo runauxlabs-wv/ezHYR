@@ -36,7 +36,7 @@ header .head {
 }
 
 header .logo {
-    background: url(/Gallery/img/Gallery_logo.svg) no-repeat;
+    background: url(../img/Gallery_logo.svg) no-repeat;
     background-size: 100%;
     width: 150px;
     height: 55px;
@@ -123,7 +123,7 @@ div[class^="sec"] {
 }
 
 .sec1 .poster {
-    background: url(/Gallery/img/poster_education.png) no-repeat;
+    background: url(../img/poster_education.png) no-repeat;
     background-size: 406px 575px;
     background-position: center bottom;
     width: 406px;
@@ -151,7 +151,7 @@ div[class^="sec"] {
 }
 
 .sec1 .Tbox .button {
-    background: url(/Gallery/img/right.svg) no-repeat;
+    background: url(../img/right.svg) no-repeat;
     background-size: 180px 30px;
     background-position: right;
     width: 100%;
@@ -258,29 +258,29 @@ div[class^="Tbox"] {
 }
 
 .sec5 .imgBox .img1 {
-    background: url(/Gallery/img/education_1.png) no-repeat;
+    background: url(../img/education_1.png) no-repeat;
 }
 
 .sec5 .imgBox .img2 {
-    background: url(/Gallery/img/education_2.png) no-repeat;
+    background: url(../img/education_2.png) no-repeat;
 }
 
 .sec5 .imgBox .img3 {
-    background: url(/Gallery/img/education_3.png) no-repeat;
+    background: url(../img/education_3.png) no-repeat;
 }
 
 .sec5 .imgBox .img4 {
-    background: url(/Gallery/img/education_4.png) no-repeat;
+    background: url(../img/education_4.png) no-repeat;
 }
 
 .sec5 .imgBox .img5 {
-    background: url(/Gallery/img/education_5.png) no-repeat;
+    background: url(../img/education_5.png) no-repeat;
 }
 
 .sec5 .imgBox .img6 {
-    background: url(/Gallery/img/education_6.png) no-repeat;
+    background: url(../img/education_6.png) no-repeat;
 }
 
 .sec5 .imgBox .img7 {
-    background: url(/Gallery/img/education_7.png) no-repeat;
+    background: url(../img/education_7.png) no-repeat;
 }

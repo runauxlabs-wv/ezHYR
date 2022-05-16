@@ -36,7 +36,7 @@ header .head {
 }
 
 header .logo {
-    background: url(/Gallery/img/Gallery_logo.svg) no-repeat;
+    background: url(../img/Gallery_logo.svg) no-repeat;
     background-size: 100%;
     width: 150px;
     height: 55px;
@@ -105,7 +105,7 @@ header .nav a:hover {
 }
 
 .main .poster {
-    background: url(/Gallery/img/poster_halsman.png) no-repeat;
+    background: url(../img/poster_halsman.png) no-repeat;
     background-size: contain;
     background-position: center;
     width: 406px;
@@ -137,7 +137,7 @@ header .nav a:hover {
 }
 
 .main .info .Tbox .button {
-    background: url(/Gallery/img/right.svg) no-repeat;
+    background: url(../img/right.svg) no-repeat;
     background-size: 180px 30px;
     background-position: right;
     width: 100%;

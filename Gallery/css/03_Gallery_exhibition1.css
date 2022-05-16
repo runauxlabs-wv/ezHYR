@@ -37,7 +37,7 @@ header .head {
 }
 
 header .logo {
-    background: url(/Gallery/img/Gallery_logo.svg) no-repeat;
+    background: url(../img/Gallery_logo.svg) no-repeat;
     background-size: 100%;
     width: 150px;
     height: 55px;
@@ -130,7 +130,7 @@ section .wrap .main .poster {
 }
 
 section .wrap .main .poster::after {
-    background: url(/Gallery/img/poster_halsman.png) no-repeat;
+    background: url(../img/poster_halsman.png) no-repeat;
     background-size: 406px 575px;
     background-position: center center;
     display: block;
@@ -146,7 +146,7 @@ section .wrap .main .poster::after {
 }
 
 section .wrap .main .poster::before {
-    background: url(/Gallery/img/poster_halsman.png) no-repeat;
+    background: url(../img/poster_halsman.png) no-repeat;
     background-size: cover;
     position: absolute;
     display: block;
@@ -168,7 +168,7 @@ section .wrap .bottom {
     background: url(/Gallery/img/left.svg) no-repeat;
 } */
 section .wrap .bottom .right {
-    background: url(/Gallery/img/right.svg) no-repeat;
+    background: url(../img/right.svg) no-repeat;
 }
 
 section .wrap .bottom .left,

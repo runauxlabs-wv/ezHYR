@@ -38,7 +38,7 @@ header .head {
 }
 
 header .logo {
-    background: url(/Gallery/img/Gallery_logo.svg) no-repeat;
+    background: url(../img/Gallery_logo.svg) no-repeat;
     background-size: 100%;
     width: 150px;
     height: 55px;
@@ -124,13 +124,13 @@ header .nav .menu a:hover {
 
 
 .sec1 .main .leftBox .left {
-    background: url(/Gallery/img/left.svg) no-repeat;
+    background: url(../img/left.svg) no-repeat;
     text-indent: -9999px;
     overflow: hidden;
 }
 
 .sec1 .main .rightBox .right {
-    background: url(/Gallery/img/right.svg) no-repeat;
+    background: url(../img/right.svg) no-repeat;
     text-indent: -9999px;
     overflow: hidden;
 }

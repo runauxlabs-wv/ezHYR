@@ -36,7 +36,7 @@ header .head {
 }
 
 header .logo {
-    background: url(/Gallery/img/Gallery_logo.svg) no-repeat;
+    background: url(../img/Gallery_logo.svg) no-repeat;
     background-size: 100%;
     width: 150px;
     height: 55px;
@@ -149,7 +149,7 @@ footer {
 }
 
 .sec1 .poster {
-    background: url(/Gallery/img/poster_halsman.png) no-repeat;
+    background: url(../img/poster_halsman.png) no-repeat;
     background-size: contain;
     background-position: center;
     width: 406px;
@@ -176,7 +176,7 @@ footer {
 }
 
 .sec1 .Tbox .button a {
-    background: url(/Gallery/img/right.svg) no-repeat;
+    background: url(../img/right.svg) no-repeat;
     color: white;
     text-decoration: none;
     width: 180px;
@@ -233,20 +233,20 @@ div[class^="sec"] div[class^="Tbox"] p,
 }
 
 .sec2 .imgBox .img1 {
-    background: url(/Gallery/img/Gallery_halsman1.png) no-repeat;
+    background: url(../img/Gallery_halsman1.png) no-repeat;
 }
 
 .sec2 .imgBox .img2 {
-    background: url(/Gallery/img/Gallery_halsman2.png) no-repeat;
+    background: url(../img/Gallery_halsman2.png) no-repeat;
     background-position: right;
 }
 
 .sec2 .imgBox .img3 {
-    background: url(/Gallery/img/Gallery_halsman3.png) no-repeat;
+    background: url(../img/Gallery_halsman3.png) no-repeat;
 }
 
 .sec2 .imgBox .img4 {
-    background: url(/Gallery/img/Gallery_halsman4.png) no-repeat;
+    background: url(../img/Gallery_halsman4.png) no-repeat;
     background-position: right;
 }
 
@@ -261,7 +261,7 @@ div[class^="sec"] div[class^="Tbox"] p,
 }
 
 .sec3 .authorImg {
-    background: url(/Gallery/img/Gallery_halsman_author.png) no-repeat;
+    background: url(../img/Gallery_halsman_author.png) no-repeat;
     background-position: right center;
     height: 330px;
     width: 550px;

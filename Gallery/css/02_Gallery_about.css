@@ -38,7 +38,7 @@ header .head {
 }
 
 header .logo {
-    background: url(/Gallery/img/Gallery_logo.svg) no-repeat;
+    background: url(../img/Gallery_logo.svg) no-repeat;
     background-size: 100%;
     width: 150px;
     height: 55px;
@@ -90,13 +90,15 @@ header .nav a:hover {
 }
 
 /* inner디자인 */
-.swiper-slide{
+.swiper-slide,
+.swiper,
+.swiper-wrapper {
     width: 100%;
     height: 100%;
   }
 div[class^="sec"] {
     background: black;
-    min-height: 100vh;
+    height: 100%;
     padding-top: 90px;
     width: 100%;
 }
@@ -153,7 +155,7 @@ div[class^="sec"] .main .inner {
 }
 
 .sec1 .main .bottom .button .down {
-    background: url(/Gallery/img/right.svg) no-repeat;
+    background: url(../img/right.svg) no-repeat;
     text-indent: -9999px;
     overflow: hidden;
     display: block;
@@ -216,7 +218,7 @@ div[class^="sec"] .main .textbox p {
 }
 
 .Sec6 {
-    background: url(/Gallery/img/Gallery_img.png) no-repeat;
+    background: url(../img/Gallery_img.png) no-repeat;
     background-size: 100% 160%;
     background-position: center center;
     height: 100%;
@@ -261,7 +263,7 @@ div[class^="sec"] .main .textbox p {
 }
 
 .Sec6-1 .top .map {
-    background: url(/Gallery/img/Gallery_map.svg) no-repeat;
+    background: url(../img/Gallery_map.svg) no-repeat;
     background-size: contain;
     background-position: center;
     text-indent: -9999px;
