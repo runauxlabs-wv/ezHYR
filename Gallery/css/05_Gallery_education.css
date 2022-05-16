@@ -250,37 +250,43 @@ div[class^="Tbox"] {
 }
 
 /* 슬라이드 영역 수정필요 */
-.sec5 .imgBox div[class^="img"] {
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+.sec5 .imgBox div[class^="swiper-img"] {
+    background-size: contain;
     width: 180px;
     height: 180px;
     text-indent: -9999px;
     overflow: hidden;
 }
 
-.sec5 .imgBox .img1 {
+.sec5 .imgBox .swiper-img1 {
     background: url(../img/education_1.png) no-repeat;
 }
 
-.sec5 .imgBox .img2 {
+.sec5 .imgBox .swiper-img2 {
     background: url(../img/education_2.png) no-repeat;
 }
 
-.sec5 .imgBox .img3 {
+.sec5 .imgBox .swiper-img3 {
     background: url(../img/education_3.png) no-repeat;
 }
 
-.sec5 .imgBox .img4 {
+.sec5 .imgBox .swiper-img4 {
     background: url(../img/education_4.png) no-repeat;
 }
 
-.sec5 .imgBox .img5 {
+.sec5 .imgBox .swiper-img5 {
     background: url(../img/education_5.png) no-repeat;
 }
 
-.sec5 .imgBox .img6 {
+.sec5 .imgBox .swiper-img6 {
     background: url(../img/education_6.png) no-repeat;
 }
 
-.sec5 .imgBox .img7 {
+.sec5 .imgBox .swiper-img7 {
     background: url(../img/education_7.png) no-repeat;
 }

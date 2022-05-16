@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="../css/05_Gallery_education.css">
     <link rel="stylesheet" type="text/css" media="all and (max-width: 1199px)" href="../css/05_T_Gallery_education.css">
     <link rel="stylesheet" type="text/css" media="all and (max-width: 760px)" href="../css/05_M_Gallery_education.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -186,17 +188,43 @@
             <h3>
                 Gallery
             </h3>
-            <div class="imgBox">
-                <div class="img1">교육이미지</div>
-                <div class="img2">교육이미지</div>
-                <div class="img3">교육이미지</div>
-                <div class="img4">교육이미지</div>
-                <div class="img5">교육이미지</div>
-                <div class="img6">교육이미지</div>
-                <div class="img7">교육이미지</div>
+            <div class="swiper imgBox">
+                <div class="swiper-wrapper">
+                    <div class="swiper-img1">교육이미지</div>
+                    <div class="swiper-img2">교육이미지</div>
+                    <div class="swiper-img3">교육이미지</div>
+                    <div class="swiper-img4">교육이미지</div>
+                    <div class="swiper-img5">교육이미지</div>
+                    <div class="swiper-img6">교육이미지</div>
+                    <div class="swiper-img7">교육이미지</div>
+                </div>
             </div>
         </div>
     </section>
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".imgBox", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+        });
+    </script>
+
 </body>
+
+
 
 </html>
