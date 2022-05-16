@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+header .head {
+    margin: 0 20px;
+}
+
+section .wrap .main .poster::after {
+    background-size: 304px 431px;
+}
+
+section .wrap {
+    padding: 10px 0;
+}
+
+section .wrap {
+    margin: 0 20px;
+}
+
+section .wrap .main div h3 {
+    font-size: 1.1rem;
+}
+
+section .wrap .bottom h3 {
+    display: none;
+}
+
+section .wrap .bottom .right h4,
+section .wrap .bottom .left h4 {
+    font-size: 1rem;
+    padding-top: 30px;
+    word-wrap: keep-all;
+}
+
+section .wrap .bottom {
+    padding-top: 20px;
+}

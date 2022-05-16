@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+/* * {
+    outline: 1px solid red;
+} */
+header .head .nav a:not(:last-child) {
+    display: none;
+}
+
+header .head .nav a:last-child {
+    display: block;
+}
+
+header .head .nav a:last-child span {
+    font-size: 40px;
+}
+
+header .head {
+    line-height: 0px;
+    margin: 0 60px;
+}
+
+header .nav a:hover::after {
+    width: 0%;
+}
+
+header .nav a:hover {
+    color: white;
+}
+
+/* inner 디자인 */
+div[class^="sec"] .main,
+.Sec6 .main {
+    margin: 0 60px;
+}
+
+div[class^="sec"] .main .title h1 {
+    font-size: 1.2rem;
+}
+
+div[class^="sec"] .main .title h2 {
+    width: 110px;
+}
+
+.sec1 .main .bottom .textbox p span {
+    display: none;
+}
+
+.Sec6-1 .top {
+    flex-direction: column;
+}
+
+.Sec6-1 {
+    margin: 0 60px;
+    text-align: right;
+    height: 700px;
+}
+
+.Sec6-1 .top .Tbox div h3,
+.Sec6-2 .bottom div h3 {
+    padding-bottom: 10px;
+}
+
+.Sec6-1 .top .Tbox div {
+    padding-bottom: 20px;
+}
+
+.Sec6-1 .top .map {
+    text-align: left;
+    margin: 20px 0;
+    width: 100%;
+    height: 100%;
+}
+
+.Sec6-1 .top .Tbox {
+    width: 100%;
+}
+
+.Sec6-2 {
+    height: 630px;
+}
+
+.Sec6-2 .bottom {
+    margin: 0 60px;
+    flex-direction: column;
+}
+
+.Sec6-2 .bottom div {
+    width: 100%;
+    height: 100%;
+    margin: 20px 0;
+}
+
+.Sec6-2 .bottom div:last-child {
+    padding-left: 0;
+}
+
+.Sec6-2 .bottom div:first-child {
+    padding-right: 0;
+}

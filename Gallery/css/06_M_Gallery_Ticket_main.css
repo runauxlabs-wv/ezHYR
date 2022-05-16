@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+header .logo {
+    width: 130px;
+    height: 45px;
+}
+
+header .head {
+    margin: 0 20px;
+}
+
+.main {
+    margin: 0 20px;
+}
+
+.main .poster .box {
+    width: 150px;
+}
+
+.main .exhibition .poster .boxWrap:first-child {
+    margin-right: 10px;
+}
+
+.main .poster .title,
+.main .poster h4 {
+    font-size: 1rem;
+    letter-spacing: 0;
+    width: 150px;
+    margin-top: 8px;
+}
+
+.main .poster .boxWrap {
+    height: 100%;
+}
+
+.main div .mainText {
+    margin-bottom: 15px;
+    padding-top: 5px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.main .education .img {
+    width: 150px;
+    height: 215px;
+}

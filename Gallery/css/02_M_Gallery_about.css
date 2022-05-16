@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+header .head {
+    margin: 0 20px;
+}
+
+div[class^="sec"] .main,
+.Sec6 .main {
+    margin: 0 20px;
+    position: relative;
+}
+
+div[class^="sec"] {
+    height: 100vh;
+}
+
+div[class^="sec"] .main .title {
+    width: 100%;
+    margin-right: 0;
+}
+
+div[class^="sec"] .main .page,
+.Sec6 .main .page {
+    font-size: 0.9rem;
+    position: absolute;
+    right: 0;
+}
+
+div[class^="sec"] .main .inner {
+    flex-direction: column;
+}
+
+div[class^="sec"] .main .title h1 {
+    font-size: 1rem;
+}
+
+div[class^="sec"] .main .title h2 {
+    margin-top: 7px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+div[class^="sec"] .main .animation {
+    width: 80%;
+    height: 60vh;
+    border: 2px solid white;
+    margin: 20px 0;
+}
+
+.sec1 .main .bottom .textbox p {
+    width: 100%;
+}
+
+.sec1 .main .bottom .button a {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.sec1 .main .bottom .textbox,
+div[class^="sec"] .main .textbox {
+    letter-spacing: 0.2px;
+    line-height: 20px;
+    font-size: 0.8rem;
+    padding-right: 10px;
+}
+
+.sec1 .main .bottom {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+}
+
+.sec1 .main .bottom .button {
+    transform: none;
+    margin-left: -20px;
+    padding-top: 10px;
+}
+
+.Sec6 .main .textbox {
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+    padding: 15px;
+}
+
+.Sec6-1 {
+    margin: 0 20px;
+    height: 570px;
+}
+
+.Sec6-2 {
+    height: 610px;
+}
+
+.Sec6-2 .bottom {
+    margin: 0 20px;
+}
+
+.Sec6-1 .top .Tbox div h3,
+.Sec6-2 .bottom div h3 {
+    padding-top: 3px;
+    padding-bottom: 10px;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.Sec6-1 .top .Tbox div p,
+.Sec6-2 .bottom div p,
+.Sec6-2 .bottom div li {
+    padding-bottom: 2px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}

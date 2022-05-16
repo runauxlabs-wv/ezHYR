@@ -1,0 +1,205 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* Google_Notosans_font */
+@import url("https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0");
+/* Material Icons Outlined*/
+
+html {
+    font-size: 16px;
+}
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+/* nav 디자인 */
+header {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 90px;
+    width: 100%;
+    z-index: 10;
+}
+
+header .head {
+    line-height: 90px;
+    height: 90px;
+    margin: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    background: url(/Gallery/img/Gallery_logo.svg) no-repeat;
+    background-size: 100%;
+    width: 150px;
+    height: 55px;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+header .nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: 65px;
+    position: relative;
+    /* 형광펜효과때문에 삽입 */
+    display: block;
+    /* 형광펜효과때문에 삽입 */
+}
+
+header .nav {
+    display: flex;
+}
+
+/* 반응형시 추가 메뉴 */
+header .nav a:last-child {
+    display: none;
+}
+
+/* 형광펜효과 애니메이션 */
+header .nav a::after {
+    width: 0%;
+    height: 50%;
+    background: #ffffff;
+    content: "";
+    position: absolute;
+    bottom: 25%;
+    left: -10%;
+    z-index: -1;
+}
+
+header .nav a:hover::after {
+    width: 120%;
+    transition: width 0.5s;
+}
+
+header .nav a:hover {
+    color: black;
+}
+
+/* inner디자인 */
+section {
+    padding-top: 90px;
+    background: black;
+}
+
+section .wrap {
+    height: calc(100vh - 90px);
+    margin: 0 120px;
+    padding: 40px 0;
+}
+
+section .wrap .main {
+    color: white;
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 240px);
+}
+
+section .wrap .main div h3 {
+    font-size: 1.2rem;
+}
+
+section .wrap .main div p {
+    font-size: 1.1rem;
+    margin-top: 20px;
+    font-weight: 500;
+    word-break: keep-all;
+}
+
+section .wrap .main div {
+    width: 30%;
+}
+
+section .wrap .main .poster {
+    position: relative;
+    overflow: hidden;
+    width: 40%;
+    height: 100%;
+    text-indent: -9999px;
+}
+
+section .wrap .main .poster::after {
+    background: url(/Gallery/img/poster_halsman.png) no-repeat;
+    background-size: 406px 575px;
+    background-position: center center;
+    display: block;
+    position: absolute;
+    content: " ";
+    z-index: 2;
+    width: 406px;
+    height: 575px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+section .wrap .main .poster::before {
+    background: url(/Gallery/img/poster_halsman.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    display: block;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    filter: blur(10px) brightness(0.3);
+}
+
+section .wrap .bottom {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    position: relative;
+}
+
+/* section .wrap .bottom .left{
+    background: url(/Gallery/img/left.svg) no-repeat;
+} */
+section .wrap .bottom .right {
+    background: url(/Gallery/img/right.svg) no-repeat;
+}
+
+section .wrap .bottom .left,
+section .wrap .bottom .right {
+    width: 250px;
+    height: 35px;
+    text-decoration: none;
+    color: white;
+}
+
+section .wrap .bottom .right h4 {
+    text-align: right;
+}
+
+section .wrap .bottom .left h4 {
+    text-align: left;
+}
+
+section .wrap .bottom .right h4,
+section .wrap .bottom .left h4 {
+    font-size: 1.1rem;
+    padding-top: 40px;
+}
+
+/* 왼쪽버튼x */
+section .wrap .bottom .left h4 {
+    display: none;
+}
+
+section .wrap .bottom h3 {
+    font-size: 1.1rem;
+    text-align: center;
+    padding-top: 40px;
+}

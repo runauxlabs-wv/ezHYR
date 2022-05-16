@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+
+header .head .nav a:not(:last-child) {
+    display: none;
+}
+
+header .head .nav a:last-child {
+    display: block;
+}
+
+header .head .nav a:last-child span {
+    font-size: 40px;
+}
+
+header .head {
+    line-height: 0px;
+    margin: 0 60px;
+}
+
+header .nav a:hover::after {
+    width: 0%;
+}
+
+header .nav a:hover {
+    color: white;
+}
+
+/* inner */
+section .wrap .main {
+    flex-direction: column;
+}
+
+section .wrap .main div h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+section .wrap .main div p {
+    display: none;
+}
+
+section .wrap .main .poster {
+    width: 100%;
+}
+
+section .wrap .main div {
+    width: 100%;
+}
+
+section .wrap {
+    padding: 20px 0;
+    margin: 0 60px;
+}

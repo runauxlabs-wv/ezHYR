@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+header .head .nav a:not(:last-child) {
+    display: none;
+}
+
+header .head .nav a:last-child {
+    display: block;
+}
+
+header .head .nav a:last-child span {
+    font-size: 40px;
+}
+
+header .head {
+    line-height: 0px;
+    margin: 0 60px;
+}
+
+header .nav a:hover::after {
+    width: 0%;
+}
+
+header .nav a:hover {
+    color: white;
+}
+
+/* inner */
+section[class^="sec"],
+div[class^="sec"] {
+    margin: 0 60px;
+}
+
+.wrap .sec1 {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.wrap .sec1 .Tbox {
+    width: 100%;
+}
+
+.wrap .sec1 .Tbox h1 {
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.sec1 .Tbox .button {
+    margin-top: 0px;
+}

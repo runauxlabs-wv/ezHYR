@@ -1,0 +1,286 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* Google_Notosans_font */
+@import url('https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0');
+/* Material Icons Outlined*/
+
+html {
+    font-size: 16px;
+}
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+header {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 90px;
+    width: 100%;
+    z-index: 10;
+}
+
+header .head {
+    line-height: 90px;
+    height: 90px;
+    margin: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    background: url(/Gallery/img/Gallery_logo.svg) no-repeat;
+    background-size: 100%;
+    width: 150px;
+    height: 55px;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+header .nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: 65px;
+    text-align: center;
+    position: relative;
+    /* 형광펜효과때문에 삽입 */
+    display: block;
+    /* 형광펜효과때문에 삽입 */
+}
+
+header .nav {
+    display: flex;
+}
+
+/* 반응형시 추가 메뉴 */
+header .nav a:last-child {
+    display: none;
+}
+
+/* 형광펜효과 애니메이션 */
+header .nav a::after {
+    width: 0%;
+    height: 50%;
+    background: #ffffff;
+    content: "";
+    position: absolute;
+    bottom: 25%;
+    left: -10%;
+    z-index: -1;
+}
+
+header .nav a:hover::after {
+    width: 120%;
+    transition: width 0.5s;
+}
+
+header .nav a:hover {
+    color: black;
+}
+
+/* inner  */
+section[class^="sec"],
+div[class^="sec"] {
+    margin: 0 120px;
+}
+
+.wrap {
+    background: black;
+}
+
+.wrap .sec1 {
+    padding-top: 110px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding-bottom: 40px;
+}
+
+.sec2,
+.sec3,
+.sec4 {
+    padding: 40px 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.sec5 {
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sec1 .poster {
+    background: url(/Gallery/img/poster_education.png) no-repeat;
+    background-size: 406px 575px;
+    background-position: center bottom;
+    width: 406px;
+    height: 575px;
+    text-indent: -9999px;
+}
+
+.wrap .sec1 .Tbox h1 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+}
+
+.wrap .sec1 .Tbox h3 {
+    font-size: 1.2rem;
+    color: white;
+    padding-top: 0px;
+}
+
+.wrap .sec1 .Tbox p {
+    font-size: 1.1rem;
+    margin-top: 30px;
+    color: white;
+    font-weight: 500;
+}
+
+.sec1 .Tbox .button {
+    background: url(/Gallery/img/right.svg) no-repeat;
+    background-size: 180px 30px;
+    background-position: right;
+    width: 100%;
+    height: 100px;
+    margin-top: 70px;
+}
+
+.sec1 .Tbox .button a {
+    color: white;
+    text-decoration: none;
+}
+
+.sec1 .Tbox .button h4 {
+    text-align: right;
+    padding-top: 70px;
+}
+
+div[class^="Tbox"] h3 {
+    padding-top: 8px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+div[class^="Tbox"] h3:first-child {
+    border-top: 1px solid rgb(177, 177, 177);
+}
+
+div[class^="Tbox"] p,
+.sec3 .cost table td,
+.sec3 .cost ul,
+div[class^="Tbox"] ul {
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(80, 80, 80);
+    word-break: keep-all;
+}
+
+div[class^="Tbox"] {
+    width: 45%;
+}
+
+.sec2 .Tbox2 {
+    display: flex;
+}
+
+.sec2 .Tbox2 p {
+    width: 50%;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+}
+
+.sec2 .Tbox2 p:first-child {
+    padding-right: 20px;
+}
+
+.sec3 .cost {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 45%;
+}
+
+.sec3 .cost table {
+    width: 50%;
+    padding-right: 50px;
+}
+
+.sec3 .cost table td {
+    text-align: center;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(80, 80, 80);
+    border-bottom: 1px solid rgb(177, 177, 177);
+}
+
+.sec4 .Tbox2 ul {
+    padding-top: 15px;
+}
+
+.sec5 h3 {
+    color: white;
+    padding-bottom: 10px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.sec5 .imgBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 70%;
+}
+
+/* 슬라이드 영역 수정필요 */
+.sec5 .imgBox div[class^="img"] {
+    width: 180px;
+    height: 180px;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+.sec5 .imgBox .img1 {
+    background: url(/Gallery/img/education_1.png) no-repeat;
+}
+
+.sec5 .imgBox .img2 {
+    background: url(/Gallery/img/education_2.png) no-repeat;
+}
+
+.sec5 .imgBox .img3 {
+    background: url(/Gallery/img/education_3.png) no-repeat;
+}
+
+.sec5 .imgBox .img4 {
+    background: url(/Gallery/img/education_4.png) no-repeat;
+}
+
+.sec5 .imgBox .img5 {
+    background: url(/Gallery/img/education_5.png) no-repeat;
+}
+
+.sec5 .imgBox .img6 {
+    background: url(/Gallery/img/education_6.png) no-repeat;
+}
+
+.sec5 .imgBox .img7 {
+    background: url(/Gallery/img/education_7.png) no-repeat;
+}

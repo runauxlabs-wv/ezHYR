@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+header .head {
+    margin: 0 20px;
+}
+
+section[class^="sec"],
+div[class^="sec"] {
+    margin: 0 20px;
+}
+
+.sec1 .poster {
+    background-size: contain;
+    width: 304px;
+    height: 431px;
+}
+
+.wrap .sec1 .Tbox h1 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.wrap .sec1 .Tbox h3 {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.wrap .sec1 .Tbox p {
+    font-size: 0.9rem;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.sec1 .Tbox .button h4 {
+    /* padding-top: 20px; */
+    font-size: 0.9rem;
+    padding-top: 70px;
+}
+
+.sec2,
+.sec3,
+.sec4,
+.sec5 {
+    flex-direction: column;
+    padding: 30px 0 10px 0;
+}
+
+div[class^="Tbox"] {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+div[class^="Tbox"] h3 {
+    font-size: 1rem;
+    letter-spacing: 0px;
+}
+
+div[class^="Tbox"] p,
+.sec3 .cost table td,
+.sec3 .cost ul,
+div[class^="Tbox"] ul {
+    font-size: 0.9rem;
+}
+
+.sec4 .Tbox2 ul {
+    padding-left: 15px;
+}
+
+.sec5 .imgBox div[class^="img"] {
+    width: 135px;
+    height: 135px;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+.sec3 .cost {
+    width: 100%;
+}

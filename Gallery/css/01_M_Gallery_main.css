@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+header .head {
+    margin: 0 20px;
+}
+header .head .nav a:first-child span {
+    font-size: 35px;
+}

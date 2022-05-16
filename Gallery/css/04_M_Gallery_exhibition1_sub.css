@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+header .head {
+    margin: 0 20px;
+}
+
+section[class^="sec"],
+div[class^="sec"],
+.foot {
+    margin: 0 20px;
+}
+
+.wrap .sec1 {
+    padding-bottom: 5px;
+}
+
+section[class^="sec"] .Tbox h3,
+div[class^="sec"] .Tbox h3 {
+    font-size: 1rem;
+    letter-spacing: 0;
+    word-break: keep-all;
+}
+
+section[class^="sec"] .Tbox p,
+div[class^="sec"] div[class^="Tbox"] p,
+.sec5 .Tbox ul {
+    font-size: 0.9rem;
+}
+
+.sec5 table tr td {
+    font-size: 0.9rem;
+    padding: 8px;
+}
+
+.sec1 .poster {
+    background-size: contain;
+    width: 304px;
+    height: 431px;
+}
+
+.wrap .sec1 .Tbox h3 {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.wrap .sec1 .Tbox p {
+    font-size: 0.9rem;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.sec1 .Tbox .button a h4 {
+    padding-top: 20px;
+    font-size: 0.9rem;
+}
+
+.sec1 .Tbox .button a {
+    margin-left: 30px;
+    width: 130px;
+}
+
+section[class^="sec"] .Tbox,
+.sec4 .Tbox,
+.sec3 .Tbox,
+.sec4 .Tbox2,
+.sec5 table {
+    width: 100%;
+}
+
+.sec2,
+.sec3,
+.sec4,
+.sec5 {
+    flex-direction: column;
+}
+
+.sec2 .imgBox {
+    width: 100%;
+    backdrop-filter: blur(1.5px);
+    box-shadow: 0 0 30px 30px rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.sec2 .Tbox {
+    top: 10%;
+}
+
+.sec2 .imgBox div[class^="img"] {
+    height: 300px;
+}
+
+.sec2 .Tbox {
+    z-index: -1;
+}
+
+.sec3 .authorImg {
+    background-size: contain;
+    height: 245px;
+    width: 412px;
+}
+
+.wrap2 .sec4 .Tbox2 p {
+    margin-top: 30px;
+}
+
+section[class^="sec"] .Tbox p,
+div[class^="sec"] div[class^="Tbox"] p,
+.sec5 .Tbox ul {
+    margin-top: 30px;
+}
+
+.sec5 table {
+    margin-top: 15px;
+}
+
+footer .foot a p {
+    display: none;
+}

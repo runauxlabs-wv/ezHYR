@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+header .head .nav a:not(:last-child) {
+    display: none;
+}
+
+header .head .nav a:last-child {
+    display: block;
+}
+
+header .head .nav a:last-child span {
+    font-size: 40px;
+}
+
+header .head {
+    line-height: 0px;
+    margin: 0 60px;
+}
+
+header .nav a:hover::after {
+    width: 0%;
+}
+
+header .nav a:hover {
+    color: white;
+}
+
+/* inner */
+.main {
+    margin: 0 60px;
+    flex-direction: column;
+}
+
+.main .exhibition,
+.main .education {
+    width: 100%;
+}
+
+.main div .mainText {
+    margin-bottom: 30px;
+}
+
+.main .poster {
+    justify-content: center;
+    width: 100%;
+}
+
+.main .poster .box:hover .text {
+    opacity: 0;
+}
+
+.main .exhibition .poster .boxWrap:first-child {
+    margin-right: 50px;
+}
+
+.main .education {
+    padding: 50px 0;
+}
+
+.main .education .img {
+    width: 200px;
+    height: 300px;
+}

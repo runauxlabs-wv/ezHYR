@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+header .logo {
+    width: 130px;
+    height: 45px;
+}
+
+header .head {
+    margin: 0 20px;
+}
+
+.main {
+    margin: 0 20px;
+}
+
+.main form legend {
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+}
+
+.main form input {
+    border: 1px solid white;
+    background: none;
+    width: 275px;
+    height: 30px;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.main form input:last-child {
+    width: 100%;
+}
+
+.main .button {
+    width: 275px;
+}
+
+.main .button .left h4,
+.main .button .right h4 {
+    font-size: 0.9rem;
+    padding-top: 35px;
+}
+
+.main .button .left,
+.main .button .right {
+    background-size: 180px 30px;
+    width: 45%;
+    height: 40px;
+}

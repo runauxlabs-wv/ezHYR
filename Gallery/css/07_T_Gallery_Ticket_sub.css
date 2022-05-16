@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+header .head .nav a:not(:last-child) {
+    display: none;
+}
+
+header .head .nav a:last-child {
+    display: block;
+}
+
+header .head .nav a:last-child span {
+    font-size: 40px;
+}
+
+header .head {
+    line-height: 0px;
+    margin: 0 60px;
+}
+
+header .nav a:hover::after {
+    width: 0%;
+}
+
+header .nav a:hover {
+    color: white;
+}
+
+/* inner */
+.main {
+    margin: 0 60px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main .info {
+    width: 100%;
+}
+
+.main .info .Tbox h3 {
+    margin-bottom: 20px;
+}
+
+.main .info .Tbox .button {
+    height: 50px;
+    width: 157px;
+    margin-left: 20px;
+}
+
+.main .info .Tbox {
+    display: flex;
+    margin: 25px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main .info .Tbox .button h4 {
+    padding-top: 40px;
+}
+
+.main .info .form {
+    margin: 50px 0;
+}
