@@ -90,12 +90,23 @@ header .nav a:hover {
 }
 
 /* inner디자인 */
-.swiper-slide,
-.swiper,
-.swiper-wrapper {
+.swiper {
     width: 100%;
-    height: 100%;
-  }
+    height: 100vh;
+    position: relative;
+}
+.swiper-pagination{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+    font-weight: 600;
+    align-items: flex-end;
+    /* padding-right: 120px; */
+    position: absolute;
+    top: 90px;
+    padding-right: 120px;
+}
 div[class^="sec"] {
     background: black;
     height: 100%;
@@ -105,8 +116,10 @@ div[class^="sec"] {
 
 div[class^="sec"] .main,
 .Sec6 .main {
-    margin: 0 120px;
-    min-height: 100vh;
+    margin: 20px 120px 0 120px;
+}
+.Sec6 .main {
+    height: 100vh;
 }
 
 div[class^="sec"] .main .page,
@@ -143,6 +156,7 @@ div[class^="sec"] .main .title h2 {
 
 /* 메인 애니메이션 수정부분 */
 div[class^="sec"] .main .animation {
+    margin-top: 50px;
     width: 50%;
     height: 60vh;
     border: 2px solid white;
@@ -195,6 +209,7 @@ div[class^="sec"] .main .textbox {
     font-size: 0.9rem;
     border-right: 1px solid white;
     padding-right: 20px;
+    margin-top: 30px;
 }
 
 div[class^="sec"]:not(:first-child) .main .textbox {
@@ -222,9 +237,7 @@ div[class^="sec"] .main .textbox p {
     background-size: 100% 160%;
     background-position: center center;
     height: 100%;
-    padding-top: 90px;
     background-attachment: fixed;
-    /* width: 100vw; */
 }
 
 .Sec6 .main .textbox {
