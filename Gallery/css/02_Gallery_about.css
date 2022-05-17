@@ -114,12 +114,12 @@ div[class^="sec"] {
     width: 100%;
 }
 
-div[class^="sec"] .main,
-.Sec6 .main {
-    margin: 20px 120px 0 120px;
+div[class^="sec"] .main {
+    margin: 25px 120px 0 120px;
 }
 .Sec6 .main {
     height: 100vh;
+    margin: 0 120px;
 }
 
 div[class^="sec"] .main .page,

@@ -8,8 +8,8 @@
     <link rel="stylesheet" type="text/css" href="../css/05_Gallery_education.css">
     <link rel="stylesheet" type="text/css" media="all and (max-width: 1199px)" href="../css/05_T_Gallery_education.css">
     <link rel="stylesheet" type="text/css" media="all and (max-width: 760px)" href="../css/05_M_Gallery_education.css">
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+   <!-- Link Swiper's CSS -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 </head>
 
 <body>
@@ -103,8 +103,6 @@
             </h3>
             <h3>
                 프로그램 비용
-                <br>
-                주민등록번호를 기준으로 진행됩니다.
             </h3>
         </div>
         <div class="cost">
@@ -148,6 +146,9 @@
                 </li>
                 <li>
                     현장 결제도 가능합니다.
+                </li>
+                <li>
+                    주민등록번호를 기준으로 적용됩니다.
                 </li>
             </ul>
         </div>
@@ -197,31 +198,44 @@
                     <div class="swiper-img5">교육이미지</div>
                     <div class="swiper-img6">교육이미지</div>
                     <div class="swiper-img7">교육이미지</div>
+                    <div class="swiper-img8">교육이미지</div>
+                    <div class="swiper-img9">교육이미지</div>
+                    <div class="swiper-img10">교육이미지</div>
+                    <div class="swiper-img11">교육이미지</div>
+                    <div class="swiper-img12">교육이미지</div>
                 </div>
+                <!-- <div class="swiper-pagination"></div> -->
             </div>
         </div>
     </section>
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".imgBox", {
-            effect: "coverflow",
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: "auto",
-            coverflowEffect: {
-                rotate: 50,
-                stretch: 0,
-                depth: 100,
-                modifier: 1,
-                slideShadows: true,
-            },
-        });
-    </script>
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".imgBox", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    // pagination: {
+    //   el: ".swiper-pagination",
+    //   clickable: true,
+    // },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      760: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      1199: {
+        slidesPerView: 4,
+        spaceBetween: 50,
+      },
+    },
+  });
+</script>
 
 </body>
 

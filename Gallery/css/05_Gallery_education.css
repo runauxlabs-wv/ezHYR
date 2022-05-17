@@ -230,7 +230,7 @@ div[class^="Tbox"] {
 }
 
 .sec4 .Tbox2 ul {
-    padding-top: 15px;
+    padding-top: 15px 0 0 15px;
 }
 
 .sec5 h3 {
@@ -241,20 +241,18 @@ div[class^="Tbox"] {
     font-weight: 600;
 }
 
-.sec5 .imgBox {
+/* .sec5 .imgBox {
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     height: 70%;
-}
+} */
 
-/* 슬라이드 영역 수정필요 */
-.swiper {
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
+/* 슬라이드 영역 */
+.swiper-wrapper{
+    justify-content: center;
+}
 .sec5 .imgBox div[class^="swiper-img"] {
     background-size: contain;
     width: 180px;
@@ -289,4 +287,19 @@ div[class^="Tbox"] {
 
 .sec5 .imgBox .swiper-img7 {
     background: url(../img/education_7.png) no-repeat;
+}
+.sec5 .imgBox .swiper-img8 {
+    background: url(../img/education_8.png) no-repeat;
+}
+.sec5 .imgBox .swiper-img9 {
+    background: url(../img/education_9.png) no-repeat;
+}
+.sec5 .imgBox .swiper-img10 {
+    background: url(../img/education_10.png) no-repeat;
+}
+.sec5 .imgBox .swiper-img11 {
+    background: url(../img/education_11.png) no-repeat;
+}
+.sec5 .imgBox .swiper-img12 {
+    background: url(../img/education_12.png) no-repeat;
 }
