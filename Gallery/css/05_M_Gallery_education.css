@@ -67,11 +67,9 @@ div[class^="Tbox"] ul {
     padding-left: 15px;
 }
 
-.sec5 .imgBox div[class^="img"] {
+.sec5 .imgBox div[class*="img"] {
     width: 135px;
     height: 135px;
-    text-indent: -9999px;
-    overflow: hidden;
 }
 
 .sec3 .cost {

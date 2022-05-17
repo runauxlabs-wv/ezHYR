@@ -8,8 +8,8 @@
     <link rel="stylesheet" type="text/css" href="../css/05_Gallery_education.css">
     <link rel="stylesheet" type="text/css" media="all and (max-width: 1199px)" href="../css/05_T_Gallery_education.css">
     <link rel="stylesheet" type="text/css" media="all and (max-width: 760px)" href="../css/05_M_Gallery_education.css">
-   <!-- Link Swiper's CSS -->
-   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -191,51 +191,51 @@
             </h3>
             <div class="swiper imgBox">
                 <div class="swiper-wrapper">
-                    <div class="swiper-img1">교육이미지</div>
-                    <div class="swiper-img2">교육이미지</div>
-                    <div class="swiper-img3">교육이미지</div>
-                    <div class="swiper-img4">교육이미지</div>
-                    <div class="swiper-img5">교육이미지</div>
-                    <div class="swiper-img6">교육이미지</div>
-                    <div class="swiper-img7">교육이미지</div>
-                    <div class="swiper-img8">교육이미지</div>
-                    <div class="swiper-img9">교육이미지</div>
-                    <div class="swiper-img10">교육이미지</div>
-                    <div class="swiper-img11">교육이미지</div>
-                    <div class="swiper-img12">교육이미지</div>
+                    <div class="swiper-slide img1"></div>
+                    <div class="swiper-slide img2"></div>
+                    <div class="swiper-slide img3"></div>
+                    <div class="swiper-slide img4"></div>
+                    <div class="swiper-slide img5"></div>
+                    <div class="swiper-slide img6"></div>
+                    <div class="swiper-slide img7"></div>
+                    <div class="swiper-slide img8"></div>
+                    <div class="swiper-slide img9"></div>
+                    <div class="swiper-slide img10"></div>
+                    <div class="swiper-slide img11"></div>
+                    <div class="swiper-slide img12"></div>
                 </div>
-                <!-- <div class="swiper-pagination"></div> -->
             </div>
         </div>
     </section>
-<!-- Swiper JS -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-<!-- Initialize Swiper -->
-<script>
-  var swiper = new Swiper(".imgBox", {
-    slidesPerView: 1,
-    spaceBetween: 10,
-    // pagination: {
-    //   el: ".swiper-pagination",
-    //   clickable: true,
-    // },
-    breakpoints: {
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      760: {
-        slidesPerView: 4,
-        spaceBetween: 40,
-      },
-      1199: {
-        slidesPerView: 4,
-        spaceBetween: 50,
-      },
-    },
-  });
-</script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".imgBox", {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 10,
+            breakpoints: {
+                200: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                500: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                760: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+                1199: {
+                    slidesPerView: 5,
+                    spaceBetween: 40,
+                },
+            },
+        });
+    </script>
 
 </body>
 
