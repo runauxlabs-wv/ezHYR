@@ -131,7 +131,7 @@ header .nav a:hover {
     text-align: center;
 }
 
-.main form input:last-child:hover {
+.main form input:nth-child(6):hover {
     background: white;
     color: black;
 }
@@ -140,6 +140,7 @@ header .nav a:hover {
     display: flex;
     width: 500px;
     justify-content: space-between;
+    margin-top: 10px;
 }
 
 .main .button .left,
@@ -175,4 +176,8 @@ header .nav a:hover {
 
 .main .button a {
     text-decoration: none;
+}
+/* 로그인오류폼 */
+.message{
+    color: rgb(255, 78, 78);
 }

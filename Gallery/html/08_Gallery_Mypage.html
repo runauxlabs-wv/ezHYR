@@ -27,36 +27,41 @@
             </div>
         </div>
     </header>
-</body>
-<div class="wrap">
-    <div class="main">
-        <form action="#" method="post">
-            <fieldset>
-                <legend>Log In</legend>
-                <input type="text" placeholder="ID 아이디" maxlength="20">
-                <br>
-                <input type="password" placeholder="PW 비밀번호" maxlength="20">
-                <br>
-                <input type="button" value="확인">
-            </fieldset>
-        </form>
-        <div class="button">
-            <div class="left">
-                <a href="#">
-                    <h4>
-                        회원가입하기
-                    </h4>
-                </a>
-            </div>
-            <div class="right">
-                <a href="#">
-                    <h4>
-                        ID/PW 찾기
-                    </h4>
-                </a>
+
+    <div class="wrap">
+        <div class="main">
+            <form action="#" method="post" name="login">
+                <fieldset>
+                    <legend>Log In</legend>
+                    <input type="text" placeholder="ID 아이디" maxlength="20" name="id" id="id">
+                    <br>
+                    <input type="password" placeholder="PW 비밀번호" maxlength="20" name="pw" id="pw">
+                    <br>
+                    <input type="submit" value="확인">
+                    <br>
+                    <span class="message" id="message"></span>
+                </fieldset>
+            </form>
+            <div class="button">
+                <div class="left">
+                    <a href="#">
+                        <h4>
+                            회원가입하기
+                        </h4>
+                    </a>
+                </div>
+                <div class="right">
+                    <a href="#">
+                        <h4>
+                            ID/PW 찾기
+                        </h4>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-</div>
+
+    <script src="../js/08_Gallery_Mypage.js" ></script>
+</body>
 
 </html>
