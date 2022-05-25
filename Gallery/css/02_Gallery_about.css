@@ -95,7 +95,8 @@ header .nav a:hover {
     height: 100vh;
     position: relative;
 }
-.swiper-pagination{
+
+.swiper-pagination {
     color: white;
     display: flex;
     flex-direction: column;
@@ -106,6 +107,7 @@ header .nav a:hover {
     top: 90px;
     padding-right: 120px;
 }
+
 div[class^="sec"] {
     background: black;
     height: 100%;
@@ -116,6 +118,7 @@ div[class^="sec"] {
 div[class^="sec"] .main {
     margin: 25px 120px 0 120px;
 }
+
 .Sec6 .main {
     height: 100vh;
     margin: 0 120px;
@@ -154,17 +157,39 @@ div[class^="sec"] .main .title h2 {
 }
 
 /* 메인 애니메이션 수정부분 */
-div[class^="sec"] .main .animation {
-    margin-top: 50px;
-    width: 50%;
-    height: 60vh;
-    border: 2px solid white;
+#path {
+    width: 700px;
+    height: 700px;
+}
+#line_x5F_up {
+    animation-name: circle;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    transform-origin: center ;
+}
+
+@keyframes circle {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 div[class^="sec"] .main .inner {
     display: flex;
     align-items: center;
-    height: 60%;
+    height: 70%;
+}
+
+/* 하단텍스트 바텀고정 */
+.sec1 .main .bottom {
+    position: absolute;
+    bottom: 50px;
+    right: 120px;
 }
 
 .sec1 .main .bottom .button .down {
@@ -189,6 +214,7 @@ div[class^="sec"] .main .inner {
 
 .sec1 .main .bottom .button {
     transform: rotate(90deg);
+    margin-left: 80px;
 }
 
 .sec1 .main .bottom .textbox p {
