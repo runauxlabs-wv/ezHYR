@@ -157,16 +157,52 @@ div[class^="sec"] .main .title h2 {
 }
 
 /* 메인 애니메이션 수정부분 */
-#path {
+#path,
+#path2,
+#path3,
+#path4,
+#path5 {
     width: 700px;
     height: 700px;
 }
-#line_x5F_up {
-    animation-name: circle;
+#line_x5F_up,
+#path2,
+#poly1,
+#poly2,
+#cir2,
+#rec2,
+#rec3,
+#rec4,
+#rec5,
+#rec6 {
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-fill-mode: forwards;
     transform-origin: center ;
+}
+#line_x5F_up {
+    animation-name: circle;
+}
+#path2{
+    animation-name: scale;
+}
+#poly1 {
+    animation-name: circle;
+    animation-duration: 4.5s;
+}
+#poly2 {
+    animation-name: circle2;
+    animation-duration: 5s;
+}
+#cir2{
+    animation-name: circle3;
+}
+#rec2,
+#rec3,
+#rec4,
+#rec5,
+#rec6 {
+    animation-name: scale2;
 }
 
 @keyframes circle {
@@ -178,20 +214,53 @@ div[class^="sec"] .main .title h2 {
         transform: rotate(360deg);
     }
 }
+@keyframes circle2 {
+    from {
+        transform: rotate(-0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+@keyframes circle3 {
+    0%{transform: rotate(0deg)}
+    25%{transform: rotate(45deg)}
+    50%{transform: rotate(90deg)}
+    75%{transform: rotate(135deg)}
+    100%{transform: rotate(180deg)}
+}
+
+@keyframes scale {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(2);
+    }
+}
+@keyframes scale2 {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+
+/* 하단텍스트 바텀고정 */
+/* .sec1 .main .bottom {
+    position: absolute;
+    bottom: 50px;
+    right: 120px;
+} */
 
 div[class^="sec"] .main .inner {
     display: flex;
     align-items: center;
     height: 70%;
 }
-
-/* 하단텍스트 바텀고정 */
-.sec1 .main .bottom {
-    position: absolute;
-    bottom: 50px;
-    right: 120px;
-}
-
 .sec1 .main .bottom .button .down {
     background: url(../img/right.svg) no-repeat;
     text-indent: -9999px;
