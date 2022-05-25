@@ -63,7 +63,7 @@ header .nav,
 header .nav .menu {
     display: flex;
 }
-header .nav a span {
+header .nav span {
     display: none;
 }
 
