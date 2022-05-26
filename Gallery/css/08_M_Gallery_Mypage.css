@@ -1,5 +1,10 @@
 @charset "UTF-8";
-
+header .nav .menu a {
+    padding: 30px 20px 10px 0;
+}
+header .nav .menu span {
+    padding: 30px 20px 10px 0;
+}
 header .logo {
     width: 130px;
     height: 45px;

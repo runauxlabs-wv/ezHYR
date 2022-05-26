@@ -34,3 +34,12 @@ section .wrap .bottom .left h4 {
 section .wrap .bottom {
     padding-top: 20px;
 }
+header .nav .menu a {
+    padding: 30px 20px 10px 0;
+}
+header .nav .menu a {
+    padding: 30px 20px 10px 0;
+}
+header .nav .menu span {
+    padding: 30px 20px 10px 0;
+}

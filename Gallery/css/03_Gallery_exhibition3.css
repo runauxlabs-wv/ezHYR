@@ -16,7 +16,6 @@ html {
     /* outline: 1px solid red; */
 }
 
-/* nav 디자인 */
 header {
     background: black;
     position: fixed;
@@ -28,7 +27,7 @@ header {
 }
 
 header .head {
-    line-height: 90px;
+    /* line-height: 90px; */
     height: 90px;
     margin: 0 100px;
     display: flex;
@@ -51,39 +50,40 @@ header .nav a {
     font-size: 1.2rem;
     font-weight: 500;
     margin-left: 65px;
+    text-align: center;
     position: relative;
     /* 형광펜효과때문에 삽입 */
     display: block;
     /* 형광펜효과때문에 삽입 */
 }
 
-header .nav {
+header .nav,
+header .nav .menu {
     display: flex;
 }
-
-/* 반응형시 추가 메뉴 */
-header .nav a:last-child {
+header .nav button {
     display: none;
 }
 
 /* 형광펜효과 애니메이션 */
-header .nav a::after {
+header .nav .menu a::after {
     width: 0%;
-    height: 50%;
+    height: 110%;
     background: #ffffff;
     content: "";
     position: absolute;
     bottom: 25%;
+    top: -10%;
     left: -10%;
     z-index: -1;
 }
 
-header .nav a:hover::after {
+header .nav .menu a:hover::after {
     width: 120%;
     transition: width 0.5s;
 }
 
-header .nav a:hover {
+header .nav .menu a:hover {
     color: black;
 }
 

@@ -6,24 +6,37 @@
     <title> KCMA | Exhibition_HALSMAN</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/04_Gallery_exhibition1_sub.css">
-    <link rel="stylesheet" type="text/css" media="all and (max-width: 1199px)" href="../css/04_T_Gallery_exhibition1_sub.css">
-    <link rel="stylesheet" type="text/css" media="all and (max-width: 760px)" href="../css/04_M_Gallery_exhibition1_sub.css">
+    <link rel="stylesheet" type="text/css" media="all and (max-width: 1199px)"
+        href="../css/04_T_Gallery_exhibition1_sub.css">
+    <link rel="stylesheet" type="text/css" media="all and (max-width: 760px)"
+        href="../css/04_M_Gallery_exhibition1_sub.css">
 </head>
 
 <body>
     <header>
         <div class="head">
-            <a href="/html/01_Gallery_home.html" class="logo">
+            <a href="../html/01_Gallery_home.html" class="logo">
                 K현대미술관
             </a>
             <div class="nav">
-                <a href="../html/01_Gallery_home.html">HOME</a>
-                <a href="../html/02_Gallery_about.html">ABOUT</a>
-                <a href="../html/03_Gallery_exhibition1.html">EXHIBITION</a>
-                <a href="../html/05_Gallery_education.html">EDUCATION</a>
-                <a href="../html/06_Gallery_Ticket_main.html">TICKET</a>
-                <a href="../html/08_Gallery_Mypage.html">MYPAGE</a>
-                <a href="#"><span class="material-symbols-outlined">menu</span></a>
+                <button id="open">
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+                </button>
+                <div class="menu">
+                    <button id="close">
+                        <span class="material-symbols-outlined">
+                            close
+                        </span>
+                    </button>
+                    <a href="../html/01_Gallery_home.html">HOME</a>
+                    <a href="../html/02_Gallery_about.html">ABOUT</a>
+                    <a href="../html/03_Gallery_exhibition1.html">EXHIBITION</a>
+                    <a href="../html/05_Gallery_education.html">EDUCATION</a>
+                    <a href="../html/06_Gallery_Ticket_main.html">TICKET</a>
+                    <a href="../html/08_Gallery_Mypage.html">MYPAGE</a>
+                </div>
             </div>
         </div>
     </header>
@@ -50,7 +63,7 @@
                         <h4>
                             홈페이지 예약하기
                         </h4>
-                    </a> 
+                    </a>
                     <a href="https://booking.naver.com/booking/5/bizes/591335">
                         <h4>
                             네이버 예약 바로가기
@@ -249,6 +262,10 @@
             </a>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="../js/01_Gallery_nav.js"></script>
+
 </body>
 
 </html>

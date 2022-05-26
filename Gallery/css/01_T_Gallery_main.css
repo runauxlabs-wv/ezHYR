@@ -22,6 +22,9 @@ header .head {
 }
 
 /* nav 디자인 */
+header .nav button {
+    display: inline;
+}
 header .head .nav .menu {
     position: fixed;
     top: 0;

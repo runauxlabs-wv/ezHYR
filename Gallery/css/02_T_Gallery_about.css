@@ -1,17 +1,14 @@
 @charset "UTF-8";
 
-/* * {
-    outline: 1px solid red;
-} */
-header .head .nav a:not(:last-child) {
-    display: none;
-}
-
-header .head .nav a:last-child {
+header .nav a span {
     display: block;
 }
 
-header .head .nav a:last-child span {
+header .head .nav a {
+    display: block;
+}
+
+header .head .nav a span {
     font-size: 40px;
 }
 
@@ -20,12 +17,85 @@ header .head {
     margin: 0 60px;
 }
 
-header .nav a:hover::after {
-    width: 0%;
+/* nav 디자인 */
+header .nav button {
+    display: inline;
+}
+header .head .nav .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 100px 0;
+    z-index: 10;
+    flex-direction: column;
+    background: white;
+    transform: translateX(-100%);
+    transition: transform 0.5s;
 }
 
-header .nav a:hover {
+header .head .nav .menu.on {
+    transform: translateX(0);
+}
+
+header .head .nav .menu.off {
+    transform: translateX(-100%);
+}
+
+header .head .nav .menu span {
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+header .head .nav .menu span::after {
+    height: 0;
+}
+
+header .head .nav .menu span:hover {
+    color: black;
+}
+
+header .head .nav button {
+    background: none;
+    border: none;
+}
+
+header .nav .menu a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: 0px;
+    text-align: right;
+    height: 60px;
+    padding: 30px 60px 10px 0;
+}
+
+header .nav .menu a::after {
+    height: 100%;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: black;
+    transition: width 0.6s;
+}
+
+header .nav .menu a:hover {
     color: white;
+}
+
+header .nav span {
+    display: block;
+    color: white;
+    font-size: 2rem;
+}
+
+header .nav .menu span {
+    color: black;
+    padding: 30px 60px 10px 0;
 }
 
 /* inner 디자인 */

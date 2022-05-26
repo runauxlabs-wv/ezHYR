@@ -17,13 +17,24 @@
                 K현대미술관
             </a>
             <div class="nav">
-                <a href="../html/01_Gallery_home.html">HOME</a>
-                <a href="../html/02_Gallery_about.html">ABOUT</a>
-                <a href="../html/03_Gallery_exhibition1.html">EXHIBITION</a>
-                <a href="../html/05_Gallery_education.html">EDUCATION</a>
-                <a href="../html/06_Gallery_Ticket_main.html">TICKET</a>
-                <a href="../html/08_Gallery_Mypage.html">MYPAGE</a>
-                <a href="#"><span class="material-symbols-outlined">menu</span></a>
+                <button id="open">
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+                </button>
+                <div class="menu">
+                    <button id="close">
+                        <span class="material-symbols-outlined">
+                            close
+                        </span>
+                    </button>
+                    <a href="../html/01_Gallery_home.html">HOME</a>
+                    <a href="../html/02_Gallery_about.html">ABOUT</a>
+                    <a href="../html/03_Gallery_exhibition1.html">EXHIBITION</a>
+                    <a href="../html/05_Gallery_education.html">EDUCATION</a>
+                    <a href="../html/06_Gallery_Ticket_main.html">TICKET</a>
+                    <a href="../html/08_Gallery_Mypage.html">MYPAGE</a>
+                </div>
             </div>
         </div>
     </header>
@@ -60,8 +71,9 @@
             </div>
         </div>
     </div>
-
-    <script src="../js/08_Gallery_Mypage.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="../js/01_Gallery_nav.js"></script>
+    <script src="../js/08_Gallery_Mypage.js"></script>
 </body>
 
 </html>

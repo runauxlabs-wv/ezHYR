@@ -3,6 +3,9 @@
 header .head {
     margin: 0 20px;
 }
-header .head .nav a:first-child span {
-    font-size: 35px;
+header .nav .menu a {
+    padding: 30px 20px 10px 0;
+}
+header .nav .menu span {
+    padding: 30px 20px 10px 0;
 }
