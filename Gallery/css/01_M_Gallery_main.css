@@ -9,3 +9,12 @@ header .nav .menu a {
 header .nav .menu span {
     padding: 30px 20px 10px 0;
 }
+header .logo {
+    width: 100px;
+    height: 40px;
+}
+.sec1 .main div a {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}

@@ -43,3 +43,7 @@ header .nav .menu a {
 header .nav .menu span {
     padding: 30px 20px 10px 0;
 }
+header .logo {
+    width: 100px;
+    height: 40px;
+}

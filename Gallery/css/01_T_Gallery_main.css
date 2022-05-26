@@ -84,7 +84,7 @@ header .nav .menu a::after {
     left: 0;
     z-index: -1;
     background: black;
-    transition: width 0.6s;
+    transition: width 0.1s;
 }
 
 header .nav .menu a:hover {

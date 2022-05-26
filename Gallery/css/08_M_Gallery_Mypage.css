@@ -53,3 +53,7 @@ header .head {
     width: 45%;
     height: 40px;
 }
+header .logo {
+    width: 100px;
+    height: 40px;
+}

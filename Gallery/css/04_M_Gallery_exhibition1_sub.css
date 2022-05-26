@@ -121,3 +121,7 @@ div[class^="sec"] div[class^="Tbox"] p,
 footer .foot a p {
     display: none;
 }
+header .logo {
+    width: 100px;
+    height: 40px;
+}

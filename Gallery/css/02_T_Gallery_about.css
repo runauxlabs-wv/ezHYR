@@ -97,7 +97,22 @@ header .nav .menu span {
     color: black;
     padding: 30px 60px 10px 0;
 }
-
+/* 애니메이션 */
+#path,
+#path2,
+#path3,
+#path4,
+#path5 {
+    width: 500px;
+    height: 500px;
+}
+.textbox {
+    bottom: 50px;
+    right: 60px;
+}
+div[class^="sec"] .main .inner {
+    height: 70vh;
+}
 /* inner 디자인 */
 div[class^="sec"] .main,
 .Sec6 .main {
@@ -113,9 +128,16 @@ div[class^="sec"] .main .title h1 {
 div[class^="sec"] .main .title h2 {
     width: 110px;
 }
+div[class^="sec"] .main .title {
+    width: 20%;
+}
 
 .sec1 .main .bottom .textbox p span {
     display: none;
+}
+.sec1 .main .bottom .button a {
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 .Sec6-1 .top {
