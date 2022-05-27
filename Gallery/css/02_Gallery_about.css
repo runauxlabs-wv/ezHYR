@@ -248,6 +248,12 @@ div[class^="sec"] .main .title h2 {
         transform: scale(1);
     }
 }
+.st0,
+.st1 {
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-miterlimit: 10;
+}
 
 
 /* 하단텍스트 바텀고정 */
