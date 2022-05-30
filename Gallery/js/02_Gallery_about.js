@@ -21,11 +21,11 @@ window.addEventListener('wheel', function (event) {
     } else if (event.deltaY > 0) {}
 });
 // //버튼 클릭시 스크롤 이동
-// $(document).ready(function () {
-//     $("#scroll").on("click", function (event) {
-//         var offset = $(".Sec6").offset();
-//         $("html body").animate({
-//             scrollTop: offset.top
-//         }, 400);
-//     });
-// });
+$(document).ready(function () {
+    $("#scroll").on("click", function (event) {
+        var offset = $(".Sec6").offset();
+        $("html body").animate({
+            scrollTop: offset.top
+        }, 400);
+    });
+});

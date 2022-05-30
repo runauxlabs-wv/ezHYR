@@ -49,13 +49,6 @@ header .head .nav .menu span {
     top: 0;
 }
 
-header .head .nav .menu span::after {
-    height: 0;
-}
-
-header .head .nav .menu span:hover {
-    color: black;
-}
 
 header .head .nav button {
     background: none;
@@ -80,7 +73,7 @@ header .nav .menu a::after {
     left: 0;
     z-index: -1;
     background: black;
-    transition: width 0.6s;
+    transition: width 0.1s;
 }
 
 header .nav .menu a:hover {

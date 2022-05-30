@@ -135,11 +135,9 @@ div[class^="sec"] .main .title {
 .sec1 .main .bottom .textbox p span {
     display: none;
 }
-.sec1 .main .bottom button div {
+.sec1 .main .bottom button{
     font-size: 1rem;
     font-weight: 400;
-}
-.sec1 .main .bottom button{
     padding: 0 50px -50px 0;
 }
 .Sec6-1 .top {
