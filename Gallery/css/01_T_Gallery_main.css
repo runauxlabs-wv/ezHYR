@@ -53,13 +53,6 @@ header .head .nav .menu span {
     top: 0;
 }
 
-/* header .head .nav .menu span::after {
-    height: 0;
-}
-
-header .head .nav .menu span:hover {
-    color: black;
-} */
 
 header .head .nav button {
     background: none;
@@ -76,7 +69,7 @@ header .nav .menu a {
     height: 60px;
     padding: 30px 60px 10px 0;
 }
-/* 
+
 header .nav .menu a::after {
     height: 100%;
     bottom: 0;
@@ -89,7 +82,7 @@ header .nav .menu a::after {
 
 header .nav .menu a:hover {
     color: white;
-} */
+}
 
 header .nav span {
     display: block;

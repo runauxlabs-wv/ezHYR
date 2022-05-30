@@ -268,7 +268,7 @@ div[class^="sec"] .main .inner {
     align-items: center;
     height: 60vh;
 }
-.sec1 .main .bottom .button .down {
+/* .sec1 .main .bottom button .down {
     background: url(../img/right.svg) no-repeat;
     text-indent: -9999px;
     overflow: hidden;
@@ -277,20 +277,25 @@ div[class^="sec"] .main .inner {
     width: 170px;
 }
 
-.sec1 .main .bottom .button a {
+.sec1 .main .bottom button{
     color: white;
     font-size: 1.2rem;
     font-weight: 500;
     text-decoration: none;
-}
+} */
 
-.sec1 .main .bottom .button a:first-child {
+/* .sec1 .main .bottom button div:first-child {
     padding-left: 40px;
-}
+} */
 
-.sec1 .main .bottom .button {
+.sec1 .main .bottom button {
     transform: rotate(90deg);
-    margin-left: 0px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background: url(../img/right.svg) no-repeat;
+    width: 170px;
+    height: 80px;
 }
 
 .sec1 .main .bottom .textbox p {
