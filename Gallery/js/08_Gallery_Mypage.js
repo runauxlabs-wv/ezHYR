@@ -3,32 +3,22 @@
 window.onload = function() {
     var login = document.login;
     login.onsubmit = function() {
+        span = document.getElementById("message");
+        txt = document.createTextNode("");
+        span.appendChildChild(txt);
         if(!login.id.value){
-            span = document.getElementById("message");
-            txt = document.createTextNode("아이디를 입력해주세요");
-            span.replaceChild(txt);
+            span.textContent("아이디를 입력해주세요");
             login.id.focus();
             return false;
         }
-        // else{
-        //     txt = document.createTextNode("");
-        //     // alert('해당 페이지는 포트폴리오 사이트로 로그인 할 수 없습니다.')
-            
-        // }
         if(!login.pw.value){
-            span = document.getElementById("message");
-            txt = document.createTextNode("비밀번호를 입력해주세요");
-            span.replaceChild(txt);
-            login.value.focus();
+            span.textContent("비밀번호를 입력해주세요");
+            login.id.focus();
             return false;
         }
-        // else{
-        //     txt = document.createTextNode("");
-        //     // alert('해당 페이지는 포트폴리오 사이트로 로그인 할 수 없습니다.')
-        // }
-        txt = document.createTextNode("");
+        span.textContent("");
+        alert('해당 페이지는 포트폴리오 사이트로 로그인 할 수 없습니다.')
     }
-
 }
 
 
