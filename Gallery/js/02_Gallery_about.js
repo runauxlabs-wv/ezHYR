@@ -23,9 +23,19 @@ window.addEventListener('wheel', function (event) {
 // //버튼 클릭시 스크롤 이동
 $(document).ready(function () {
     $("#scroll").on("click", function (event) {
-        var offset = $(".Sec6").offset();
-        $("html body").animate({
-            scrollTop: offset.top
+        var offset = $(".Sec6").offset().top;
+        swiper.mousewheel.disable();
+        $("html, body").animate({
+            scrollTop: offset,
         }, 400);
+        console.log(offset);
     });
 });
+//스크롤이내려가면(슬라이드가끝나면) fixed된 버튼이 사라짐
+$(window).scroll(function () {
+    if($(window).scrollTop() == 0) {
+     $('#scroll').show();
+    } else {
+     $('#scroll').hide();
+    }
+   });

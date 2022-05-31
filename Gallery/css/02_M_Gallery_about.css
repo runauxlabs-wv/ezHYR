@@ -81,12 +81,6 @@ div[class^="sec"] .main .textbox {
     align-items: flex-start;
 }
 
-.sec1 .main .bottom .button {
-    transform: none;
-    margin-left: -20px;
-    padding-top: 10px;
-}
-
 .Sec6 .main .textbox {
     letter-spacing: 0.5px;
     font-size: 0.9rem;
@@ -139,13 +133,14 @@ div[class^="sec"] .main .inner {
     height: 70vh;
     justify-content: center;
 }
-.sec1 .main .bottom button div {
+#scroll{
+    transform: none;
     font-size: 0.8rem;
     font-weight: 400;
+    bottom: 10%;
+    left: -20px;
 }
-.sec1 .main .bottom button{
-    padding: 0 0 150px 0;
-}
+
 header .logo {
     width: 100px;
     height: 40px;

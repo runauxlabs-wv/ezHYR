@@ -135,10 +135,12 @@ div[class^="sec"] .main .title {
 .sec1 .main .bottom .textbox p span {
     display: none;
 }
-.sec1 .main .bottom button{
+#scroll{
+    transform: none;
     font-size: 1rem;
     font-weight: 400;
-    padding: 0 50px -50px 0;
+    bottom: 10%;
+    left: 20px;
 }
 .Sec6-1 .top {
     flex-direction: column;
