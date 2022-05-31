@@ -130,11 +130,6 @@ header .nav .menu a:hover {
     font-weight: 500;
 }
 
-.main .info .form {
-    height: 330px;
-    background: white;
-}
-
 .main .info .Tbox .button {
     background: url(../img/right.svg) no-repeat;
     background-size: 180px 30px;
@@ -152,4 +147,54 @@ header .nav .menu a:hover {
 
 .main .info .Tbox .button a {
     text-decoration: none;
+}
+/* form 요소 */
+.main .info .form {
+    display: flex;
+    justify-content: space-between;
+}
+.main .info .form .left,
+.main .info .form .right,
+.main .info .form .right .select div{
+    width: 45%;
+}
+.main .info .form .left .textBox{
+    border: 2px solid white;
+}
+.main .info .form .right .select{
+    display: flex;
+    justify-content: space-between;
+}
+.main .info .form h3{
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+.main .info .form .left .textBox div{
+    margin: 10px 10px;
+    font-size: 1rem;
+}
+.main .info .form .right .select select,
+.main .info .form .right .select div input,
+.main .info .form .right input{
+    background: none;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 1rem;
+    width: 100%;
+    border: 2px solid white;
+}
+.main .info input{
+    background: white;
+    color: black;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.main .info input:hover{
+    color: white;
+    background: black;
+    border: 2px solid white;
 }

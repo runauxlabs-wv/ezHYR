@@ -24,7 +24,7 @@ window.addEventListener('wheel', function (event) {
 $(document).ready(function () {
     $("#scroll").on("click", function (event) {
         var offset = $(".Sec6").offset().top;
-        swiper.mousewheel.disable();
+        // swiper.mousewheel.disable();
         $("html, body").animate({
             scrollTop: offset,
         }, 400);
