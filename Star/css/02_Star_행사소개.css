@@ -1,0 +1,186 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* Google_Notosans_font */
+@font-face {
+    font-family: 'Eulyoo1945-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Eulyoo1945-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 을유 폰트 */
+
+html {
+    font-size: 16px;
+}
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+/* header디자인 */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    z-index: 10;
+}
+header .wrap {
+    margin: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+header .logo {
+    background: url(../img/Logo_star.svg) no-repeat;
+    background-position: center;
+    width: 175px;
+    height: 100px;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+.navButton,
+.navButton span {
+    display: inline-block;
+    transition: all .4s;
+}
+
+.navButton {
+    position: relative;
+    width: 32px;
+    height: 28px;
+}
+
+.navButton span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #FFF4D7;
+    border-radius: 3px;
+    z-index: 15;
+}
+
+.navButton span:nth-of-type(1) {
+    top: 0;
+}
+
+.navButton span:nth-of-type(2) {
+    top: 13px;
+}
+
+.navButton span:nth-of-type(3) {
+    bottom: 0;
+}
+
+
+/* 중앙 라인이 고정된 자리에서 투명하게 사라지며 상하라인 회전하며 엑스자 만들기 */
+.navButton.active-1 span:nth-of-type(1) {
+    transform: translateY(12px) rotate(-45deg);
+    background: #2F2725;
+}
+
+.navButton.active-1 span:nth-of-type(2) {
+    opacity: 0;
+}
+
+.navButton.active-1 span:nth-of-type(3) {
+    transform: translateY(-13px) rotate(45deg);
+    background: #2F2725;
+
+}
+header .menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100vh;
+    padding: 100px 0;
+    z-index: 10;
+    flex-direction: column;
+    background: #fffdf7d8;
+    transform: translateX(100%);
+    transition: transform 0.5s;
+    box-shadow: 6px 6px 9px 2px #342D44;
+}
+header .menu a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: #2F2725;
+    text-align: right;
+    padding: 20px 100px 30px 0;
+    position: relative;
+    width: 200px;
+}
+/* 밑줄효과 애니메이션 */
+header .menu a::after {
+    width: 0%;
+    height: 4%;
+    background: #514b5c;
+    content: "";
+    position: absolute;
+    bottom: 20%;
+    right: 40%;
+    z-index: 10;
+}
+
+header .menu a:hover::after {
+    width: 80%;
+    transition: width 0.5s;
+}
+
+header .menu a:hover{
+    color: #2F2725;
+}
+
+header .menu.on {
+    transform: translateX(0);
+}
+/* inner 디자인 */
+.sec1 {
+    height: 1000px;
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(../img/경복궁1.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.sec1 > div {
+    margin: 0 100px 30px 0;
+    padding: 15px 10px;
+    width: fit-content;
+    height: fit-content;
+    background: #2f27254f;
+}
+.sec1 > div h1{
+    color: white;
+    font-family: 'Eulyoo1945-SemiBold';
+    text-align: right;
+    font-size: 1.6rem;
+    letter-spacing: 3px;
+}
+.sec1 > div p{
+    color: white;
+    text-align: right;
+    padding-top: 50px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 1.7;
+}
+/* span .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    color: #2F2725;
+} */

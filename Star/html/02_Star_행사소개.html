@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>경복궁 별빛야행 행사소개</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/02_Star_행사소개.css">
+    <!-- <link rel="stylesheet" type="text/css" media="all and (max-width: 1199px)" href="">
+    <link rel="stylesheet" type="text/css" media="all and (max-width: 760px)" href=""> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+</head>
+<body>
+    <header>
+        <div class="wrap">
+            <a href="#" class="logo">
+                별빛야행
+            </a>
+            <div class="nav">
+                <a class="navButton" href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+                <div class="menu">
+                    <a href="#">별빛야행</a>
+                    <a href="#">행사소개</a>
+                    <a href="#">예매안내</a>
+                    <a href="#">오시는길</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="sec1">
+        <div>
+            <h1>
+                경복궁 별빛야행
+            </h1>
+            <p>
+                봄 깊은 밤, "경복궁 별빛야행" 에 여러분을 초대합니다.
+                <br>
+                은은한 별빛아래 경복궁 별빛산책을 떠나볼까요.
+                <br>
+                궁궐의 옛 이야기를 마주하고, 쏟아지는 별빛 아래에서 정취를 느껴보세요.
+                <br>
+                별 가득한 봄의 어느날 귀한 손님이 드시도록 경복궁의 문이 열립니다.
+            </p>
+        </div>
+    </section>
+    <section>
+        <div class="night course1">
+            <h2>
+                별빛산책
+            </h2>
+            <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">소주방</div>
+              <div class="swiper-slide">자경전</div>
+              <div class="swiper-slide">함화당 집경당</div>
+              <div class="swiper-slide">집옥채</div>
+              <div class="swiper-slide">향원정 건청궁</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="night course2">
+            <h2>
+                해설탐방
+            </h2>
+        </div>
+
+       
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/01_Star_main.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          pagination: {
+            el: ".swiper-pagination",
+            type: "progressbar",
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+</body>
+</html>
