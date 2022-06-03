@@ -180,4 +180,5 @@ header .nav .menu a:hover {
 /* 로그인오류폼 */
 .message{
     color: rgb(255, 78, 78);
+    font-size: 0.8rem;
 }
