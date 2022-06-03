@@ -150,34 +150,3 @@ header .menu a:hover{
 header .menu.on {
     transform: translateX(0);
 }
-/* inner 디자인 */
-.sec1 {
-    height: 1000px;
-    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(../img/경복궁1.jpg) no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-}
-.sec1 > div {
-    margin: 0 100px 30px 0;
-    padding: 15px 10px;
-    width: fit-content;
-    height: fit-content;
-    background: #2f27254f;
-}
-.sec1 > div h1{
-    color: white;
-    font-family: 'Eulyoo1945-SemiBold';
-    text-align: right;
-    font-size: 1.6rem;
-    letter-spacing: 3px;
-}
-.sec1 > div p{
-    color: white;
-    text-align: right;
-    padding-top: 50px;
-    font-weight: 300;
-    letter-spacing: 1px;
-    line-height: 1.7;
-}
