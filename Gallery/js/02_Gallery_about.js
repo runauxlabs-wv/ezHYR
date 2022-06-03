@@ -5,7 +5,7 @@ var swiper = new Swiper(".slide", {
     spaceBetween: 0,
     sensitivity: 3,
     // touchRatio: 1,
-    // mousewheel: true,
+    mousewheel: true,
     pagination: {
         el: ".swiper-pagination",
         type: "fraction",
