@@ -19,7 +19,7 @@ function validate() {
     }
 
     // 비밀번호 정규식 확인
-    if (!checkReg(regPw, pw, "최소 8 자, 최소 하나의 문자, 하나의 숫자 및 하나의 특수 문자로만 입력")) {
+    if (!checkReg(regPw, pw, "최소 8자, 최소 하나의 문자, 숫자, 특수 문자를 포함하여 입력")) {
         return false;
     }
     // 비밀번호 빈값확인
