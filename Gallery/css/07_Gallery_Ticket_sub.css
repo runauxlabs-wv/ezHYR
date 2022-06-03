@@ -164,7 +164,7 @@ header .nav .menu a:hover {
 .main .info .form .right #selGoods,
 .main .info .form .right #btnAddGoods,
 .main .info .form .right #goodsTotAmt,
-.main .info .form .right .button {
+.button2 {
     border: 1px solid white;
     padding: 10px;
     background: none;
@@ -177,7 +177,7 @@ header .nav .menu a:hover {
     text-align: right;
     width: 100%;
 }
-.main .info .form .right .button{
+.button2{
     width: 100%;
     margin: 15px 0;
 
@@ -187,7 +187,7 @@ header .nav .menu a:hover {
     margin: 15px 0;
 }
 .main .info .form .right #btnAddGoods:hover,
-.main .info .form .right .button:hover,
+.button2:hover,
 .main .info .form #container ul li button:hover{
     color: black;
     background: white;
