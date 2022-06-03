@@ -5,7 +5,7 @@ window.onload = function() {
     login.onsubmit = function() {
         span = document.getElementById("message");
         txt = document.createTextNode("");
-        span.appendChildChild(txt);
+        span.appendChild(txt);
         if(!login.id.value){
             span.textContent("아이디를 입력해주세요");
             login.id.focus();
