@@ -1,13 +1,10 @@
 //Initialize Swiper
 var swiper = new Swiper(".slide", {
     direction: "vertical",
-    slidesPerView: 1,
-    spaceBetween: 0,
     sensitivity: 3,
-    // touchRatio: 1,
     mousewheel: true,
     pagination: {
-        el: ".swiper-pagination",
+        el: ".slide .swiper-pagination",
         type: "fraction",
     },
     on: {

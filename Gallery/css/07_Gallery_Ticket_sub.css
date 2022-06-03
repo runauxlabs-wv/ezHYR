@@ -175,7 +175,8 @@ header .nav .menu a:hover {
 }
 .main .info .form .right .select select,
 .main .info .form .right .select div input,
-.main .info .form .right input{
+.main .info .form .right input,
+.main .info input{
     background: none;
     color: white;
     padding: 10px;
@@ -185,16 +186,11 @@ header .nav .menu a:hover {
     border: 2px solid white;
 }
 .main .info input{
-    background: white;
-    color: black;
-    width: 100%;
-    padding: 10px;
     margin: 10px 0;
     font-size: 1.1rem;
     font-weight: 500;
 }
 .main .info input:hover{
-    color: white;
-    background: black;
-    border: 2px solid white;
+    color: black;
+    background: white;
 }

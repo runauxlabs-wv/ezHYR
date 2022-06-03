@@ -119,7 +119,7 @@ div[class^="sec"] .main,
     margin: 0 60px;
 }
 .swiper-pagination{
-    padding-right: 60px;
+    right: 60px;
 }
 div[class^="sec"] .main .title h1 {
     font-size: 1.2rem;
