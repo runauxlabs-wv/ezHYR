@@ -71,54 +71,28 @@
                 <div class="form">
                     <div class="left">
                         <h3>선택내역</h3>
-                        <div class="textBox">
-                            <div>
-                                <span>
-                                    어린이 :
-                                </span>
-                                <span>원</span>
-                                <span>x</span>
-                            </div>
-                            <div>
-                                <span>
-                                    청소년 :
-                                </span>
-                                <span>원</span>
-                                <span>x</span>
-                            </div>
-                            <div>
-                                <span>
-                                    성인 :
-                                </span>
-                                <span>원</span>
-                                <span>x</span>
-                            </div>
+                        <div id="container">
                         </div>
                     </div>
                     <div class="right">
                         <div class="select">
+                            <h3>
+                                분류
+                            </h3>
                             <div>
-                                <h3>
-                                    분류
-                                </h3>
-                                <select>
-                                    <option value="20,000">성인</option>
-                                    <option value="15,000">청소년</option>
-                                    <option value="13,000">어린이</option>
-                                </select>
+                                <select id="selGoods" name="selGoods"></select>
+                                <button id="btnAddGoods">추가하기</button>
                             </div>
-                            <div>
-                                <h3>
-                                    수량
-                                </h3>
-                                <input type="number" max="50">
-                            </div>
-
                         </div>
-                        <input type="text">
+                        <div>
+                          <h3>
+                              합계
+                          </h3>  
+                          <input id="goodsTotAmt" name="totAmt" value="0">
+                        </div>
+                        <input type="button" value="구매하기" class="button">
                     </div>
                 </div>
-                <input type="button" value="구매하기">
             </div>
         </div>
     </section>
@@ -126,4 +100,5 @@
     <script src="../js/01_Gallery_nav.js"></script>
     <script src="../js/07_Gallery_Ticket.js"></script>
 </body>
+
 </html>

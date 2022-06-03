@@ -154,43 +154,80 @@ header .nav .menu a:hover {
     justify-content: space-between;
 }
 .main .info .form .left,
-.main .info .form .right,
-.main .info .form .right .select div{
+.main .info .form .right{
     width: 45%;
 }
-.main .info .form .left .textBox{
-    border: 2px solid white;
+.main .info .form .left #container {
+    border: 1px solid white;
+    padding: 10px;
 }
-.main .info .form .right .select{
-    display: flex;
-    justify-content: space-between;
+.main .info .form .right #selGoods,
+.main .info .form .right #btnAddGoods,
+.main .info .form .right #goodsTotAmt,
+.main .info .form .right .button {
+    border: 1px solid white;
+    padding: 10px;
+    background: none;
+    color: white;
+    width: 49%;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.main .info .form .right #goodsTotAmt {
+    text-align: right;
+    width: 100%;
+}
+.main .info .form .right .button{
+    width: 100%;
+    margin: 15px 0;
+
 }
 .main .info .form h3{
     font-size: 1.1rem;
-    margin-bottom: 20px;
+    margin: 15px 0;
 }
-.main .info .form .left .textBox div{
-    margin: 10px 10px;
-    font-size: 1rem;
-}
-.main .info .form .right .select select,
-.main .info .form .right .select div input,
-.main .info .form .right input,
-.main .info input{
-    background: none;
-    color: white;
-    padding: 10px;
-    margin: 5px 0;
-    font-size: 1rem;
-    width: 100%;
-    border: 2px solid white;
-}
-.main .info input{
-    margin: 10px 0;
-    font-size: 1.1rem;
-    font-weight: 500;
-}
-.main .info input:hover{
+.main .info .form .right #btnAddGoods:hover,
+.main .info .form .right .button:hover,
+.main .info .form #container ul li button:hover{
     color: black;
     background: white;
+}
+.main .info .form #container ul {
+    list-style: none;
+}
+.main .info .form #container ul li{
+    display: inline-block;
+}
+.main .info .form #container ul li input{
+    background: none;
+    color: white;
+    border: none;
+    text-align: right;
+    padding: 10px;
+    font-size: 1rem;
+}
+.main .info .form #container ul li:nth-child(1){
+    width: 100%;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.main .info .form #container ul li:nth-child(2){
+    width: 70%;
+}
+.main .info .form #container ul li:nth-child(2) input{
+    width: 80%;
+}
+.main .info .form #container ul li:nth-child(6) input{
+    width: 70%;
+}
+.main .info .form #container ul li button{
+    border: 1px solid white;
+    background: none;
+    color: white;
+    font-size: 1rem;
+    padding: 1px 2px;
+    width: 15px;
+}
+.main .info .form #container ul li:nth-child(5) button{
+    width: fit-content;
 }

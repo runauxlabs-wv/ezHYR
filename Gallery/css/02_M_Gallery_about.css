@@ -80,7 +80,9 @@ div[class^="sec"] .main .textbox {
     flex-direction: column-reverse;
     align-items: flex-start;
 }
-
+.Sec6 .main {
+    height: 60vh;
+}
 .Sec6 .main .textbox {
     letter-spacing: 0.5px;
     font-size: 0.9rem;
