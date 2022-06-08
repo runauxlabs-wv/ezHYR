@@ -193,12 +193,14 @@ p{
 .Tbox p:first-child{
     font-weight: 500;
 }
-.sec1-1,
-.sec1-2{
+.sec1-1 {
     display: flex;
     justify-content: space-between;
 }
 .left,
 .right{
     width: 46%;
+}
+.wrapper{
+    background: #40305f;
 }
