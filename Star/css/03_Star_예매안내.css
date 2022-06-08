@@ -171,6 +171,34 @@ h1{
     font-size: 2.2rem;
 }
 section {
-    padding: 100px 0;
+    padding: 30px 0;
     margin: 0 100px;
+}
+.up div h2{
+    font-family: 'Eulyoo1945-SemiBold';
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 55px 0 30px 0;
+}
+.Tbox{
+    display: flex;
+    justify-content: center;
+}
+p{
+    color: rgb(63, 63, 63);
+    border-bottom: 2px solid #40305f91;
+    padding: 7px;
+    width: 100%;
+}
+.Tbox p:first-child{
+    font-weight: 500;
+}
+.sec1-1,
+.sec1-2{
+    display: flex;
+    justify-content: space-between;
+}
+.left,
+.right{
+    width: 46%;
 }
