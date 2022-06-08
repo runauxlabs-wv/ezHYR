@@ -11,6 +11,7 @@
 
 html {
     font-size: 16px;
+    background: #f0f0f0;
 }
 
 * {
@@ -29,6 +30,7 @@ header {
     height: 100px;
     width: 100%;
     z-index: 10;
+    border-bottom: 1px solid #f0f0f046;
 }
 header .wrap {
     margin: 0 100px;
@@ -69,7 +71,7 @@ header .logo {
     left: 0;
     width: 100%;
     height: 3px;
-    background: #FFF4D7;
+    background: #f7f3ed;
     border-radius: 3px;
     z-index: 15;
 }
@@ -111,7 +113,7 @@ header .menu {
     padding: 100px 0;
     z-index: 10;
     flex-direction: column;
-    background: #fffdf7d8;
+    background: #e2e2e2bb;
     transform: translateX(100%);
     transition: transform 0.5s;
     box-shadow: 6px 6px 9px 2px #342D44;
@@ -149,4 +151,54 @@ header .menu a:hover{
 
 header .menu.on {
     transform: translateX(0);
+}
+/* inner디자인 */
+.background{
+    background: url(../img/찾아오시는길.jpg) no-repeat;
+    height: 500px;
+    filter: brightness(90%);
+    text-indent: -9999px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-family: 'Eulyoo1945-SemiBold';
+    color: #ffffff;
+    text-indent: 0;
+    padding-top: 100px;
+
+}
+section {
+    padding: 100px 0;
+    margin: 0 100px;
+}
+section h1{
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+section .Tbox{
+    display: flex;
+    justify-content: space-between;
+}
+section .Tbox iframe {
+    width: 100%;
+}
+section .Tbox div:first-child{
+    width:45%;
+    margin-right: 50px;
+}
+section .Tbox div:last-child{
+    text-align: right;
+    border-top: 1px solid #2f272542;
+    width: 45%;
+}
+section .Tbox div:last-child h3{
+    font-size: 1.1rem;
+    margin: 20px 0 8px 0;
+}
+section .Tbox div:last-child p{
+    font-size: 1rem;
+    font-weight: 500;
 }

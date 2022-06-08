@@ -7,10 +7,17 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Eulyoo1945-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Eulyoo1945-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 /* 을유 폰트 */
 
 html {
     font-size: 16px;
+    background: #f0f0f0;
 }
 
 * {
@@ -29,6 +36,7 @@ header {
     height: 100px;
     width: 100%;
     z-index: 10;
+    border-bottom: 1px solid #f0f0f046;
 }
 header .wrap {
     margin: 0 100px;
@@ -69,7 +77,7 @@ header .logo {
     left: 0;
     width: 100%;
     height: 3px;
-    background: #FFF4D7;
+    background: #f7f3ed;
     border-radius: 3px;
     z-index: 15;
 }
@@ -111,7 +119,7 @@ header .menu {
     padding: 100px 0;
     z-index: 10;
     flex-direction: column;
-    background: #fffdf7d8;
+    background: #e2e2e2bb;
     transform: translateX(100%);
     transition: transform 0.5s;
     box-shadow: 6px 6px 9px 2px #342D44;
@@ -150,34 +158,147 @@ header .menu a:hover{
 header .menu.on {
     transform: translateX(0);
 }
-/* inner 디자인 */
-.sec1 {
-    height: 1000px;
-    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(../img/경복궁1.jpg) no-repeat;
-    background-size: cover;
+/* inner디자인 */
+.background{
+    background: url(../img/행사소개.jpg) no-repeat;
+    height: 500px;
+    filter: brightness(90%);
+    text-indent: -9999px;
+    overflow: hidden;
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
 }
-.sec1 > div {
-    margin: 0 100px 30px 0;
-    padding: 15px 10px;
-    width: fit-content;
-    height: fit-content;
-    background: #2f27254f;
-}
-.sec1 > div h1{
-    color: white;
+h1{
     font-family: 'Eulyoo1945-SemiBold';
-    text-align: right;
-    font-size: 1.6rem;
-    letter-spacing: 3px;
+    color: #ffffff;
+    text-indent: 0;
+    padding-top: 100px;
+    font-size: 1.5rem;
 }
-.sec1 > div p{
+.sec1{
+    text-align: center;
+    padding: 50px 0;
+}
+.sec1 h1{
+    color: black;
+    padding-top: 0;
+}
+.sec1 p{
+    color: rgb(63, 63, 63);
+    line-height: 24px;
+}
+.sec1 div{
+    text-indent: -9999px;
+    overflow: hidden;
+    height: 70px;
+    border-right: 1px solid #2f27256e;
+    width: 0.1px;
+    margin: 20px 50%;
+}
+/* tab구조 */
+  
+  ul.tabs{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  ul.tabs li{
+    color: rgba(255, 255, 255, 0.445);
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  ul.tabs li.current{
     color: white;
-    text-align: right;
-    padding-top: 50px;
-    font-weight: 300;
-    letter-spacing: 1px;
-    line-height: 1.7;
+    font-weight: 600;
+    border-bottom: 3px solid white;
+  }
+  
+  .tab-content{
+    display: none;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  .tab-content.current{
+    display: inherit;
+  }
+  .Tbox .place h2{
+      font-size: 0.9rem;
+      color: white;
+      font-weight: 500;
+  }
+  .Tbox p{
+      font-size: 1rem;
+      font-weight: 400;
+      margin: 15px 0;
+      text-align: center;
+      color: white;
+      font-family: 'Eulyoo1945-Regular';
+  }
+  .Tbox .place{
+      display: flex;
+      justify-content: space-around
+  }
+  /* night */
+  .night {
+      background: #40305f;
+  }
+  .night .Tbox2{
+      padding: 50px 0;
+      color: white;
+      text-align: center;
+  }
+  .night .Tbox2 h2{
+    font-family: 'Eulyoo1945-SemiBold';
+    font-size: 1.4rem;
+    padding-bottom: 10px;
+    letter-spacing: 10px;
+  }
+  .night .Tbox2 h3{
+    font-family: 'Eulyoo1945-SemiBold';
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+  .imgbox{
+      display: flex;
+      justify-content: center;
+  }
+  div[class^="slide"] {
+      background: white;
+      border-radius: 10px;
+      margin: 0 10px;
+      width: 250px;
+      height: 280px;
+  }
+  div[class^="img"]{
+      height: 50%;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      text-indent: -9999px;
+      overflow: hidden;
+      background-size: cover;
+  }
+  .img1{
+      background: url(../img/소주방메인.jpg) no-repeat;
+  }
+  .img2{
+    background: url(../img/자경전메인.jpg) no-repeat;
 }
+.img3{
+    background: url(../img/함화당메인.jpg) no-repeat;
+}
+.img4{
+    background: url(../img/집옥재메인.jpg) no-repeat;
+}
+.img5{
+    background: url(../img/향원정메인.jpg) no-repeat;
+}
+  div[class^="slide"] div h3{
+    text-indent: 0;
+  }
+  div[class^="slide"] div p{
+      text-indent: 0;
+  }
