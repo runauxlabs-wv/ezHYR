@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
 /* Google_Notosans_font */
 @font-face {
     font-family: 'Eulyoo1945-SemiBold';
@@ -7,12 +8,14 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Eulyoo1945-Regular';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Eulyoo1945-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
 /* 을유 폰트 */
 
 html {
@@ -37,7 +40,9 @@ header {
     width: 100%;
     z-index: 10;
     border-bottom: 1px solid #f0f0f046;
+    background: rgba(0, 0, 0, 0.05);
 }
+
 header .wrap {
     margin: 0 100px;
     display: flex;
@@ -110,6 +115,7 @@ header .logo {
     background: #2F2725;
 
 }
+
 header .menu {
     position: fixed;
     top: 0;
@@ -124,7 +130,8 @@ header .menu {
     transition: transform 0.5s;
     box-shadow: 6px 6px 9px 2px #342D44;
 }
-header .menu a{
+
+header .menu a {
     font-size: 1.3rem;
     text-decoration: none;
     font-weight: 500;
@@ -134,6 +141,7 @@ header .menu a{
     position: relative;
     width: 200px;
 }
+
 /* 밑줄효과 애니메이션 */
 header .menu a::after {
     width: 0%;
@@ -151,15 +159,16 @@ header .menu a:hover::after {
     transition: width 0.5s;
 }
 
-header .menu a:hover{
+header .menu a:hover {
     color: #2F2725;
 }
 
 header .menu.on {
     transform: translateX(0);
 }
+
 /* inner디자인 */
-.background{
+.background {
     background: url(../img/행사소개.jpg) no-repeat;
     height: 500px;
     filter: brightness(90%);
@@ -169,26 +178,32 @@ header .menu.on {
     align-items: center;
     justify-content: center;
 }
-h1{
+
+h1 {
     font-family: 'Eulyoo1945-SemiBold';
     color: #ffffff;
     text-indent: 0;
     padding-top: 100px;
-    font-size: 1.5rem;
+    font-size: 2.2rem;
 }
-.sec1{
+
+.sec1 {
     text-align: center;
     padding: 50px 0;
 }
-.sec1 h1{
+
+.sec1 h1 {
     color: black;
     padding-top: 0;
+    font-size: 1.5rem;
 }
-.sec1 p{
+
+.sec1 p {
     color: rgb(63, 63, 63);
     line-height: 24px;
 }
-.sec1 div{
+
+.sec1 div {
     text-indent: -9999px;
     overflow: hidden;
     height: 70px;
@@ -196,109 +211,199 @@ h1{
     width: 0.1px;
     margin: 20px 50%;
 }
+
 /* tab구조 */
-  
-  ul.tabs{
+
+ul.tabs {
     list-style: none;
     display: flex;
     justify-content: center;
-  }
-  ul.tabs li{
+}
+
+ul.tabs li {
     color: rgba(255, 255, 255, 0.445);
     display: inline-block;
     padding: 10px 15px;
     cursor: pointer;
-  }
-  
-  ul.tabs li.current{
+}
+
+ul.tabs li.current {
     color: white;
     font-weight: 600;
     border-bottom: 3px solid white;
-  }
-  
-  .tab-content{
+}
+
+.tab-content {
     display: none;
     padding: 15px;
     border-radius: 5px;
-  }
-  
-  .tab-content.current{
+}
+
+.tab-content.current {
     display: inherit;
-  }
-  .Tbox .place h2{
-      font-size: 0.9rem;
-      color: white;
-      font-weight: 500;
-  }
-  .Tbox p{
-      font-size: 1rem;
-      font-weight: 400;
-      margin: 15px 0;
-      text-align: center;
-      color: white;
-      font-family: 'Eulyoo1945-Regular';
-  }
-  .Tbox .place{
-      display: flex;
-      justify-content: space-around
-  }
-  /* night */
-  .night {
-      background: #40305f;
-  }
-  .night .Tbox2{
-      padding: 50px 0;
-      color: white;
-      text-align: center;
-  }
-  .night .Tbox2 h2{
+}
+
+.Tbox .place h2 {
+    font-size: 0.9rem;
+    color: white;
+    font-weight: 500;
+}
+
+.Tbox p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 15px 0 25px 0;
+    text-align: center;
+    color: white;
+    font-family: 'Eulyoo1945-Regular';
+}
+
+.Tbox .place {
+    display: flex;
+    justify-content: space-around
+}
+
+/* night */
+.night {
+    background: #40305f;
+}
+
+.night .Tbox2 {
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+}
+
+.night .Tbox2 h2,
+.sun .Tbox2 h2 {
     font-family: 'Eulyoo1945-SemiBold';
     font-size: 1.4rem;
     padding-bottom: 10px;
     letter-spacing: 10px;
-  }
-  .night .Tbox2 h3{
+}
+
+.night .Tbox2 h3 {
     font-family: 'Eulyoo1945-SemiBold';
     font-size: 1rem;
     letter-spacing: 2px;
-  }
-  .imgbox{
-      display: flex;
-      justify-content: center;
-  }
-  div[class^="slide"] {
-      background: white;
-      border-radius: 10px;
-      margin: 0 10px;
-      width: 250px;
-      height: 280px;
-  }
-  div[class^="img"]{
-      height: 50%;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
-      text-indent: -9999px;
-      overflow: hidden;
-      background-size: cover;
-  }
-  .img1{
-      background: url(../img/소주방메인.jpg) no-repeat;
-  }
-  .img2{
+}
+
+.imgbox {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px;
+    padding-bottom: 20px;
+}
+
+div[class^="slide"] {
+    background: white;
+    border-radius: 10px;
+    margin: 0 10px;
+    width: 250px;
+    height: 280px;
+}
+
+div[class^="img"] {
+    height: 50%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-indent: -9999px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.img1,
+.img2-2 {
+    background: url(../img/소주방메인.jpg) no-repeat;
+}
+
+.img2,
+.img4-5,
+.img5-6 {
     background: url(../img/자경전메인.jpg) no-repeat;
 }
-.img3{
+
+.img3,
+.img2-4 {
     background: url(../img/함화당메인.jpg) no-repeat;
 }
-.img4{
+
+.img4 {
     background: url(../img/집옥재메인.jpg) no-repeat;
 }
-.img5{
+
+.img5,
+.img5-7 {
     background: url(../img/향원정메인.jpg) no-repeat;
 }
-  div[class^="slide"] div h3{
+
+.img2-1,
+.img3-1,
+.img4-1,
+.img5-1 {
+    background: url(../img/경복궁메인.jpg) no-repeat;
+}
+
+.img2-3 {
+    background: url(../img/강녕전메인.jpg) no-repeat;
+}
+
+.img2-5,
+.img3-4,
+.img5-3 {
+    background: url(../img/경회루메인.jpg) no-repeat;
+}
+
+.img2-6,
+.img3-2,
+.img4-2,
+.img5-2 {
+    background: url(../img/근정전메인.jpg) no-repeat;
+}
+.img3-3,
+.img4-3,
+.img5-4{
+    background: url(../img/사정전메인.jpg) no-repeat;
+}
+.img4-4,
+.img5-5{
+    background: url(../img/강녕전메인.jpg) no-repeat;
+}
+div[class^="slide"] div h3 {
+    font-size: 1rem;
+    padding: 10px 5px 0 5px;
+}
+
+div[class^="slide"] div p {
+    font-size: 0.9rem;
+    color: rgb(63, 63, 63);
+    padding: 8px 5px 0 5px;
+}
+
+div[class^="slide"] div h3,
+div[class^="slide"] div p {
     text-indent: 0;
-  }
-  div[class^="slide"] div p{
-      text-indent: 0;
-  }
+    text-align: center;
+    font-weight: 500;
+}
+
+/* sun */
+.sun .Tbox2 {
+    padding: 50px 0;
+    color: #40305f;
+    text-align: center;
+}
+
+.sun .Tbox p {
+    color: #40305f;
+}
+
+.sun ul.tabs li.current {
+    color: #40305f;
+    border-bottom: 3px solid #40305f;
+}
+
+.sun ul.tabs li {
+    color: #40305f9f;
+}
