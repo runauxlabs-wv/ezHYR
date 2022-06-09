@@ -4,7 +4,7 @@
 
 html {
     font-size: 16px;
-    background: #e0dee4;
+    background: #40305f;
 }
 
 * {
@@ -17,7 +17,7 @@ html {
 
 /* header디자인 */
 header {
-    background: #342D44;
+    background: #40305f;
     position: fixed;
     top: 0;
     left: 0;
@@ -106,7 +106,7 @@ header .menu {
     padding: 100px 0;
     z-index: 10;
     flex-direction: column;
-    background: #fffdf7d8;
+    background: #f7f7f7bb;
     transform: translateX(100%);
     transition: transform 0.5s;
     box-shadow: 6px 6px 9px 2px #342D44;

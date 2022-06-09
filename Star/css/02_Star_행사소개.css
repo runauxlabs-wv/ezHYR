@@ -125,7 +125,7 @@ header .menu {
     padding: 100px 0;
     z-index: 10;
     flex-direction: column;
-    background: #e2e2e2bb;
+    background: #f7f7f7bb;
     transform: translateX(100%);
     transition: transform 0.5s;
     box-shadow: 6px 6px 9px 2px #342D44;

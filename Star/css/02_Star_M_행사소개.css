@@ -1,0 +1,46 @@
+/* header디자인 */
+header .wrap {
+    margin: 0 20px;
+}
+
+header .menu a {
+    font-size: 1.2rem;
+}
+
+/* inner디자인 */
+
+h1 {
+    font-size: 1.7rem;
+}
+
+.sec1 h1 {
+    font-size: 1.3rem;
+}
+
+.sec1 p {
+    font-size: 0.9rem;
+    margin: 0 20px;
+}
+
+.sec1 {
+    padding: 30px 0;
+}
+
+.background {
+    height: 400px;
+}
+
+div[class^="slide"] {
+    margin: 20px 10px;
+    width: 200px;
+}
+
+.imgbox {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imgbox {
+    margin: 0 20px;
+    padding-bottom: 20px;
+}
