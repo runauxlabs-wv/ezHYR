@@ -242,17 +242,6 @@ footer .cultureLogo2 {
       padding: 5px 10px;
       border-radius: 5px;
   }
-  /* map 구조 */
-  .map{
-      position: relative;
-  }
-  img {
-      padding-top: 100px;
-      position: absolute;
-      left: 0;
-      top: 0;
-      min-width: 760px;
-  }
   /* 왼쪽 장소 설명박스 */
   .left {
     position: fixed;
@@ -265,7 +254,7 @@ footer .cultureLogo2 {
     background: #fffdf7d8;
     transform: translateX(-100%);
     transition: transform 0.5s;
-    box-shadow: 6px 6px 9px 2px #342D44;
+    box-shadow: 3px 3px 5px 2px #342D44;
 }
 .left.on {
     transform: translateX(0);
@@ -284,4 +273,59 @@ footer .cultureLogo2 {
     font-size: 1.2rem;
     text-align: center;
     font-weight: 400;
+}
+ /* map 구조 */
+ .map{
+    /* position: relative; */
+    margin: 0 15px;
+    padding-top: 100px;
+}
+.road {
+    position: absolute;
+    top: 200px;
+    left: 280px;
+    width: 1250px;
+}
+img[class^="place"] {
+    position: absolute;
+}
+.place1{
+    top: 574px;
+    left: 194px;
+}
+.place2{
+    top: 319px;
+    left: 441px;
+}
+.place3{
+    top: 337px;
+    left: 743px;
+}
+.place4{
+    top: 204px;
+    left: 812px;
+}
+.place5{
+    top: 180px;
+    left: 372px;
+}
+.place6{
+    top: 269px;
+    left: 1140px;
+}
+.place7{
+    top: 629px;
+    left: 901px;
+}
+.place8{
+    top: 493px;
+    left: 1019px;
+}
+.place9{
+    top: 259px;
+    left: 1085px;
+}
+.place10{
+    top: 141px;
+    left: 1008px;
 }
