@@ -255,6 +255,9 @@ footer .cultureLogo2 {
     transform: translateX(-100%);
     transition: transform 0.5s;
     box-shadow: 3px 3px 5px 2px #342D44;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .left.on {
     transform: translateX(0);
@@ -266,12 +269,16 @@ footer .cultureLogo2 {
 .left img{
     height: 40%;
     text-align: center;
-    margin: 30px 50px;
+    margin: 50px 50px;
 }
 .left h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
     font-weight: 400;
+    margin: 0 150px;
+    color: #222;
+    letter-spacing: 1px;
+    line-height: 25px;
 }
  /* map 구조 */
  .map{
@@ -417,14 +424,20 @@ img[class^="place"] {
     stroke-linejoin: round;
     stroke-width: 5px;
 }
-.n_course1{
-    width: 341px;
+#n_course1{
+    width: 344px;
     position: absolute;
-    top: 240px;
-    left: 942px;
-    /* display: none; */
+    top: 236px;
+    left: 941px;
 }
-#n1-1{stroke-dasharray: 500; stroke-dashoffset: -500;animation: Cn1 1s linear 0s forwards;}
+#n_course2{
+    width: 934px;
+    position: absolute;
+    top: 326px;
+    left: 359px;
+    display: none;
+}
+/* #n1-1{stroke-dasharray: 500; stroke-dashoffset: -500;animation: Cn1 1s linear 0s forwards;}
 #n1-2{stroke-dasharray: 500; stroke-dashoffset: -500;animation: Cn1 1.8s linear 0s forwards;}
 #n1-3{stroke-dasharray: 500; stroke-dashoffset: -500;animation: Cn1 2s linear 0s forwards;}
 #n1-4{stroke-dasharray: 500; stroke-dashoffset: -500;animation: Cn1-1 2s linear 2s forwards;}
@@ -436,4 +449,4 @@ img[class^="place"] {
 @keyframes Cn1-1 {
     from {stroke-dashoffset : 500px;}
     to {stroke-dashoffset : 0px;}
- }
+ } */
