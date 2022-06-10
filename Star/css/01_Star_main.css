@@ -24,6 +24,7 @@ header {
     width: 100%;
     z-index: 10;
 }
+
 header .wrap {
     margin: 0 100px;
     display: flex;
@@ -96,6 +97,7 @@ header .logo {
     background: #2F2725;
 
 }
+
 header .menu {
     position: fixed;
     top: 0;
@@ -110,7 +112,8 @@ header .menu {
     transition: transform 0.5s;
     box-shadow: 6px 6px 9px 2px #342D44;
 }
-header .menu a{
+
+header .menu a {
     font-size: 1.3rem;
     text-decoration: none;
     font-weight: 500;
@@ -120,6 +123,7 @@ header .menu a{
     position: relative;
     width: 200px;
 }
+
 /* 밑줄효과 애니메이션 */
 header .menu a::after {
     width: 0%;
@@ -137,13 +141,14 @@ header .menu a:hover::after {
     transition: width 0.5s;
 }
 
-header .menu a:hover{
+header .menu a:hover {
     color: #2F2725;
 }
 
 header .menu.on {
     transform: translateX(0);
 }
+
 /* inner 디자인 */
 
 /* course bar design */
@@ -156,16 +161,20 @@ header .menu.on {
 .st1 {
     fill: #2F2725;
 }
+
 footer {
     height: 80px;
 }
+
 footer .cultureLogo {
     background: url(../img/Logo_cultural.svg) no-repeat;
 }
+
 footer .cultureLogo2 {
     background: url(../img/Logo_cultural2.svg) no-repeat;
     margin-left: 150px;
 }
+
 footer .cultureLogo,
 footer .cultureLogo2 {
     background-size: contain;
@@ -174,76 +183,83 @@ footer .cultureLogo2 {
     text-indent: -9999px;
     overflow: hidden;
     display: inline-block;
-    position:absolute;
+    position: absolute;
     bottom: 0;
     left: 100px;
 }
+
 /* tab구조 */
-  .course_sun,
-  .course_night{
+.course_sun,
+.course_night {
     width: 500px;
     margin: 0 auto;
     position: absolute;
     bottom: 20px;
     right: 100px;
-  }
-  
-  ul.tabs{
+}
+
+ul.tabs {
     list-style: none;
     display: flex;
     justify-content: flex-end;
-  }
-  ul.tabs li{
+}
+
+ul.tabs li {
     background: none;
     color: rgb(255, 255, 255);
     display: inline-block;
     padding: 10px 15px;
     cursor: pointer;
-  }
-  
-  ul.tabs li.current{
+}
+
+ul.tabs li.current {
     background: #ffffffab;
     color: #222;
     border-radius: 5px 5px 0 0;
     font-weight: 600;
-  }
-  
-  .tab-content{
+}
+
+.tab-content {
     display: none;
     background: #ffffffab;
     padding: 15px;
     border-radius: 5px;
-  }
-  
-  .tab-content.current{
+}
+
+.tab-content.current {
     display: inherit;
-  }
-  .Tbox .place h1{
-      font-size: 0.9rem;
-      font-weight: 500;
-  }
-  .Tbox p{
-      font-size: 0.9rem;
-      font-weight: 400;
-      margin: 15px 0;
-      text-align: center;
-  }
-  .Tbox .place{
-      display: flex;
-      justify-content: space-around
-  }
-  .Tbox a{
-      text-decoration: none;
-      width: fit-content;
-      font-size: 0.9rem;
-      font-weight: 400;
-      color: #FFF4D7;
-      background: #342D44;
-      padding: 5px 10px;
-      border-radius: 5px;
-  }
-  /* 왼쪽 장소 설명박스 */
-  .left {
+}
+
+.Tbox .place h1 {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.Tbox p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.Tbox .place {
+    display: flex;
+    justify-content: space-around
+}
+
+.Tbox a {
+    text-decoration: none;
+    width: fit-content;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #FFF4D7;
+    background: #342D44;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* 왼쪽 장소 설명박스 */
+.left {
     position: fixed;
     top: 0;
     left: 0;
@@ -259,18 +275,22 @@ footer .cultureLogo2 {
     flex-direction: column;
     align-items: center;
 }
+
 .left.on {
     transform: translateX(0);
 }
-.left h1{
+
+.left h1 {
     font-size: 1.5rem;
     text-align: center;
 }
-.left img{
+
+.left img {
     height: 40%;
     text-align: center;
     margin: 50px 50px;
 }
+
 .left h2 {
     font-size: 1rem;
     text-align: center;
@@ -280,64 +300,113 @@ footer .cultureLogo2 {
     letter-spacing: 1px;
     line-height: 25px;
 }
- /* map 구조 */
- .map{
+
+/* map 구조 */
+.map {
     /* position: relative; */
     margin: 0 15px;
     padding-top: 100px;
 }
+
 .road {
     position: absolute;
     top: 200px;
     left: 340px;
     width: 1250px;
 }
+
 img[class^="place"] {
     position: absolute;
     cursor: pointer;
 }
-.place1{
+
+.place1 {
     top: 574px;
     left: 254px;
 }
-.place2{
+
+.place2 {
     top: 319px;
     left: 501px;
 }
-.place3{
+
+.place3 {
     top: 337px;
     left: 803px;
 }
-.place4{
+
+.place4 {
     top: 204px;
     left: 872px;
 }
-.place5{
+
+.place5 {
     top: 180px;
     left: 432px;
 }
-.place6{
+
+.place6 {
     top: 269px;
     left: 1200px;
 }
-.place7{
+
+.place7 {
     top: 629px;
     left: 961px;
 }
-.place8{
+
+.place8 {
     top: 493px;
     left: 1079px;
 }
-.place9{
+
+.place9 {
     top: 259px;
     left: 1145px;
 }
-.place10{
+
+.place10 {
     top: 144px;
     left: 1074px;
 }
+
+.star {
+    position: absolute;
+    top: 260px;
+    left: 286px;
+    width: 1131px;
+    pointer-events: none;
+    animation: light 3s forwards;
+}
+
+@keyframes light {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+.tree {
+    position: absolute;
+    top: 201px;
+    left: 439px;
+    width: 1127px;
+    pointer-events: none;
+}
+
+.lightBar {
+    position: absolute;
+    top: 340px;
+    left: 641px;
+    width: 1029px;
+    pointer-events: none;
+}
+
 /* 마우스 호버 */
-.map div p{
+.map div p {
     position: absolute;
     color: white;
     border-left: 2px solid white;
@@ -345,69 +414,82 @@ img[class^="place"] {
     font-weight: 500;
     z-index: 1;
     opacity: 0%;
-    transition : all 0.5s;
+    transition: all 0.5s;
 }
-.map div p:after{
+
+.map div p:after {
     position: absolute;
     content: ' ';
 }
-.map div img:hover + p {
+
+.map div img:hover+p {
     opacity: 100%;
 }
-.map div{
+
+.map div {
     display: inline-block;
 }
-.map .wrap10 p{
+
+.map .wrap10 p {
     top: 83px;
     left: 1054px;
     height: 70px;
 }
-.map .wrap9 p{
+
+.map .wrap9 p {
     top: 101px;
     left: 1203px;
     height: 162px;
 }
-.map .wrap8 p{
+
+.map .wrap8 p {
     top: 445px;
     left: 998px;
     height: 49px;
 }
-.map .wrap7 p{
+
+.map .wrap7 p {
     top: 545px;
     left: 998px;
     height: 85px;
 }
 
-.map .wrap6 p{
+.map .wrap6 p {
     top: 184px;
     left: 1423px;
     height: 124px;
 }
-.map .wrap5 p{
+
+.map .wrap5 p {
     top: 114px;
     left: 573px;
     height: 99px;
 }
-.map .wrap4 p{
+
+.map .wrap4 p {
     top: 123px;
     left: 853px;
     height: 99px;
 }
-.map .wrap3 p{
+
+.map .wrap3 p {
     top: 212px;
     left: 848px;
     height: 126px;
 }
-.map .wrap2 p{
+
+.map .wrap2 p {
     top: 113px;
     left: 717px;
     height: 242px;
 }
-.map .wrap1 p{
+
+.map .wrap1 p {
     top: 464px;
     left: 301px;
     height: 124px;
 }
+
 .map .wrap10 p,
 .map .wrap8 p,
 .map .wrap4 p,
@@ -416,27 +498,138 @@ img[class^="place"] {
     border-right: 1.5px solid white;
     text-align: right;
 }
+
 /* 코스따라가기 */
-.cls-1 {
+.cls-0 {
     fill: none;
     stroke: #662d91;
     stroke-linecap: round;
     stroke-linejoin: round;
     stroke-width: 5px;
 }
-#n_course1{
+
+#n_course1 {
     width: 344px;
     position: absolute;
     top: 236px;
     left: 941px;
 }
-#n_course2{
+
+#n_course2 {
     width: 934px;
     position: absolute;
     top: 326px;
     left: 359px;
     display: none;
 }
+
+/* 조명움직이기 */
+.cls-1 {
+    isolation: isolate;
+}
+
+.cls-2 {
+    opacity: 0.74;
+}
+
+.cls-3 {
+    mix-blend-mode: screen;
+    opacity: 0.57;
+}
+
+.cls-4 {
+    mask: url(#mask);
+}
+
+.cls-5 {
+    fill: url(#linear-gradient);
+}
+
+.cls-6 {
+    fill: #ce2925;
+}
+
+.cls-7 {
+    fill: #ea4747;
+}
+
+.cls-8 {
+    fill: #e23d3d;
+}
+
+.cls-9 {
+    fill: #4c49e8;
+}
+
+.cls-10 {
+    fill: #4141d8;
+}
+
+.cls-11 {
+    mask: url(#mask-2);
+}
+
+.cls-12 {
+    fill: url(#linear-gradient-2);
+}
+
+.cls-13 {
+    fill: #3a2534;
+}
+
+.cls-14 {
+    filter: url(#luminosity-noclip-2);
+}
+
+.cls-15 {
+    filter: url(#luminosity-noclip);
+}
+.ani {
+    position: absolute;
+    top: 274px;
+    left: 331px;
+    width: 948px;
+    pointer-events: none;
+}
+#move1,
+#move2{
+    position: absolute;
+}
+#move1{
+    transform-origin: right ;
+    animation: move 2s infinite;
+}
+#move2{
+    transform-origin: bottom ;
+    animation: move2 2s infinite;
+}
+@keyframes move{
+    0% {
+        transform: rotate(0deg);
+    }
+    35% {
+        transform: rotate(1deg);
+    }
+    70%{
+        transform: rotate(-1deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes move2{
+    0% {
+        transform: rotate(0deg);
+    }
+    35% {
+        transform: rotate(-0.3deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+
 /* #n1-1{stroke-dasharray: 500; stroke-dashoffset: -500;animation: Cn1 1s linear 0s forwards;}
 #n1-2{stroke-dasharray: 500; stroke-dashoffset: -500;animation: Cn1 1.8s linear 0s forwards;}
 #n1-3{stroke-dasharray: 500; stroke-dashoffset: -500;animation: Cn1 2s linear 0s forwards;}
