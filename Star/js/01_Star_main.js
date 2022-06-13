@@ -32,7 +32,7 @@ $(document).ready(function() {
 
 				$(this).click(function() {
 					$(".left").addClass("on");
-					let i = $(this).index() - 2; //앞에 index번호 없앰 svg등 추가로 생겨서
+					let i = $(this).index() - 3; //앞에 index번호 없앰 svg등 추가로 생겨서
 					console.log(i);
 					console.log(data[i].name);
 					$("#name").text(data[i].name); //배열맞춰서 불러오기
@@ -64,3 +64,14 @@ $(function(){
         $('.n_course1').css('display','none');
     });
   });
+  
+  //toggle버튼 테마바꾸기
+  $(document).ready(function() {
+    $("input:checkbox").on('click', function() {
+          if ( $(this).prop('checked') ) {
+            $(this).parent().addClass("selected");
+          } else {
+            $(this).parent().removeClass("selected");
+          }
+        });
+    });
