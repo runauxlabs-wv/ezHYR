@@ -499,30 +499,6 @@ img[class^="place"] {
     text-align: right;
 }
 
-/* 코스따라가기 */
-.cls-0 {
-    fill: none;
-    stroke: #662d91;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-width: 5px;
-}
-
-#n_course1 {
-    width: 344px;
-    position: absolute;
-    top: 236px;
-    left: 941px;
-}
-
-#n_course2 {
-    width: 934px;
-    position: absolute;
-    top: 326px;
-    left: 359px;
-    display: none;
-}
-
 /* 조명움직이기 */
 .cls-1 {
     isolation: isolate;
@@ -630,11 +606,26 @@ img[class^="place"] {
 }
 
 
-/* #n1-1{stroke-dasharray: 500; stroke-dashoffset: -500;animation: Cn1 1s linear 0s forwards;}
-#n1-2{stroke-dasharray: 500; stroke-dashoffset: -500;animation: Cn1 1.8s linear 0s forwards;}
-#n1-3{stroke-dasharray: 500; stroke-dashoffset: -500;animation: Cn1 2s linear 0s forwards;}
-#n1-4{stroke-dasharray: 500; stroke-dashoffset: -500;animation: Cn1-1 2s linear 2s forwards;}
-#n1-5{stroke-dasharray: 500; stroke-dashoffset: -500;animation: Cn1 2s linear 1.8s forwards;}
+/* 코스따라가기 */
+.cls-0 {
+    fill: none;
+    stroke: #662d91;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 5px;
+}
+.n_course1{
+    width: 341px;
+    position: absolute;
+    top: 240px;
+    left: 942px;
+    /* display: none; */
+}
+#n1-1{stroke-dasharray: 500; stroke-dashoffset: -500;animation: 1s linear 0s forwards;}
+#n1-2{stroke-dasharray: 500; stroke-dashoffset: -500;animation: 1.8s linear 0s forwards;}
+#n1-3{stroke-dasharray: 500; stroke-dashoffset: -500;animation: 2s linear 0s forwards;}
+#n1-4{stroke-dasharray: 500; stroke-dashoffset: -500;animation: 2s linear 2s forwards;}
+#n1-5{stroke-dasharray: 500; stroke-dashoffset: -500;animation: 2s linear 1.8s forwards;}
 @keyframes Cn1 {
    from {stroke-dashoffset : -500px;}
    to {stroke-dashoffset : 0px;}
@@ -642,4 +633,4 @@ img[class^="place"] {
 @keyframes Cn1-1 {
     from {stroke-dashoffset : 500px;}
     to {stroke-dashoffset : 0px;}
- } */
+ }

@@ -46,18 +46,14 @@ $(document).ready(function() {
         }
     });
 });
-//코스 애니메이션 실행
 
-var  n_course2 = document.querySelector('#n_course2'),
-     btn2 = document.querySelector('.btn2');
-
-
-
-var tlh2 = new TimelineMax();
-tlh2.add("start");
-tlh2.fromTo(n_course2, 1, {drawSVG:"0%"}, {drawSVG:"100%", ease: Power2.easeInOut});
-tlh2.seek(1.5);
-
-btn2.onclick = function() {
-  tlh2.play("start");
-}
+//코스 애니메이션
+$(function(){
+    $('#btN1').click(function(){ 
+        $('#n1-1').css('animation-name','Cn1');
+        $('#n1-2').css('animation-name','Cn1');
+        $('#n1-3').css('animation-name','Cn1');
+        $('#n1-4').css('animation-name','Cn1-1');
+        $('#n1-5').css('animation-name','Cn1');
+    });
+  });
