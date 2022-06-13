@@ -634,3 +634,23 @@ img[class^="place"] {
     from {stroke-dashoffset : 500px;}
     to {stroke-dashoffset : 0px;}
  }
+ .n_course2{
+    width: 946px;
+    position: absolute;
+    top: 318px;
+    left: 350px;
+ }
+#n2-1{stroke-dasharray: 500; stroke-dashoffset: -500;animation: 1s linear 0s forwards;}
+#n2-2{stroke-dasharray: 500; stroke-dashoffset: -500;animation: 2s linear 0.5s forwards;}
+#n2-3{stroke-dasharray: 500; stroke-dashoffset: -500;animation: 2s linear 1.3s forwards;}
+#n2-4{stroke-dasharray: 500; stroke-dashoffset: -500;animation: 3s linear 2s forwards;}
+#n2-5{stroke-dasharray: 500; stroke-dashoffset: -500;animation: 1.5s linear 1.5s forwards;}
+#n2-6{stroke-dasharray: 500; stroke-dashoffset: -500;animation: 2.5s linear 3s forwards;}
+#n2-7{stroke-dasharray: 500; stroke-dashoffset: -500;animation: 2s linear 3.3s forwards;}
+#n2-8{stroke-dasharray: 500; stroke-dashoffset: -500;animation: 2s linear 2.5s forwards;}
+#n2-9{stroke-dasharray: 500; stroke-dashoffset: -500;animation: 2s linear 4.5s forwards;}
+#n2-10{stroke-dasharray: 500; stroke-dashoffset: -500;animation: 2s linear 3.7s forwards;}
+#n2-11{stroke-dasharray: 500; stroke-dashoffset: -500;animation: 1.8s linear 5.8s forwards;}
+#n2-12{stroke-dasharray: 500; stroke-dashoffset: -500;animation: 1.8s linear 6.3s forwards;}
+#n2-13{stroke-dasharray: 500; stroke-dashoffset: -500;animation: 1.3s linear 7.2s forwards;}
+

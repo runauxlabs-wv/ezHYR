@@ -50,10 +50,17 @@ $(document).ready(function() {
 //코스 애니메이션
 $(function(){
     $('#btN1').click(function(){ 
-        $('#n1-1').css('animation-name','Cn1');
-        $('#n1-2').css('animation-name','Cn1');
-        $('#n1-3').css('animation-name','Cn1');
+        $('.n_course1').css('display','block');
+        $('#n1-1,#n1-2,#n1-3,#n1-5').css('animation-name','Cn1');
         $('#n1-4').css('animation-name','Cn1-1');
-        $('#n1-5').css('animation-name','Cn1');
+        $('.n_course2').css('display','none');
+    });
+  });
+  $(function(){
+    $('#btN2').click(function(){
+        $('.n_course2').css('display','block');
+        $('#n2-5,#n2-8,#n2-10,#n2-12,#n2-13').css('animation-name','Cn1');
+        $('#n2-1,#n2-2,#n2-3,#n2-4,#n2-6,#n2-7,#n2-9,#n2-11').css('animation-name','Cn1-1');
+        $('.n_course1').css('display','none');
     });
   });
