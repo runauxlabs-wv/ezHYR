@@ -3,6 +3,7 @@ var swiper = new Swiper(".slide", {
     direction: "vertical",
     sensitivity: 3,
     mousewheel: true,
+    touchRatio: 1,
     pagination: {
         el: ".slide .swiper-pagination",
         type: "fraction",
