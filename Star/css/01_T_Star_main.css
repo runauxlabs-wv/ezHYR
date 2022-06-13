@@ -1,0 +1,46 @@
+@charset "UTF-8";
+header .logo {
+    width: 130px;
+    height: 70px;
+}
+
+header {
+    height: 70px;
+}
+
+.navButton {
+    width: 27px;
+}
+
+header .menu {
+    width: 100%;
+    align-items: center;
+}
+
+header .menu a {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 20px 0 30px 0;
+    width: 150px;
+}
+
+header .menu a::after {
+    left: 0%;
+}
+
+header .menu a:hover::after {
+    width: 100%;
+}
+header .wrap,
+.toggle {
+    margin: 0 60px;
+}
+/* inner */
+.course_sun, .course_night{
+    margin: 0 60px;
+    right: 0;
+}
+footer .cultureLogo,
+footer .cultureLogo2{
+    left: 60px;
+}

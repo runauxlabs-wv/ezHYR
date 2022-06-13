@@ -6,9 +6,9 @@
     <title>경복궁 별빛야행</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/01_Star_main.css">
-    <!-- <link rel="stylesheet" type="text/css" media="all and (max-width: 1199px)"
-        href="">
-    <link rel="stylesheet" type="text/css" media="all and (max-width: 760px)" href=""> -->
+    <link rel="stylesheet" type="text/css" media="all and (max-width: 1199px)"
+        href="../css/01_T_Star_main.css">
+    <link rel="stylesheet" type="text/css" media="all and (max-width: 760px)" href="../css/01_M_Star_main.css">
 </head>
 
 <body>
@@ -32,13 +32,15 @@
             </div>
         </div>
         <div class="toggle">
-            <span class="material-symbols-outlined">bedtime</span>
-            <span class="material-symbols-outlined">sunny</span>
-        <label class="switch-button">
-            <input type="checkbox"/>
-            <span class="onoff-switch"></span>
-        </label>
-    </div>
+            <span class="material-symbols-outlined" id="moon">bedtime</span>
+            <span class="moonT">밤의 산책길</span>
+            <span class="material-symbols-outlined" id="sun">sunny</span>
+            <span class="sunT">낮의 산책길</span>
+            <label class="switch-button">
+                <input type="checkbox" />
+                <span class="onoff-switch"></span>
+            </label>
+        </div>
     </header>
     <div class="left">
         <h1 id="name">
@@ -49,6 +51,7 @@
     </div>
     <div class="map">
         <img src="../img/map/n_길.png" alt="길" class="road">
+        <img src="../img/map/s_길.png" alt="낮길" class="sun_road">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 524.26" class="n_course1">
             <g>
                 <g id="n1">
@@ -76,6 +79,33 @@
                 <line id="n2-12" class="cls-0" x1="97.97" y1="233.63" x2="435.5" y2="27.5" />
                 <line id="n2-13" class="cls-0" x1="183.62" y1="300.88" x2="97.5" y2="233.5" />
             </g>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 530 480" class="s_course1">
+            <g id="n3">
+                <line id="n3-1" class="cls-01" x1="2.5" y1="477.5" x2="217.52" y2="318.01" />
+                <line id="n3-2" class="cls-01" x1="217.5" y1="318.5" x2="85.3" y2="222.39" />
+                <line id="n3-3" class="cls-01" x1="85.5" y1="222.5" x2="447.87" y2="2.52" />
+                <line id="n3-4" class="cls-01" x1="447.5" y1="2.5" x2="527.5" y2="44.5" />
+            </g>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 711 379" class="s_course2">
+            <g id="n4">
+                <line id="n4-1" class="cls-01" x1="2.5" y1="376.5" x2="217.63" y2="217.5" />
+                <line id="n4-2" class="cls-01" x1="217.5" y1="217.5" x2="401.19" y2="318.46" />
+                <line id="n4-3" class="cls-01" x1="401.5" y1="318.5" x2="603.62" y2="200.96" />
+                <line id="n4-4" class="cls-01" x1="603.5" y1="200.5" x2="577.44" y2="137.44" />
+                <line id="n4-5" class="cls-01" x1="577.5" y1="137.5" x2="708.34" y2="57.76" />
+                <line id="n4-6" class="cls-01" x1="708.5" y1="57.5" x2="612.5" y2="2.5" />
+            </g>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 832 480" class="s_course3">
+                <g id="n5">
+                    <line id="n5-1" class="cls-01" x1="2.5" y1="477.5" x2="217.52" y2="318.01" />
+                    <line id="n5-2" class="cls-01" x1="217.5" y1="318.5" x2="85.3" y2="222.39" />
+                    <line id="n5-3" class="cls-01" x1="85.5" y1="222.5" x2="447.87" y2="2.52" />
+                    <line id="n5-4" class="cls-01" x1="447.5" y1="2.5" x2="728.14" y2="163.44" />
+                    <polyline id="n5-5" class="cls-01" points="728.5 163.5 747.75 152.41 675.4 109.93 829.5 21.5" />
+                </g>
         </svg>
         <div class="wrap10">
             <img src="../img/map/집옥재.png" alt="집옥재" class="place10">
@@ -120,6 +150,7 @@
         <img src="../img/map/하단조명.png" alt="조명" class="star">
         <img src="../img/map/n_나무.png" alt="나무" class="tree">
         <img src="../img/map/조명고정.png" alt="조명" class="lightBar">
+        <img src="../img/map/s_조형물.png" alt="조형물" class="sun_tree">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 760.46 279.23"
             class="ani">
             <defs>
@@ -206,11 +237,11 @@
             </g>
         </svg>
     </div>
-    <!-- <div class="course_sun">
+    <div class="course_sun">
         <ul class="tabs">
-            <li class="tab-link current" data-tab="tab1-1">40m 코스</li>
-            <li class="tab-link" data-tab="tab1-2">60m 코스</li>
-            <li class="tab-link" data-tab="tab1-3">90m 코스</li>
+            <li class="tab-link current" data-tab="tab1-1" id="btS1">40m 코스</li>
+            <li class="tab-link" data-tab="tab1-2" id="btS2">60m 코스</li>
+            <li class="tab-link" data-tab="tab1-3" id="btS3">90m 코스</li>
         </ul>
         <div id="tab1-1" class="tab-content current">
             <svg version="1.1" id="bar1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -233,7 +264,6 @@
                     <h1>경회루</h1>
                 </div>
                 <p>별빛야행을 관람하기 전 40분동안 산책하며 둘러보기 좋은 코스입니다.</p>
-                <a href="#">해당 코스 자세히보기</a>
             </div>
         </div>
         <div id="tab1-2" class="tab-content">
@@ -259,7 +289,6 @@
                     <h1>자경전</h1>
                 </div>
                 <p>별빛야행을 관람하기 전 60분동안 걸어가며 둘러보기 좋은 코스입니다.</p>
-                <a href="#">해당 코스 자세히보기</a>
             </div>
         </div>
         <div id="tab1-3" class="tab-content">
@@ -289,14 +318,13 @@
                     <h1>향원정과 건청궁</h1>
                 </div>
                 <p>별빛야행을 관람하기 전 90분동안 여기저기 둘러보기 좋은 코스입니다.</p>
-                <a href="#">해당 코스 자세히보기</a>
             </div>
         </div>
-    </div> -->
+    </div>
     <div class="course_night">
         <ul class="tabs">
-            <li class="tab-link current" data-tab="tab2-1" class="btn2" id="btN1">별빛산책</li>
-            <li class="tab-link" data-tab="tab2-2" class="btn2" id="btN2">해설탐방</li>
+            <li class="tab-link current" data-tab="tab2-1" id="btN1">별빛산책</li>
+            <li class="tab-link" data-tab="tab2-2" id="btN2">해설탐방</li>
         </ul>
         <div id="tab2-1" class="tab-content current">
             <svg version="1.1" id="bar4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -321,7 +349,6 @@
                     <h1>향원정과 건청궁</h1>
                 </div>
                 <p>다양한 체험과 함께 산책할 수 있는 코스</p>
-                <a href="#">해당 코스 자세히보기</a>
             </div>
         </div>
         <div id="tab2-2" class="tab-content">
@@ -350,7 +377,6 @@
                     <h1>근정전</h1>
                 </div>
                 <p>경복궁에 대한 해설과 함께 산책할 수 있는 코스</p>
-                <a href="#">해당 코스 자세히보기</a>
             </div>
         </div>
     </div>

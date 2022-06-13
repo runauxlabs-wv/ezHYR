@@ -3,7 +3,12 @@
 /* Google_Notosans_font */
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
 /* Goggle_icon */
-
+@font-face {
+    font-family: 'Eulyoo1945-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Eulyoo1945-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 html {
     font-size: 16px;
     background: #40305f;
@@ -199,7 +204,9 @@ footer .cultureLogo2 {
     bottom: 20px;
     right: 100px;
 }
-
+.course_sun{
+    display: none;
+}
 ul.tabs {
     list-style: none;
     display: flex;
@@ -249,17 +256,6 @@ ul.tabs li.current {
     justify-content: space-around
 }
 
-.Tbox a {
-    text-decoration: none;
-    width: fit-content;
-    font-size: 0.9rem;
-    font-weight: 400;
-    color: #FFF4D7;
-    background: #342D44;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
 /* 왼쪽 장소 설명박스 */
 .left {
     position: fixed;
@@ -269,10 +265,10 @@ ul.tabs li.current {
     height: 100vh;
     padding: 100px 0;
     z-index: 10;
-    background: #fffdf7d8;
+    background: #f7f7f7bb;
     transform: translateX(-100%);
     transition: transform 0.5s;
-    box-shadow: 3px 3px 5px 2px #342D44;
+    box-shadow: 1px 2px 5px 1px #342d4462;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -316,7 +312,13 @@ ul.tabs li.current {
     left: 340px;
     width: 1250px;
 }
-
+.sun_road{
+    position: absolute;
+    top: 200px;
+    left: 340px;
+    width: 1250px;
+    display: none;
+}
 img[class^="place"] {
     position: absolute;
     cursor: pointer;
@@ -406,6 +408,14 @@ img[class^="place"] {
     left: 641px;
     width: 1029px;
     pointer-events: none;
+}
+.sun_tree{
+    position: absolute;
+    top: 147px;
+    left: 406px;
+    width: 1253px;
+    pointer-events: none;
+    display: none;
 }
 
 /* 마우스 호버 */
@@ -564,11 +574,9 @@ img[class^="place"] {
     filter: url(#luminosity-noclip);
 }
 .ani {
-    position: absolute;
     top: 274px;
     left: 331px;
     width: 948px;
-    pointer-events: none;
 }
 #move1,
 #move2{
@@ -617,12 +625,26 @@ img[class^="place"] {
     stroke-linejoin: round;
     stroke-width: 5px;
 }
+.cls-01 {
+    fill: none;
+    stroke: #39b54a;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 5px;
+}
+.n_course1,
+.n_course2,
+.s_course1,
+.s_course2,
+.s_course3,
+.ani{
+    position: absolute;
+    pointer-events: none;
+}
 .n_course1{
     width: 341px;
-    position: absolute;
     top: 240px;
     left: 942px;
-    /* display: none; */
 }
 #n1-1{stroke-dasharray: 500; stroke-dashoffset: -500;animation: 1s linear 0s forwards;}
 #n1-2{stroke-dasharray: 500; stroke-dashoffset: -500;animation: 1.8s linear 0s forwards;}
@@ -639,7 +661,6 @@ img[class^="place"] {
  }
  .n_course2{
     width: 946px;
-    position: absolute;
     top: 318px;
     left: 350px;
  }
@@ -657,6 +678,37 @@ img[class^="place"] {
 #n2-12{stroke-dasharray: 500; stroke-dashoffset: -500;animation: 1.8s linear 6.3s forwards;}
 #n2-13{stroke-dasharray: 500; stroke-dashoffset: -500;animation: 1.3s linear 7.2s forwards;}
 
+.s_course1{
+    width: 562px;
+    top: 348px;
+    left: 370px;
+}
+#n3-1{stroke-dasharray: 500; stroke-dashoffset: -500;animation: 1s linear 0.2s forwards;}
+#n3-2{stroke-dasharray: 500; stroke-dashoffset: -500;animation: 2s linear 1s forwards;}
+#n3-3{stroke-dasharray: 500; stroke-dashoffset: -500;animation: 2s linear 1.8s forwards;}
+#n3-4{stroke-dasharray: 500; stroke-dashoffset: -500;animation: 2s linear 1.7s forwards;}
+.s_course2{
+    width: 761px;
+    top: 465px;
+    left: 362px;
+}
+#n4-1{stroke-dasharray: 500; stroke-dashoffset: -500;animation: 1s linear 0.2s forwards;}
+#n4-2{stroke-dasharray: 500; stroke-dashoffset: -500;animation: 2s linear 1s forwards;}
+#n4-3{stroke-dasharray: 500; stroke-dashoffset: -500;animation: 2s linear 1.8s forwards;}
+#n4-4{stroke-dasharray: 500; stroke-dashoffset: -500;animation: 2s linear 2.3s forwards;}
+#n4-5{stroke-dasharray: 500; stroke-dashoffset: -500;animation: 2s linear 2.7s forwards;}
+#n4-6{stroke-dasharray: 500; stroke-dashoffset: -500;animation: 2s linear 3.5s forwards;}
+.s_course3{
+    width: 897px;
+    top: 348px;
+    left: 360px;
+}
+#n5-1{stroke-dasharray: 500; stroke-dashoffset: -500;animation: 1s linear 0.2s forwards;}
+#n5-2{stroke-dasharray: 500; stroke-dashoffset: -500;animation: 2s linear 1s forwards;}
+#n5-3{stroke-dasharray: 500; stroke-dashoffset: -500;animation: 1.5s linear 1.8s forwards;}
+#n5-4{stroke-dasharray: 500; stroke-dashoffset: -500;animation: 2s linear 3.3s forwards;}
+#n5-5{stroke-dasharray: 500; stroke-dashoffset: -500;animation: 2s linear 4.6s forwards;}
+
 /* toggle 버튼만들기 */
 .toggle{
     margin: 0 100px;
@@ -664,9 +716,24 @@ img[class^="place"] {
     align-items: center;
 }
 .toggle .material-symbols-outlined{
-    color: white;
     width: 30px;
     height: 30px;
+}
+.moonT,
+.sunT{
+    font-family: 'Eulyoo1945-Regular';
+    margin-right: 20px;
+    font-size: 1.2rem;
+}
+.moonT,
+#moon
+{
+    color: white;
+}
+.sunT,
+#sun{
+    color: #2F2725;
+    display: none;
 }
 .switch-button {
     position: relative;
@@ -706,7 +773,7 @@ img[class^="place"] {
 }
 
 .switch-button input:checked + .onoff-switch {
-    background-color: #ffcf2f;
+    background-color: #723ead;
 }
 
 .switch-button input:checked + .onoff-switch:before {
