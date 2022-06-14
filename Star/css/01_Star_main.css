@@ -650,17 +650,17 @@ img[class^="place"] {
 /* 코스따라가기 */
 .cls-0 {
     fill: none;
-    stroke: #662d91;
+    stroke: #ffce46;
     stroke-linecap: round;
     stroke-linejoin: round;
-    stroke-width: 5px;
+    stroke-width: 14px;
 }
 .cls-01 {
     fill: none;
     stroke: #39b54a;
     stroke-linecap: round;
     stroke-linejoin: round;
-    stroke-width: 5px;
+    stroke-width: 14px;
 }
 .n_course1,
 .n_course2,
@@ -716,7 +716,7 @@ img[class^="place"] {
 #n3-1{stroke-dasharray: 500; stroke-dashoffset: -500;animation: 1s linear 0.2s forwards;}
 #n3-2{stroke-dasharray: 500; stroke-dashoffset: -500;animation: 2s linear 1s forwards;}
 #n3-3{stroke-dasharray: 500; stroke-dashoffset: -500;animation: 2s linear 1.8s forwards;}
-#n3-4{stroke-dasharray: 500; stroke-dashoffset: -500;animation: 2s linear 1.7s forwards;}
+#n3-4{stroke-dasharray: 500; stroke-dashoffset: -500;animation: 2s linear 4s forwards;}
 .s_course2{
     width: 761px;
     top: 465px;

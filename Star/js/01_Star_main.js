@@ -57,8 +57,7 @@ $(function () {
     });
     $('#btS1').click(function(){
         $('.s_course1').css('display','block');
-        $('#n3-1,#n3-2,#n3-3').css('animation-name','Cn1-1');
-        $('#n3-4').css('animation-name','Cn1');
+        $('#n3-1,#n3-2,#n3-3,#n3-4').css('animation-name','Cn1-1');
         $('.n_course1,.n_course2,.s_course2,.s_course3').css('display','none');
     });
     $('#btS2').click(function(){
