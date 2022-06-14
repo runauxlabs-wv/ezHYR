@@ -826,3 +826,16 @@ img[class^="place"] {
     color: rgb(31, 31, 31);
     text-align: center;
 }
+#modal .content h3{
+    color: rgb(31, 31, 31);
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 26px;
+}
+#modal .content p{
+    color: rgb(31, 31, 31);
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 26px;
+    margin-top: 50px;
+}
