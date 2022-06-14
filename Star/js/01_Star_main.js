@@ -78,109 +78,63 @@ $(".map div img").hover(function(){
 },function(){
     $(this).css("transform","translateY(8px)");
 });
+// //코스탭 장소클릭
+$(".click1").click(function(){
+    $('.place1').click();
 });
+$(".click2").click(function(){
+    $('.place2').click();
+});
+$(".click3").click(function(){
+    $('.place3').click();
+});
+$(".click4").click(function(){
+    $('.place4').click();
+});
+$(".click5").click(function(){
+    $('.place5').click();
+});
+$(".click6").click(function(){
+    $('.place6').click();
+});
+$(".click7").click(function(){
+    $('.place7').click();
+});
+$(".click7").click(function(){
+    $('.place7').click();
+});
+$(".click8").click(function(){
+    $('.place8').click();
+});
+$(".click9").click(function(){
+    $('.place9').click();
+});
+$(".click10").click(function(){
+    $('.place10').click();
+});
+
+
+//   //toggle버튼 테마바꾸기
+    $("input:checkbox").on('click', function() {
+          if ( $(this).prop('checked') ) {
+            $(this).parent().addClass("selected");
+            $('body').addClass("sun");
+          } else {
+            $(this).parent().removeClass("selected");
+            $('body').removeClass("sun");
+          }
+        });
+    });
+
+
 //모달창 x버튼 누르거나 모달창 외 클릭시 사라지게하기
 const closeBtn = modal.querySelector(".close-area")
 closeBtn.addEventListener("click", e => {
     modal.style.display = "none"
-})
+});
 modal.addEventListener("click", e => {
     const evTarget = e.target
     if(evTarget.classList.contains("modal-overlay")) {
         modal.style.display = "none"
     }
-})
-  
-//   //toggle버튼 테마바꾸기
-//   $(document).ready(function() {
-//     $("input:checkbox").on('click', function() {
-//           if ( $(this).prop('checked') ) {
-//             $(this).parent().addClass("selected");
-//             $("html").css("background", "#f0f0f0");
-//             $("header .logo").css({"background":"url(../img/Logo_star_black.svg) no-repeat"});
-//             $(".navButton span").css("background", "#40305f");
-//             $(".map div p, ul.tabs li").css("color", "#40305f");
-//             $(".map div p").css("border-left", "2px solid #40305f");
-//             $(".map .wrap10 p, .map .wrap8 p, .map .wrap4 p, .map .wrap1 p").css("border-left", "none");
-//             $(".map .wrap10 p, .map .wrap8 p, .map .wrap4 p, .map .wrap1 p").css("border-right", "1.5px solid #40305f");
-//             $(".course_sun, .sun_road, .sun_tree, #sun, .sunT").css("display", "block");
-//             $(".star, .course_night, .tree, .lightBar, .road, .ani, #moon, .moonT").css("display", "none");
-//           } else {
-//             $(this).parent().removeClass("selected");
-//             $("html").css("background", "#40305f");
-//             $("header .logo").css({"background":"url(../img/Logo_star.svg) no-repeat"});
-//             $(".navButton span").css("background", "#FFF4D7");
-//             $(".star").css("display", "block");
-//             $(".map div p, ul.tabs li").css("color", "white");
-//             $(".map div p").css("border-left", "2px solid white");
-//             $(".map .wrap10 p, .map .wrap8 p, .map .wrap4 p, .map .wrap1 p").css("border-left", "none");
-//             $(".map .wrap10 p, .map .wrap8 p, .map .wrap4 p, .map .wrap1 p").css("border-right", "1.5px solid white");
-//             $(".star, .course_night, .tree, .lightBar, .road, .ani, #moon, .moonT").css("display", "block");
-//             $(".course_sun, .sun_road, .sun_tree, #sun, .sunT").css("display", "none");
-//           }
-//         });
-//     });
-
-    $(window).resize(function(){ 
-        if (window.innerWidth > 760) {  // 다바이스 크기가 480이상일때 
-            $(document).ready(function() {
-                $("input:checkbox").on('click', function() {
-                      if ( $(this).prop('checked') ) {
-                        $(this).parent().addClass("selected");
-                        $("html, header").css("background", "#f0f0f0bd");
-                        $("header .logo").css({"background":"url(../img/Logo_star_black.svg) no-repeat"});
-                        $(".navButton span").css("background", "#40305f");
-                        $(".map div p, ul.tabs li").css("color", "#40305f");
-                        $(".map div p").css("border-left", "2px solid #40305f");
-                        $(".map .wrap10 p, .map .wrap8 p, .map .wrap4 p, .map .wrap1 p").css("border-left", "none");
-                        $(".map .wrap10 p, .map .wrap8 p, .map .wrap4 p, .map .wrap1 p").css("border-right", "1.5px solid #40305f");
-                        $(".course_sun, .sun_road, .sun_tree, #sun, .sunT").css("display", "block");
-                        $(".star, .course_night, .tree, .lightBar, .road, .ani, #moon, .moonT").css("display", "none");
-                      } else {
-                        $(this).parent().removeClass("selected");
-                        $("html").css("background", "#40305f");
-                        $("header .logo").css({"background":"url(../img/Logo_star.svg) no-repeat"});
-                        $(".navButton span").css("background", "#FFF4D7");
-                        $(".star").css("display", "block");
-                        $(".map div p, ul.tabs li").css("color", "white");
-                        $(".map div p").css("border-left", "2px solid white");
-                        $(".map .wrap10 p, .map .wrap8 p, .map .wrap4 p, .map .wrap1 p").css("border-left", "none");
-                        $(".map .wrap10 p, .map .wrap8 p, .map .wrap4 p, .map .wrap1 p").css("border-right", "1.5px solid white");
-                        $(".star, .course_night, .tree, .lightBar, .road, .ani, #moon, .moonT").css("display", "block");
-                        $(".course_sun, .sun_road, .sun_tree, #sun, .sunT").css("display", "none");
-                      }
-                    });
-                });
-        
-        } else {
-            $(document).ready(function() {
-                $("input:checkbox").on('click', function() {
-                      if ( $(this).prop('checked') ) {
-                        $(this).parent().addClass("selected");
-                        $("html, header").css("background", "#f0f0f0bd");
-                        $("header .logo").css({"background":"url(../img/Logo_star_black.svg) no-repeat"});
-                        $(".navButton span").css("background", "#40305f");
-                        $(".map div p").css("color", "#40305f");
-                        $(".map div p").css("border-left", "2px solid #40305f");
-                        $(".map .wrap10 p, .map .wrap8 p, .map .wrap4 p, .map .wrap1 p").css("border-left", "none");
-                        $(".map .wrap10 p, .map .wrap8 p, .map .wrap4 p, .map .wrap1 p").css("border-right", "1.5px solid #40305f");
-                        $(".course_sun, .sun_road, .sun_tree").css("display", "block");
-                        $(".star, .course_night, .tree, .lightBar, .road, .ani").css("display", "none");
-                      } else {
-                        $(this).parent().removeClass("selected");
-                        $("html, header").css("background", "#40305f");
-                        $("header .logo").css({"background":"url(../img/Logo_star.svg) no-repeat"});
-                        $(".navButton span").css("background", "#FFF4D7");
-                        $(".star").css("display", "block");
-                        $(".map div p, ul.tabs li").css("color", "white");
-                        $(".map div p").css("border-left", "2px solid white");
-                        $(".map .wrap10 p, .map .wrap8 p, .map .wrap4 p, .map .wrap1 p").css("border-left", "none");
-                        $(".map .wrap10 p, .map .wrap8 p, .map .wrap4 p, .map .wrap1 p").css("border-right", "1.5px solid white");
-                        $(".star, .course_night, .tree, .lightBar, .road, .ani").css("display", "block");
-                        $(".course_sun, .sun_road, .sun_tree").css("display", "none");
-                      }
-                    });
-                });    
-        }
-        
-        }).resize();
+});

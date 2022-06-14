@@ -32,6 +32,27 @@ html {
 }
 
 /* header디자인 */
+.cultureLogo {
+    background: url(../img/Logo_cultural_sun.svg) no-repeat;
+}
+
+.cultureLogo2 {
+    background: url(../img/Logo_cultural2_sun.svg) no-repeat;
+    margin-right: 150px;
+}
+
+.cultureLogo,
+.cultureLogo2 {
+    background-size: contain;
+    height: 100px;
+    width: 150px;
+    text-indent: -9999px;
+    overflow: hidden;
+    display: inline-block;
+    position: absolute;
+    bottom:50px;
+    right: 100px;
+}
 header {
     position: fixed;
     top: 0;
@@ -40,7 +61,9 @@ header {
     width: 100%;
     z-index: 10;
     border-bottom: 1px solid #f0f0f046;
-    background: rgba(0, 0, 0, 0.05);
+}
+header.active{
+    background: #40305fad;
 }
 
 header .wrap {
@@ -168,8 +191,10 @@ header .menu.on {
 }
 
 /* inner디자인 */
+
 .background {
     background: url(../img/행사소개.jpg) no-repeat;
+    background-position: top;
     height: 500px;
     filter: brightness(90%);
     text-indent: -9999px;

@@ -14,3 +14,11 @@ $(function () {
         $(".menu").toggleClass("on");
     });
 });
+//스크롤 상하로 생겼을때 메뉴바 색상 변경
+$(window).on('scroll',function(){
+    if($(window).scrollTop()){
+        $('header').addClass('active');
+    }else{
+        $('header').removeClass('active');
+    }
+});

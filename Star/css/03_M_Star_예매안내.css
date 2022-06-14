@@ -6,6 +6,11 @@ header .wrap {
 header .menu a {
     font-size: 1.2rem;
 }
+.cultureLogo, .cultureLogo2 {
+    height: 75px;
+    width: 125px;
+    right: 35px;
+}
 
 /* inner디자인 */
 

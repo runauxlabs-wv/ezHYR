@@ -44,25 +44,20 @@ ul.tabs {
 }
 
 ul.tabs li {
-    background: #ffffffab;
+    background: #40305fd3;
     width: 50%;
     text-align: center;
     font-weight: 300;
 }
 
 ul.tabs li.current {
-    background: #40305fd3;
-    color: white;
+    background: #ffffffc4;
+    color: #40305f;
     border-radius: 0;
 }
 
 .tab-content.current {
     display: none;
-}
-
-.cultureLogo,
-.cultureLogo2 {
-    right: 20px;
 }
 
 .left h1 {
@@ -221,4 +216,60 @@ img[class^="place"] {
 
 .map div p {
     display: none;
+}
+.cultureLogo, .cultureLogo2 {
+    height: 75px;
+    width: 125px;
+    right: 35px;
+}
+/* modal창 디자인 */
+#modal .modal-window {
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 8px 32px 0 rgba(39, 15, 46, 0.37);
+    backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    width: 320px;
+    height: 500px;
+    position: relative;
+    top: -20px;
+    padding: 35px 20px;
+    z-index: 30;
+}
+
+#modal .title h2 {
+    font-size: 1.2rem;
+}
+#modal .close-area {
+    font-size: 1rem;
+    padding: 0px 6px;
+}
+#modal .content {
+    margin-top: 20px;
+    color: rgb(31, 31, 31);
+    text-align: center;
+}
+#modal .content h3{
+    color: black;
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-height: 23px;
+    font-family: 'Eulyoo1945-Regular';
+    word-break: keep-all;
+}
+#modal .content p{
+    color: rgb(49, 49, 49);
+    font-weight: 500;
+    font-size: 0.8rem;
+    line-height: 26px;
+    margin-top: 50px;
+    word-break: keep-all;
+
+}
+/* 테마변경 */
+.sun #sun,
+.sun .sunT{
+    display: none;
+}
+.sun header {
+    background: #f0f0f0c5;
 }

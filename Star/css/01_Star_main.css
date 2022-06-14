@@ -17,9 +17,10 @@
 }
 html {
     font-size: 16px;
+}
+body{
     background: #40305f;
 }
-
 * {
     font-family: 'Noto Sans KR', sans-serif;
     margin: 0;
@@ -200,7 +201,7 @@ header .menu.on {
 /* tab구조 */
 .course_sun,
 .course_night {
-    width: 500px;
+    width: 550px;
     margin: 0 auto;
     position: fixed;
     bottom: 20px;
@@ -234,7 +235,9 @@ ul.tabs li.current {
     display: none;
     background: #ffffffab;
     padding: 15px;
-    border-radius: 5px;
+    border-radius: 15px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
 .tab-content.current {
@@ -244,12 +247,40 @@ ul.tabs li.current {
 .Tbox .place li {
     font-size: 0.9rem;
     font-weight: 500;
+    list-style: none;
+    width: 50px;
+    margin: 25px 0 0 30px;
+    cursor: pointer;
+}
+.Tbox .place li::before{
+    content:'';
+    display:inline-block;
+    width:8px;
+    height:8px;
+    margin:-13px -24px 0 0;
+    vertical-align:top;
+    background:black;
+    border-radius:50%;
+    cursor: pointer;
+  }
+  .Tbox .place li::after {
+    content: '';
+    background:black;
+    display: block;
+    height: 0.15em;
+    margin:-32px -85px 0 -25px;
+    pointer-events: none;
+
+}
+.Tbox .place li:last-child:after{
+    display: none;
 }
 .Tbox p {
     font-size: 0.9rem;
     font-weight: 400;
     margin: 15px 0;
     text-align: center;
+    font-family: 'Eulyoo1945-Regular';
 }
 
 .Tbox .place {
@@ -795,7 +826,7 @@ img[class^="place"] {
     backdrop-filter: blur(1.5px);
     border-radius: 10px;
     z-index: 20;
-
+    touch-action: none;
 }
 #modal .modal-window {
     background: rgba(255, 255, 255, 0.7);
@@ -807,7 +838,9 @@ img[class^="place"] {
     position: relative;
     top: -100px;
     padding: 35px 20px;
+    z-index: 30;
 }
+
 #modal .title h2 {
     color: #40305f;
     text-align: center;
@@ -823,6 +856,10 @@ img[class^="place"] {
     padding: 0px 8px;
     border: 2px solid #40305f;
     border-radius: 50px;
+}
+#modal .close-area:hover{
+    background: #40305f;
+    color: white;
 }
 
 #modal .content {
@@ -843,4 +880,54 @@ img[class^="place"] {
     font-size: 0.9rem;
     line-height: 26px;
     margin-top: 50px;
+}
+
+body[data-theme='dark'] {
+    background-color: #f0f0f0;
+}
+/* 테마변경 */
+body.sun{
+    background: #f0f0f0;
+}
+.sun header .logo{
+    background:url(../img/Logo_star_black.svg) no-repeat;
+}
+.sun .navButton span{
+    background: #40305f;
+}
+.sun .map div p,
+.sun ul.tabs li{
+    color: #40305f;
+}
+.sun .map div p{
+    border-left: 2px solid #40305f;
+}
+.sun .map .wrap10 p,
+.sun .map .wrap8 p,
+.sun .map .wrap4 p,
+.sun .map .wrap1 p{
+    border-left: none;
+}
+.sun .map .wrap10 p,
+.sun .map .wrap8 p,
+.sun .map .wrap4 p,
+.sun .map .wrap1 p{
+    border-right: 1.5px solid #40305f;
+}
+.sun .course_sun,
+.sun .sun_road,
+.sun .sun_tree,
+.sun #sun,
+.sun .sunT{
+    display: block;
+}
+.sun .star,
+.sun .course_night,
+.sun .tree,
+.sun .lightBar,
+.sun .road,
+.sun .ani,
+.sun #moon,
+.sun .moonT{
+    display: none;
 }
