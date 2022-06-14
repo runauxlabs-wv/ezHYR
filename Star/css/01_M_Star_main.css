@@ -1,8 +1,224 @@
 /* header디자인 */
+header {
+    background: #40305fd3;
+    ;
+}
+
 header .wrap {
     margin: 0 20px;
 }
 
 header .menu a {
     font-size: 1.2rem;
+}
+
+.moonT,
+.sunT,
+.material-symbols-outlined {
+    display: none;
+}
+
+.toggle {
+    /* margin: 0 20px;
+    justify-content: center; */
+    position: absolute;
+    top: 20px;
+    left: 95px;
+}
+
+/* inner */
+.course_sun,
+.course_night {
+    width: 100%;
+    margin: 0 auto;
+    bottom: 0;
+    right: 0;
+}
+
+.course_sun {
+    display: none;
+}
+
+ul.tabs {
+    justify-content: center;
+}
+
+ul.tabs li {
+    background: #ffffffab;
+    width: 50%;
+    text-align: center;
+    font-weight: 300;
+}
+
+ul.tabs li.current {
+    background: #40305fd3;
+    color: white;
+    border-radius: 0;
+}
+
+.tab-content.current {
+    display: none;
+}
+
+.cultureLogo,
+.cultureLogo2 {
+    right: 20px;
+}
+
+.left h1 {
+    font-size: 1.3rem;
+}
+
+.left h2 {
+    font-size: 0.8rem;
+    margin: 0 30px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    overflow-y: auto;
+    padding: 0 2px;
+}
+
+.left img {
+    height: 35%;
+    margin: 25px 30px;
+}
+
+.left {
+    padding: 60px 0;
+}
+
+/* map 구조 */
+.map {
+    padding-top: 150px;
+}
+
+.road,
+.sun_road {
+    top: 122px;
+    left: 50px;
+    width: 750px;
+}
+
+img[class^="place"] {
+    width: 225px;
+}
+
+.place1 {
+    top: 361px;
+    left: 9px;
+}
+
+.place2 {
+    top: 224px;
+    left: 156px;
+}
+
+.wrap3 .place3 {
+    top: 201px;
+    left: 289px;
+    width: 150px;
+}
+
+.wrap4 .place4 {
+    top: 117px;
+    left: 360px;
+    width: 187.5px;
+}
+
+.place5 {
+    top: 105px;
+    left: 97px;
+}
+
+.place6 {
+    top: 147px;
+    left: 566px;
+}
+
+.wrap7 .place7 {
+    top: 368px;
+    left: 407px;
+    width: 86.15px;
+}
+
+.wrap8 .place8 {
+    top: 286px;
+    left: 485px;
+    width: 60px;
+}
+
+.wrap9 .place9 {
+    top: 147px;
+    left: 543px;
+    width: 75px;
+}
+
+.wrap10 .place10 {
+    top: 70px;
+    left: 468px;
+    width: 123.75px;
+}
+
+.star {
+    top: 156px;
+    left: 8px;
+    width: 685px;
+}
+
+.tree {
+    top: 119px;
+    left: 83px;
+    width: 726px;
+}
+
+.lightBar {
+    top: 282px;
+    left: 201px;
+    width: 598px;
+}
+
+.ani {
+    top: 250px;
+    left: 33px;
+    width: 565px;
+}
+
+.sun_tree {
+    top: 80px;
+    left: 77px;
+    width: 754px;
+}
+
+.n_course1 {
+    width: 219px;
+    top: 134px;
+    left: 406px;
+}
+
+.n_course2 {
+    width: 551px;
+    top: 199px;
+    left: 56px;
+}
+
+.s_course1 {
+    width: 339px;
+    top: 208px;
+    left: 64px;
+}
+
+.s_course2 {
+    width: 434px;
+    top: 286px;
+    left: 72px;
+}
+
+.s_course3 {
+    width: 519px;
+    top: 215px;
+    left: 68px;
+}
+
+.map div p {
+    display: none;
 }

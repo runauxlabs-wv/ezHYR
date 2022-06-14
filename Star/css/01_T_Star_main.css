@@ -44,3 +44,13 @@ footer .cultureLogo,
 footer .cultureLogo2{
     left: 60px;
 }
+/* 왼쪽 장소 설명박스 */
+.left {
+    width: 100%;
+}
+.left h2 {
+    margin: 0 50px;
+}
+.cultureLogo, .cultureLogo2 {
+    right: 60px;
+}

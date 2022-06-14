@@ -378,7 +378,8 @@ div[class^="slide"] div h3 {
 div[class^="slide"] div p {
     font-size: 0.9rem;
     color: rgb(63, 63, 63);
-    padding: 8px 5px 0 5px;
+    padding: 8px 15px 0 15px;
+    word-break: keep-all;
 }
 
 div[class^="slide"] div h3,

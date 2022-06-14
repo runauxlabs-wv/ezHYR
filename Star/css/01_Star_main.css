@@ -169,30 +169,26 @@ header .menu.on {
     fill: #2F2725;
 }
 
-footer {
-    height: 80px;
+.cultureLogo {
+    background: url(../img/Logo_cultural_sun.svg) no-repeat;
 }
 
-footer .cultureLogo {
-    background: url(../img/Logo_cultural.svg) no-repeat;
+.cultureLogo2 {
+    background: url(../img/Logo_cultural2_sun.svg) no-repeat;
+    margin-right: 150px;
 }
 
-footer .cultureLogo2 {
-    background: url(../img/Logo_cultural2.svg) no-repeat;
-    margin-left: 150px;
-}
-
-footer .cultureLogo,
-footer .cultureLogo2 {
+.cultureLogo,
+.cultureLogo2 {
     background-size: contain;
-    height: 80px;
-    width: 120px;
+    height: 100px;
+    width: 150px;
     text-indent: -9999px;
     overflow: hidden;
     display: inline-block;
     position: absolute;
-    bottom: 0;
-    left: 100px;
+    bottom:50px;
+    right: 100px;
 }
 
 /* tab구조 */
@@ -200,7 +196,7 @@ footer .cultureLogo2 {
 .course_night {
     width: 500px;
     margin: 0 auto;
-    position: absolute;
+    position: fixed;
     bottom: 20px;
     right: 100px;
 }
@@ -292,31 +288,29 @@ ul.tabs li.current {
 .left h2 {
     font-size: 1rem;
     text-align: center;
-    font-weight: 400;
+    font-weight: 500;
     margin: 0 150px;
-    color: #222;
+    color: rgb(56, 56, 56);
     letter-spacing: 1px;
-    line-height: 25px;
+    line-height: 27px;
+    word-break: keep-all;
 }
 
 /* map 구조 */
 .map {
     /* position: relative; */
-    margin: 0 15px;
+    margin: 0 10px;
     padding-top: 100px;
 }
 
-.road {
+.road,
+.sun_road {
     position: absolute;
     top: 200px;
     left: 340px;
     width: 1250px;
 }
 .sun_road{
-    position: absolute;
-    top: 200px;
-    left: 340px;
-    width: 1250px;
     display: none;
 }
 img[class^="place"] {
@@ -779,4 +773,56 @@ img[class^="place"] {
 .switch-button input:checked + .onoff-switch:before {
 
     transform: translateX(26px);
+}
+/* modal창 디자인 */
+#modal.modal-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(129, 129, 129, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(39, 15, 46, 0.37);
+    backdrop-filter: blur(1.5px);
+    border-radius: 10px;
+    z-index: 10;
+
+}
+#modal .modal-window {
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 8px 32px 0 rgba(39, 15, 46, 0.37);
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    width: 500px;
+    height: 600px;
+    position: relative;
+    top: -100px;
+    padding: 20px;
+}
+#modal .title {
+    color: #40305f;
+    text-align: center;
+    font-family: 'Eulyoo1945-Regular';
+}
+#modal .close-area {
+    position: absolute;
+    font-size: 1.3rem;
+    cursor: pointer;
+    right: 48%;
+    bottom: 20px;
+    color: #40305f;
+    padding: 0px 8px;
+    border: 2px solid #40305f;
+    border-radius: 50px;
+}
+
+#modal .content {
+    margin-top: 20px;
+    color: rgb(31, 31, 31);
+    text-align: center;
 }
