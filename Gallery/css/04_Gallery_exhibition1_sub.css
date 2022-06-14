@@ -276,7 +276,7 @@ div[class^="sec"] div[class^="Tbox"] p,
 }
 
 .sec5 .Tbox ul {
-    padding-left: 20px;
+    list-style-position: inside;
 }
 
 .sec5 table {

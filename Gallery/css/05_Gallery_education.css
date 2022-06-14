@@ -188,6 +188,7 @@ div[class^="Tbox"] ul {
     font-weight: 500;
     color: rgb(80, 80, 80);
     word-break: keep-all;
+    list-style-position: inside;
 }
 
 div[class^="Tbox"] {
@@ -217,7 +218,7 @@ div[class^="Tbox"] {
 
 .sec3 .cost table {
     width: 50%;
-    padding-right: 50px;
+    padding-right: 20px;
 }
 
 .sec3 .cost table td {
@@ -230,7 +231,7 @@ div[class^="Tbox"] {
 }
 
 .sec4 .Tbox2 ul {
-    padding-top: 15px 0 0 15px;
+    padding-top: 15px;
 }
 
 .sec5 h3 {

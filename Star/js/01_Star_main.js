@@ -79,6 +79,17 @@ $(".map div img").hover(function(){
     $(this).css("transform","translateY(8px)");
 });
 });
+//모달창 x버튼 누르거나 모달창 외 클릭시 사라지게하기
+const closeBtn = modal.querySelector(".close-area")
+closeBtn.addEventListener("click", e => {
+    modal.style.display = "none"
+})
+modal.addEventListener("click", e => {
+    const evTarget = e.target
+    if(evTarget.classList.contains("modal-overlay")) {
+        modal.style.display = "none"
+    }
+})
   
 //   //toggle버튼 테마바꾸기
 //   $(document).ready(function() {

@@ -4,6 +4,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
 /* Goggle_icon */
 @font-face {
+    font-family: 'Eulyoo1945-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Eulyoo1945-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
     font-family: 'Eulyoo1945-Regular';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Eulyoo1945-Regular.woff') format('woff');
     font-weight: normal;
@@ -235,11 +241,10 @@ ul.tabs li.current {
     display: inherit;
 }
 
-.Tbox .place h1 {
+.Tbox .place li {
     font-size: 0.9rem;
     font-weight: 500;
 }
-
 .Tbox p {
     font-size: 0.9rem;
     font-weight: 400;
@@ -789,25 +794,24 @@ img[class^="place"] {
     box-shadow: 0 8px 32px 0 rgba(39, 15, 46, 0.37);
     backdrop-filter: blur(1.5px);
     border-radius: 10px;
-    z-index: 10;
+    z-index: 20;
 
 }
 #modal .modal-window {
     background: rgba(255, 255, 255, 0.7);
     box-shadow: 0 8px 32px 0 rgba(39, 15, 46, 0.37);
     backdrop-filter: blur( 13.5px );
-    -webkit-backdrop-filter: blur( 13.5px );
     border-radius: 10px;
     width: 500px;
-    height: 600px;
+    height: 400px;
     position: relative;
     top: -100px;
-    padding: 20px;
+    padding: 35px 20px;
 }
-#modal .title {
+#modal .title h2 {
     color: #40305f;
     text-align: center;
-    font-family: 'Eulyoo1945-Regular';
+    font-family: 'Eulyoo1945-SemiBold';
 }
 #modal .close-area {
     position: absolute;
@@ -827,15 +831,16 @@ img[class^="place"] {
     text-align: center;
 }
 #modal .content h3{
-    color: rgb(31, 31, 31);
+    color: black;
     font-weight: 500;
     font-size: 1rem;
     line-height: 26px;
+    font-family: 'Eulyoo1945-Regular';
 }
 #modal .content p{
-    color: rgb(31, 31, 31);
+    color: rgb(49, 49, 49);
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 26px;
     margin-top: 50px;
 }
