@@ -77,40 +77,6 @@ $(".map div img").hover(function(){
     $(this).css("transform","translateY(8px)");
 });
 // //코스탭 장소클릭
-// $(".click1").click(function(){
-//     $('.place1').click();
-// });
-// $(".click2").click(function(){
-//     $('.place2').click();
-// });
-// $(".click3").click(function(){
-//     $('.place3').click();
-// });
-// $(".click4").click(function(){
-//     $('.place4').click();
-// });
-// $(".click5").click(function(){
-//     $('.place5').click();
-// });
-// $(".click6").click(function(){
-//     $('.place6').click();
-// });
-// $(".click7").click(function(){
-//     $('.place7').click();
-// });
-// $(".click7").click(function(){
-//     $('.place7').click();
-// });
-// $(".click8").click(function(){
-//     $('.place8').click();
-// });
-// $(".click9").click(function(){
-//     $('.place9').click();
-// });
-// $(".click10").click(function(){
-//     $('.place10').click();
-// });
-
 $('.place li').click(function () {
     var placeCourse = $(this).attr('class');
     console.log(placeCourse);
