@@ -3,7 +3,8 @@ var swiper = new Swiper(".slide", {
     direction: "vertical",
     sensitivity: 3,
     mousewheel: true,
-    touchRatio: 1,
+    touchRatio: 2,
+    // followFinger: false,
     pagination: {
         el: ".slide .swiper-pagination",
         type: "fraction",
@@ -12,7 +13,8 @@ var swiper = new Swiper(".slide", {
         reachEnd: function () {
             swiper.mousewheel.disable();
         }
-    }
+    },
+    noSwipingID: 'no-swiping' //슬라이드 가장 마지막에서 touch 스크롤 활성화하기 위해 가장 마지막 슬라이드 no swiper
 });
 // 슬라이드 가장 마지막에서 스크롤 활성화
 window.addEventListener('wheel', function (event) {
@@ -20,6 +22,7 @@ window.addEventListener('wheel', function (event) {
         swiper.mousewheel.enable();
     } else if (event.deltaY > 0) { }
 });
+
 // //버튼 클릭시 스크롤 이동
 $(document).ready(function () {
     $("#scroll").on("click", function (event) {
