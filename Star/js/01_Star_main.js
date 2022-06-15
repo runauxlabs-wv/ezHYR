@@ -24,7 +24,6 @@ $(function () {
         datatype: "json",
         success: function(data) { // 갔다온 다음 결과값
 			$(".map>div").each(function(index) {
-
 				$(this).click(function() {
 					$(".left").addClass("on");
 					let i = $(this).index() - 7; //앞에 index번호 없앰 svg등 추가로 생겨서
@@ -78,41 +77,50 @@ $(".map div img").hover(function(){
     $(this).css("transform","translateY(8px)");
 });
 // //코스탭 장소클릭
-$(".click1").click(function(){
-    $('.place1').click();
-});
-$(".click2").click(function(){
-    $('.place2').click();
-});
-$(".click3").click(function(){
-    $('.place3').click();
-});
-$(".click4").click(function(){
-    $('.place4').click();
-});
-$(".click5").click(function(){
-    $('.place5').click();
-});
-$(".click6").click(function(){
-    $('.place6').click();
-});
-$(".click7").click(function(){
-    $('.place7').click();
-});
-$(".click7").click(function(){
-    $('.place7').click();
-});
-$(".click8").click(function(){
-    $('.place8').click();
-});
-$(".click9").click(function(){
-    $('.place9').click();
-});
+// $(".click1").click(function(){
+//     $('.place1').click();
+// });
+// $(".click2").click(function(){
+//     $('.place2').click();
+// });
+// $(".click3").click(function(){
+//     $('.place3').click();
+// });
+// $(".click4").click(function(){
+//     $('.place4').click();
+// });
+// $(".click5").click(function(){
+//     $('.place5').click();
+// });
+// $(".click6").click(function(){
+//     $('.place6').click();
+// });
+// $(".click7").click(function(){
+//     $('.place7').click();
+// });
+// $(".click7").click(function(){
+//     $('.place7').click();
+// });
+// $(".click8").click(function(){
+//     $('.place8').click();
+// });
+// $(".click9").click(function(){
+//     $('.place9').click();
+// });
+// $(".click10").click(function(){
+//     $('.place10').click();
+// });
+
+$('.place li').click(function () {
+    var placeCourse = $(this).attr('class');
+    console.log(placeCourse);
+    var course = placeCourse.substr(placeCourse.length-1, 1);
+    console.log(course);
+    $(".place" + course).click();
+})
 $(".click10").click(function(){
     $('.place10').click();
 });
-
-
 //   //toggle버튼 테마바꾸기
     $("input:checkbox").on('click', function() {
           if ( $(this).prop('checked') ) {
