@@ -1,4 +1,4 @@
-// 스팟 클릭시 설명창 생성
+// 스팟 클릭시 설명창 닫힘
 $(function () {
     $(".left").click(function () {
         $(".left").toggleClass("on");
@@ -42,17 +42,64 @@ $(function () {
 
 //코스 애니메이션
     $('#btN1').click(function(){ 
+        $('.map div p').css('opacity','0');
         $('.n_course1').css('display','block');
         $('#n1-1,#n1-2,#n1-3,#n1-5').css('animation-name','Cn1');
         $('#n1-4').css('animation-name','Cn1-1');
         $('.n_course2,.s_course1,.s_course2,.s_course3').css('display','none');
+        $( document ).ready( function() {
+            var Time = 900;
+            $( '.text7' ).animate( {
+              opacity: '1'
+            }, Time, function() {
+              $( '.text8' ).animate( {
+                opacity: '1'
+              }, Time, function() {
+                $( '.text6' ).animate( {
+                  opacity: '1'
+                }, Time, function() {
+                    $( '.text9' ).animate( {
+                      opacity: '1'
+                    }, Time, function() {
+                        $( '.text10' ).animate( {
+                          opacity: '1'
+                        }, Time );
+                    });
+              } );
+            } );
+          } );
     });
     $('#btN2').click(function(){
+        $('.map div p').css('opacity','0');
         $('.n_course2').css('display','block');
         $('#n2-5,#n2-8,#n2-10,#n2-12,#n2-13').css('animation-name','Cn1');
         $('#n2-1,#n2-2,#n2-3,#n2-4,#n2-6,#n2-7,#n2-9,#n2-11').css('animation-name','Cn1-1');
         $('.n_course1,.s_course1,.s_course2,.s_course3').css('display','none');
-
+        $( document ).ready( function() {
+            var Time = 1500;
+            $( '.text1' ).animate( {
+              opacity: '1'
+            }, Time, function() {
+              $( '.text7' ).animate( {
+                opacity: '1'
+              }, Time, function() {
+                $( '.text9' ).animate( {
+                  opacity: '1'
+                }, Time, function() {
+                    $( '.text4' ).animate( {
+                      opacity: '1'
+                    }, Time, function() {
+                        $( '.text5' ).animate( {
+                          opacity: '1'
+                        }, Time, function() {
+                            $( '.text2' ).animate( {
+                              opacity: '1'
+                            }, Time );
+                        });
+                    });
+              } );
+            } );
+          } );
     });
     $('#btS1').click(function(){
         $('.s_course1').css('display','block');
@@ -69,7 +116,8 @@ $(function () {
         $('#n5-1,#n5-2,#n5-3,#n5-4,#n5-5').css('animation-name','Cn1-1');
         $('.n_course1,.n_course2,.s_course1,.s_course2').css('display','none');
     });
-  
+
+
 //마우스 호버 이벤트
 $(".map div img").hover(function(){
     $(this).css("transform","translateY(-8px)");
@@ -98,6 +146,7 @@ $(".click10").click(function(){
           }
         });
     });
+});
 
 
 //모달창 x버튼 누르거나 모달창 외 클릭시 사라지게하기
@@ -111,3 +160,5 @@ modal.addEventListener("click", e => {
         modal.style.display = "none"
     }
 });
+});
+
