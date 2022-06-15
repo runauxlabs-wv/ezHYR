@@ -456,7 +456,6 @@ img[class^="place"] {
     padding: 0 10px;
     font-weight: 500;
     z-index: 1;
-    opacity: 0%;
     transition: all 0.5s;
 }
 
@@ -465,9 +464,9 @@ img[class^="place"] {
     content: ' ';
 }
 
-.map div img:hover+p {
+/* .map div img:hover+p {
     opacity: 100%;
-}
+} */
 
 .map div {
     display: inline-block;
