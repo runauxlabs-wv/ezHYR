@@ -145,7 +145,7 @@ header .nav>a:hover header .nav .subNav{
     background: #a2be87;
 }
 .sec2{
-    height: 185px;
+    height: 150px;
     padding: 30px 0;
 }
 .sec3{
@@ -244,3 +244,65 @@ footer{
 .sec2 .Tbox2 a:nth-child(1){
     margin-right: 20px;
 }
+/* .swiper{
+    height: 300px;
+} */
+.img2-1{
+    background: url(../img/이천원과금메달.jpg) no-repeat;
+}
+div[class^=img2]{
+    height: 150px;
+    background-size: cover;
+    text-indent: -9999px;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.Tbox3 h2{
+    color: rgb(20, 20, 20);
+    font-size: 1.1rem;
+    padding: 15px 20px;
+}
+.Tbox3 p{
+    color: rgb(60, 60, 60);
+    font-size: 1rem;
+    font-weight: 500;
+    word-break: keep-all;
+    padding: 10px 20px;
+}
+.swiper-wrapper .swiper-slide{
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    height: 330px;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 1.5rem;
+    border: 2px solid #205c40;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+:root {
+    --swiper-theme-color: #205c40;
+}
+.swiper-button-next{
+    right: 100px;
+}
+.swiper-button-prev{
+    left: 100px;
+}
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal{
+    bottom: 0px;
+}
+/* .swiper-button-next:hover,
+.swiper-button-prev:hover{
+    color: white;
+    background: #205c40;
+    font-size: 1rem;
+    height: 36px;
+    border: 2px solid #205c40;
+    padding: 4px 10px;
+    border-radius: 20px;
+} */
