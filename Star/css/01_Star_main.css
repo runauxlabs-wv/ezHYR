@@ -464,10 +464,6 @@ img[class^="place"] {
     content: ' ';
 }
 
-/* .map div img:hover+p {
-    opacity: 100%;
-} */
-
 .map div {
     display: inline-block;
 }
@@ -537,7 +533,7 @@ img[class^="place"] {
 .map .wrap4 p,
 .map .wrap1 p {
     border-left: none;
-    border-right: 1.5px solid white;
+    border-right: 2px solid white;
     text-align: right;
 }
 
@@ -911,7 +907,7 @@ body.sun{
 .sun .map .wrap8 p,
 .sun .map .wrap4 p,
 .sun .map .wrap1 p{
-    border-right: 1.5px solid #40305f;
+    border-right: 2px solid #40305f;
 }
 .sun .course_sun,
 .sun .sun_road,

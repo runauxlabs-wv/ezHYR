@@ -19,7 +19,7 @@ $(function () {
     //json 데이터 불러오기
     // $(".map>div").click(function() {
     $.ajax({
-        url: "../js/place.json", // 어디로 갈거니? // 갈 때 데이터
+        url: "../js/place.json", // 어디로 갈거니?
         type: "get", // 타입은 뭘 쓸거니?
         datatype: "json",
         success: function (data) { // 갔다온 다음 결과값
@@ -45,6 +45,7 @@ $(function () {
         $(':animated').stop();
         $('.map div p').hide();
     });
+
     $('#btN1').click(function () {
         $('.n_course1').css('display', 'block');
         $('#n1-1,#n1-2,#n1-3,#n1-5').css('animation-name', 'Cn1');
@@ -76,7 +77,7 @@ $(function () {
         $('#n2-5,#n2-8,#n2-10,#n2-12,#n2-13').css('animation-name', 'Cn1');
         $('#n2-1,#n2-2,#n2-3,#n2-4,#n2-6,#n2-7,#n2-9,#n2-11').css('animation-name', 'Cn1-1');
         $('.n_course1,.s_course1,.s_course2,.s_course3').css('display', 'none');
-        var Time = 1500;
+        var Time = 1700;
         $('.text1').fadeIn(
             Time,
             function () {
@@ -118,10 +119,9 @@ $(function () {
                             });
                     });
             });
-       
+        return false;
     });
-     return false;
-});
+
 $('#btS2').click(function () {
     $('.s_course2').css('display', 'block');
     $('#n4-1,#n4-2,#n4-3,#n4-4,#n4-5,#n4-6').css('animation-name', 'Cn1-1');
@@ -176,8 +176,8 @@ $('#btS3').click(function () {
                                 });
                         });
                 });
-            });
-            return false;
+        });
+    return false;
 });
 
 //마우스 호버 이벤트
@@ -208,6 +208,7 @@ $("input:checkbox").on('click', function () {
         $(this).parent().removeClass("selected");
         $('body').removeClass("sun");
     }
+});
 });
 
 //모달창 x버튼 누르거나 모달창 외 클릭시 사라지게하기

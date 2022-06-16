@@ -273,3 +273,89 @@ img[class^="place"] {
 .sun header {
     background: #f0f0f0c5;
 }
+/* 마우스 호버 */
+.map div p,
+.sun .map div p {
+    border-left: none;
+    padding: 0 5px;
+    font-weight: 500;
+    font-size: 0.7rem;
+    height: fit-content;
+}
+.map div p{
+    background: rgba(40, 0, 56, 0.377);  
+}
+.sun .map div p{
+    background: rgba(255, 255, 255, 0.829);  
+}
+.map .wrap10 p {
+    top: 69px;
+    left: 544px;
+    height: fit-content;
+}
+
+.map .wrap9 p {
+    top: 152px;
+    left: 591px;
+    height: fit-content;
+}
+
+.map .wrap8 p {
+    top: 327px;
+    left: 528px;
+    height: fit-content;
+}
+
+.map .wrap7 p {
+    top: 369px;
+    left: 442px;
+    height: fit-content;
+}
+
+.map .wrap6 p {
+    top: 161px;
+    left: 723px;
+    height: fit-content;
+}
+
+.map .wrap5 p {
+    top: 117px;
+    left: 264px;
+    height: fit-content;
+}
+
+.map .wrap4 p {
+    top: 140px;
+    left: 434px;
+    height: fit-content;
+}
+
+.map .wrap3 p {
+    top: 258px;
+    left: 395px;
+    height: fit-content;
+}
+
+.map .wrap2 p {
+    top: 318px;
+    left: 309px;
+    height: fit-content;
+}
+
+.map .wrap1 p {
+    top: 414px;
+    left: 159px;
+    height: fit-content;
+}
+
+.map .wrap10 p,
+.map .wrap8 p,
+.map .wrap4 p,
+.map .wrap1 p,
+.sun .map .wrap10 p,
+.sun .map .wrap8 p,
+.sun .map .wrap4 p,
+.sun .map .wrap1 p {
+    border-right: none;
+    text-align: left;
+}
