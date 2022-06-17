@@ -1,7 +1,8 @@
-$(function () {
-$(".header .nav>a").hover(function () {
-    $('.subNav').slideDown('medium');
-}, function () {
-    $('.subNav').slideUp('medium');
+$( document ).ready( function() {
+$(".nav").mouseenter(function () {
+    $('.subNav').addClass("on");
+});
+$(".subNav").mouseleave(function () {
+    $('.subNav').removeClass("on");
 });
 });

@@ -64,9 +64,8 @@ header .button:hover{
     border-radius: 10px;
 }
 .subNav{
-    /* height: 0px;
-    overflow-y: hidden; */
-    height: 560px;
+    height: 0;
+    overflow-y: hidden;
     background: #f8f8f8ec;
     position: absolute;
     top: 80px;
@@ -74,7 +73,6 @@ header .button:hover{
     display: flex;
     justify-content: center;
     width: 100%;
-    display: none;
 }
 .subNav>div{
     display: flex;
@@ -130,11 +128,12 @@ header .nav>a:hover {
     color: #205c40;
     font-weight: 600;
 }
-/* header .wrapHeader .nav:hover .subNav{
-    height: 560px;
+.subNav.on{
+    display: flex;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-    transition: height 0.5s;
-} */
+    transition: all 0.5s;
+    height: 560px;
+}
 /* inner디자인 */
 .swiper.Swiper-main{
     height: 600px;
