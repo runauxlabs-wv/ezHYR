@@ -4,7 +4,6 @@ $(function () {
         $(".left").toggleClass("on");
     });
     //tab 스크립트
-
     $('ul.tabs li').click(function () {
         var tab_id = $(this).attr('data-tab');
 
@@ -15,9 +14,7 @@ $(function () {
         $("#" + tab_id).addClass('current');
     });
 
-
     //json 데이터 불러오기
-    // $(".map>div").click(function() {
     $.ajax({
         url: "../js/place.json", // 어디로 갈거니?
         type: "get", // 타입은 뭘 쓸거니?
