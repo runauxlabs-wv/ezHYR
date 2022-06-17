@@ -63,45 +63,47 @@ header .button:hover{
     padding: 8px 13px;
     border-radius: 10px;
 }
-header .nav .subNav{
-    height: 0px;
-    overflow-y: hidden;
-    background: #ffffffec;
+.subNav{
+    /* height: 0px; */
+    /* overflow-y: hidden; */
+    background: #f8f8f8ec;
     position: absolute;
-    top: 57px;
-    left: auto;
-    right: auto;
+    top: 80px;
     z-index: 10;
     display: flex;
+    justify-content: center;
+    width: 100%;
 }
-header .nav .subNav>div{
+.subNav>div{
     display: flex;
     flex-direction: column;
     width: 150px;
     margin: 0 10px;
+    padding: 0 0 20px 0;
+    border-right: 1px solid rgb(218, 218, 218);
 }
-header .nav .subNav div a{
+.subNav>div:last-child{
+    border: none;
+}
+.subNav div a{
     font-size: 1rem;
     padding: 10px 0 7px 0;
     text-decoration: none;
     color: rgb(20, 20, 20);
     font-weight: 500;
 }
-header .nav .subNav div .subMenu{
+.subNav div .subMenu{
     display: flex;
     flex-direction: column;
 }
-header .nav .subNav div .subMenu a{
+.subNav div .subMenu a{
     font-size: 0.9rem;
     padding: 0 0 3px 5px;
     color: rgb(60, 60, 60);
 }
-header .nav .subNav div a:hover{
+.subNav div a:hover{
     color: black;
     font-weight: 600;
-}
-header .nav{
-    position: relative;
 }
 header .nav>a::after {
     width: 0%;
@@ -109,12 +111,12 @@ header .nav>a::after {
     background: #205c40;
     content: "";
     position: absolute;
-    top: 53px;
+    top: 80px;
     z-index: 20;
-    margin-left: -50px;
+    margin-left: -80px;
 }
 header .nav>a:nth-child(1)::after{
-    margin-left: -80px;
+    margin-left: -110px;
 }
 
 header .nav>a:hover::after {
@@ -126,9 +128,8 @@ header .nav>a:hover {
     color: #205c40;
     font-weight: 600;
 }
-header .nav>a:hover header .nav .subNav{
-    height: 570px;
-    background: #f1f1f3;
+header .wrapHeader .nav:hover .subNav{
+    height: 560px;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
     transition: height 0.5s;
 }
@@ -149,17 +150,27 @@ header .nav>a:hover header .nav .subNav{
     padding: 30px 0;
 }
 .sec3{
-    height: 500px;
+    height: 650px;
+    background: url(../img/bg.svg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 30px 0;
 }
 .sec4{
-    height: 300px;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
 }
 footer{
-    height: 200px;
+    height: 180px;
+    background: rgb(255, 255, 255);
 }
 .sec1,
 .sec2,
-.sec1-1 .Tbox1{
+.sec1-1 .Tbox1,
+.wrapSec3,
+footer .wrapFooter{
     margin: 0 auto;
     width: 1200px;
 }
@@ -171,17 +182,21 @@ footer{
     align-items: center;
 }
 .sec1 .Tbox0 h1,
-.sec2 .Tbox2 h1{
+.sec2 .Tbox2 h1,
+.sec3 h1,
+.sec4 h2{
     color: rgb(20, 20, 20);
 }
 .sec1 .Tbox0 h2,
-.sec2 .Tbox2 h2{
+.sec2 .Tbox2 h2,
+.sec3 .Tbox4 h2{
     color: white;
     background: #205c40;
     padding: 3px 2px;
 }
 .sec1 .Tbox0 a,
-.sec2 .Tbox2 a{
+.sec2 .Tbox2 a,
+.sec3 .Tbox4 a{
     text-decoration: none;
     color: rgb(60, 60, 60);
     font-weight: 500;
@@ -189,12 +204,14 @@ footer{
     display: flex;
 }
 .sec1 .Tbox0 a:hover,
-.sec2 .Tbox2 a:hover{
+.sec2 .Tbox2 a:hover,
+.sec3 .Tbox4 a:hover{
     color: rgb(20, 20, 20);
     font-weight: 600;
 }
 .sec1 .Tbox0 a span,
-.sec2 .Tbox2 a span{
+.sec2 .Tbox2 a span
+.sec3 .Tbox4 a span{
     padding-left: 10px;
 }
 .chart{
@@ -250,13 +267,36 @@ footer{
 .img2-1{
     background: url(../img/이천원과금메달.jpg) no-repeat;
 }
+.img2-2{
+    background: url(../img/후원.jpeg) no-repeat;
+}
+.img2-3{
+    background: url(../img/그린툰.jpg) no-repeat;
+}
+.img2-4{
+    background: url(../img/캄보디아.jpg) no-repeat;
+}
+.img2-5{
+    background: url(../img/케냐.png) no-repeat;
+}
+.img2-6{
+    background: url(../img/미소.png) no-repeat;
+}
+.img2-7{
+    background: url(../img/나누어봄.jpg) no-repeat;
+}
+.img2-8{
+    background: url(../img/산불.png) no-repeat;
+}
 div[class^=img2]{
-    height: 150px;
+    height: 160px;
     background-size: cover;
     text-indent: -9999px;
     overflow: hidden;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    background-position: center;
+
 }
 .Tbox3 h2{
     color: rgb(20, 20, 20);
@@ -296,13 +336,78 @@ div[class^=img2]{
 .swiper-pagination-bullets.swiper-pagination-horizontal{
     bottom: 0px;
 }
-/* .swiper-button-next:hover,
-.swiper-button-prev:hover{
+.swiper{
+    padding-bottom: 40px;
+}
+.sec3 .Tbox4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sec3 .youtube{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+.left{
+    background:#a2be87;
+    width: 50%;
+}
+.right{
+    background:#85a36a;
+    width: 50%;
+
+}
+.wrapLeft,
+.wrapRight{
+    width: 600px;
+    padding: 30px;
     color: white;
-    background: #205c40;
-    font-size: 1rem;
-    height: 36px;
-    border: 2px solid #205c40;
-    padding: 4px 10px;
-    border-radius: 20px;
-} */
+    font-weight: 400;
+}
+.wrapLeft{
+    margin: 0 0 0 auto;
+}
+.wrapRight{
+    margin: 0 auto 0 0;
+}
+.sec4 ul li{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.sec4 ul li p{
+    width: 410px;
+}
+.sec4 h2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    color: #0a2e1d;
+    cursor: pointer;
+}
+footer .wrapFooter{
+    padding: 30px 0;
+}
+footer .wrapFooter div {
+    color: rgb(60, 60, 60);
+    font-size: 0.8rem;
+}
+footer .wrapFooter div:nth-child(2){
+    text-align: right;
+}
+footer .wrapFooter div p{
+    padding-bottom: 10px;
+}
+footer .wrapFooter div p:nth-child(3){
+    font-weight: 500;
+}
+footer .wrapFooter div a{
+    padding-right: 20px;
+}
+footer .wrapFooter div span{
+    border: 1px solid rgb(60, 60, 60);
+    padding: 2px 5px;
+    border-radius: 5px;
+}
