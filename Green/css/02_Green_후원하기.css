@@ -6,6 +6,7 @@
 html {
     font-size: 16px;
 }
+
 * {
     font-family: 'Noto Sans KR', sans-serif;
     margin: 0;
@@ -13,22 +14,26 @@ html {
     box-sizing: border-box;
     /* outline: 1px solid red; */
 }
+
 /* header디자인 */
-header{
+header {
     padding: 5px 0;
     height: 80px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
-.wrapHeader{
+
+.wrapHeader {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-header .wrapHeader{
+
+header .wrapHeader {
     width: 1200px;
     margin: 0 auto;
 }
-header .logo{
+
+header .logo {
     display: block;
     background: url(../img/Green_logo.png) no-repeat;
     background-size: contain;
@@ -37,10 +42,12 @@ header .logo{
     text-indent: -9999px;
     overflow: hidden;
 }
-header .nav{
+
+header .nav {
     display: flex;
 }
-header .nav>a{
+
+header .nav>a {
     display: block;
     color: rgb(20, 20, 20);
     text-decoration: none;
@@ -49,7 +56,8 @@ header .nav>a{
     width: 150px;
     margin: 0 10px;
 }
-header .button{
+
+header .button {
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: 500;
@@ -58,12 +66,14 @@ header .button{
     padding: 8px 13px;
     border-radius: 10px;
 }
-header .button:hover{
+
+header .button:hover {
     background: #205c40;
     padding: 8px 13px;
     border-radius: 10px;
 }
-.subNav{
+
+.subNav {
     height: 0;
     overflow-y: hidden;
     background: #f8f8f8ec;
@@ -75,7 +85,8 @@ header .button:hover{
     width: 100%;
     /* display: none; */
 }
-.subNav>div{
+
+.subNav>div {
     display: flex;
     flex-direction: column;
     width: 150px;
@@ -83,29 +94,35 @@ header .button:hover{
     padding: 0 0 20px 0;
     border-right: 1px solid rgb(218, 218, 218);
 }
-.subNav>div:last-child{
+
+.subNav>div:last-child {
     border: none;
 }
-.subNav div a{
+
+.subNav div a {
     font-size: 1rem;
     padding: 10px 0 7px 0;
     text-decoration: none;
     color: rgb(20, 20, 20);
     font-weight: 500;
 }
-.subNav div .subMenu{
+
+.subNav div .subMenu {
     display: flex;
     flex-direction: column;
 }
-.subNav div .subMenu a{
+
+.subNav div .subMenu a {
     font-size: 0.9rem;
     padding: 0 0 3px 5px;
-    color: rgb(60, 60, 60);
+    color: rgb(80, 80, 80);
 }
-.subNav div a:hover{
-    color: black;
+
+.subNav div a:hover {
+    color: #205c40;
     font-weight: 600;
 }
+
 header .nav>a::after {
     width: 0%;
     height: 2px;
@@ -116,7 +133,8 @@ header .nav>a::after {
     z-index: 20;
     margin-left: -80px;
 }
-header .nav>a:nth-child(1)::after{
+
+header .nav>a:nth-child(1)::after {
     margin-left: -110px;
 }
 
@@ -129,10 +147,106 @@ header .nav>a:hover {
     color: #205c40;
     font-weight: 600;
 }
-.subNav.on{
+
+.subNav.on {
     display: flex;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
     transition: all 0.5s;
     height: 560px;
 }
+
 /* inner 디자인 */
+.top {
+    background: #85a36a url(../img/sub_bg.svg)no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapTop {
+    margin: 0 auto;
+    width: 1200px;
+    height: 250px;
+    position: relative;
+}
+
+.main {
+    margin: 50px auto;
+    width: 800px;
+}
+
+.top h1 {
+    color: white;
+    font-size: 2rem;
+    padding-top: 80px;
+}
+
+.wrapTop div {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.top div p {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    background: rgba(189, 189, 189, 0.301);
+    height: fit-content;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.top div p:first-child {
+    border-right: 1px solid rgba(255, 255, 255, 0.384);
+}
+
+.main .step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 50px 0;
+}
+
+.main .step h1 {
+    color: #205c40;
+    border: 3px solid #205c40;
+    border-radius: 40px;
+    padding: 15px 25px;
+}
+
+.line {
+    width: 50px;
+    height: 5px;
+    background: #205c40;
+}
+
+dt,
+dd {
+    padding: 10px;
+}
+
+dt {
+    margin-bottom: 5px;
+    color: #205c40;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+dd {
+    margin-bottom: 5px;
+    display: none;
+}
+form h3{
+    color: rgb(20, 20, 20);
+    font-size: 1.2rem;
+}
+/* label{
+    color: rgb(80, 80, 80);
+    font-size: 1.1rem;
+    font-weight: 500;
+} */
+label input[type=radio]{
+    background: #205c40;
+}
