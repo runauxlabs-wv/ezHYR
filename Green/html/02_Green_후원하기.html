@@ -120,35 +120,41 @@
     </div>
     <section class="top">
         <div class="wrapTop">
-        <h1>후원신청하기</h1>
-        <div>
-            <p>후원 <span class="material-symbols-outlined">
-                expand_more
-                </span></p>
-            <p>후원신청하기 <span class="material-symbols-outlined">
-                expand_more
-                </span></p>
+            <h1>후원신청하기</h1>
+            <div>
+                <p>후원 <span class="material-symbols-outlined">
+                        expand_more
+                    </span></p>
+                <p>후원신청하기 <span class="material-symbols-outlined">
+                        expand_more
+                    </span></p>
+            </div>
         </div>
-    </div>
     </section>
     <section class="main">
         <div class="step">
             <h1>1</h1>
             <hr class="line">
-            <h1>2</h1>
+            <h1 class="nth2">2</h1>
             <hr class="line">
             <h1>3</h1>
         </div>
         <div>
             <dl>
                 <dt>Step1 후원정보</dt>
-                <dd>
-                    <form method="get">
+                <dd class="Step1">
+                    <form method="get" class="step1">
                         <h3>후원방식</h3>
-                        <label><input type="radio" name="how"> <spna>정기후원</spna></label>
-                        <label><input type="radio" name="how"> <spna>일시후원</spna></label>
+                        <div class="how">
+                            <button type="button" class="how-click">정기후원</button>
+                            <button type="button" class="how-click">일시후원</button>
+                        </div>
+                        <div class="what">
                             <h3>후원분야</h3>
-                            <span>후원분야 자세히보기</span>
+                            <span>후원분야 자세히보기 <span class="material-symbols-outlined">
+                                    arrow_right_alt
+                                </span></span>
+                        </div>
                         <select>
                             <option value="1">국내 아동지원기금</option>
                             <option value="1">해외 아동지원기금</option>
@@ -158,30 +164,40 @@
                             <option value="1">부르키나파소 아동결연후원</option>
                             <option value="1">에티오피아 아동결연후원</option>
                         </select>
-                        <label><input type="radio" name="money"> <spna>10,000</spna></label>
-                        <label><input type="radio" name="money"> <spna>30,000</spna></label>
-                        <label><input type="radio" name="money"> <spna>50,000</spna></label>
-                        <label><input type="radio" name="money"> <spna>100,000</spna></label>
-                        <label><input type="radio" name="money"> <spna>150,000</spna></label>
-                        <label><input type="radio" name="money"> <spna>200,000</spna></label>
-                        <span>원 이면 </span>
-                        <span>총 후원금액</span>
-                        <span></span>
-                        <span>원</span>
+                        <div class="much">
+                            <button type="button" class="much-click">10,000</button>
+                            <button type="button" class="much-click">30,000</button>
+                            <button type="button" class="much-click">100,000</button>
+                            <button type="button" class="much-click">150,000</button>
+                            <button type="button" class="much-click">200,000</button>
+                            <button type="button" class="much-click"><input type="text" Placeholder="직접 입력하기"></button>
+                        </div>
+                        <div class="total">
+                            <span>총 후원금액</span>
+                            <span></span>
+                            <span>원</span>
+                        </div>
+                        <div class="nextBtn">
+                            <a class="next">다음단계로</a>
+                        </div>
                     </form>
                 </dd>
                 <dt>Step2 후원자 정보</dt>
-                <dd>
-                    <form method="get">
+                <dd class="Step2">
+                    <form method="get" class="step2">
                         <h3>회원유형</h3>
-                        <label><input type="radio"> 개인</label>
-                        <label><input type="radio"> 기업</label>
-                        <label><input type="radio"> 외국인</label>
+                        <div class="who">
+                            <button type="button">개인</button>
+                            <button type="button">기업</button>
+                            <button type="button">외국인</button>
+                        </div>
                         <h3>후원자 성함</h3>
-                        <label><input type="text"></label>
+                        <input type="text">
                         <h3>성별</h3>
-                        <label><input type="radio"> 여자</label>
-                        <label><input type="radio"> 남자</label>
+                        <div class="male">
+                            <button type="button"> 여자 </button>
+                            <button type="button"> 남자 </button>
+                        </div>
                         <h3>생년월일</h3>
                         <input type="date" id="birthdate">
                         <h3>휴대폰번호</h3>
@@ -210,22 +226,43 @@
                         <h3>
                             기부금영수증
                         </h3>
-                        <label><input type="radio"> 예</label>
-                        <label><input type="radio"> 아니오</label>
+                        <div class="question">
+                            <button type="button"> 예</button>
+                            <button type="button"> 아니오</button>
+                        </div>
+                        <div class="nextBtn">
+                            <a class="next">다음단계로</a>
+                        </div>
                     </form>
                 </dd>
                 <dt>Step3 후원금납입</dt>
-                <dd>
-                    <form method="get">
+                <dd class="Step3">
+                    <form method="get" class="step3">
                         <h3>결제방법</h3>
-                        <label><input type="radio"> 계좌이체</label>
-                        <label><input type="radio"> 신용카드</label>
-                        <label><input type="radio"> 간편결제</label>
+                        <div class="credit">
+                            <button type="button"> 계좌이체</button>
+                            <button type="button"> 신용카드</button>
+                            <button type="button"> 간편결제</button>
+                        </div>
                         <h3>이용약관, 개인정보 수집 이용 동의</h3>
-                        <label><input type="checkbox"> 개인정보 수집 이용 동의</label>
-                        <span>자세히보기</span>
-                        <label><input type="checkbox"> 어린이재단 이용약관 동의</label>
-                        <span>자세히보기</span>
+                        <div class="textBox">
+                            <div>
+                            <label><input type="checkbox"> 개인정보 수집 이용 동의</label>
+                            <span>자세히보기<span class="material-symbols-outlined">
+                                arrow_right_alt
+                            </span></span>
+                        </div>
+                        <div>
+                            <label><input type="checkbox"> 어린이재단 이용약관 동의</label>
+                            <span>자세히보기<span class="material-symbols-outlined">
+                                arrow_right_alt
+                            </span></span>
+                        </div>
+                            
+                        </div>
+                                <div class="nextBtn">
+                                    <a class="next">결제하기</a>
+                        </div>
                     </form>
                 </dd>
             </dl>

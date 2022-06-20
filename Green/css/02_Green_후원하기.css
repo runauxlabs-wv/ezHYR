@@ -113,7 +113,7 @@ header .button:hover {
 }
 
 .subNav div .subMenu a {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     padding: 0 0 3px 5px;
     color: rgb(80, 80, 80);
 }
@@ -171,12 +171,12 @@ header .nav>a:hover {
 
 .main {
     margin: 50px auto;
-    width: 800px;
+    width: 540px;
 }
 
 .top h1 {
     color: white;
-    font-size: 2rem;
+    font-size: 2.1rem;
     padding-top: 80px;
 }
 
@@ -214,6 +214,8 @@ header .nav>a:hover {
     border: 3px solid #205c40;
     border-radius: 40px;
     padding: 15px 25px;
+    background: none;
+    cursor: pointer;
 }
 
 .line {
@@ -222,31 +224,147 @@ header .nav>a:hover {
     background: #205c40;
 }
 
-dt,
-dd {
-    padding: 10px;
-}
-
 dt {
     margin-bottom: 5px;
     color: #205c40;
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
-
 dd {
-    margin-bottom: 5px;
+    margin-bottom: 30px;
     display: none;
+    transition: all 0.5s;
+}
+dd.on{
+    display: block;
 }
 form h3{
     color: rgb(20, 20, 20);
     font-size: 1.2rem;
+    margin: 30px 0 20px 0;
 }
-/* label{
-    color: rgb(80, 80, 80);
+.step1 button,
+.step2 button,
+.step3 button{
+    color: #205c40;
+    background: none;
+    border: 1px solid #205c40;
     font-size: 1.1rem;
     font-weight: 500;
-} */
-label input[type=radio]{
+    padding: 10px 15px;
+    width: 50%;
+    cursor: pointer;
+}
+.step1 .how,
+.step1 .what,
+.step1 .much{
+    display: flex;
+    justify-content: space-between;
+}
+.step1 .what>span{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(60, 60, 60);
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 40px 0 20px 0;
+
+}
+.step1 select,
+.step2 input,
+.step2 select{
+    width: 100%;
+    margin-bottom: 20px;
+    height: 40px;
+    border: 1px solid #205c40;
+    color: rgb(80, 80, 80);
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 3px 10px;
+}
+.step1 .much{
+    flex-wrap: wrap;
+}
+.step1 button input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    background: none;
+}
+.step1 .total span{
+    color: rgb(20, 20, 20);
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.step1 .total {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+.nextBtn{
+    display: flex;
+    justify-content: flex-end;
+}
+.nextBtn .next{
+    width: 30%;
     background: #205c40;
+    color: white;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-align: center;
+}
+.step2 .who button,
+.step3 .credit button{
+    width: 33.3333%;
+}
+.step2 .who,
+.step2 .male,
+.step2 .question,
+.step3 .credit,
+.step3 .textBox{
+    display: flex;
+}
+.step2 select,
+.step2 label input{
+    width: 30%;
+}
+.step3 .textBox{
+    flex-direction: column;
+}
+.step3 .textBox div{
+    display: flex;
+    justify-content: space-between;
+}
+.step3 .textBox div span{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(60, 60, 60);
+    font-weight: 500;
+    font-size: 1rem;
+}
+.step3 .textBox label{
+    color: rgb(20, 20, 20);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+button.click,
+.step1 button:hover,
+.step2 button:hover,
+.step3 button:hover{
+    color: white;
+    background: #205c40;
+}
+.main .step h1.click {
+    color: white;
+    background:  #205c40;
 }
