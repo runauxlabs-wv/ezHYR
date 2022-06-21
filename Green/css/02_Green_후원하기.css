@@ -204,7 +204,7 @@ header .nav>a:hover {
     display: flex;
     flex-direction: column;
     position: absolute;
-    bottom: -219px;
+    bottom: -225px;
     right: 127px;
     background: rgba(189, 189, 189, 0.301);
     width: 89.39px;
@@ -218,6 +218,7 @@ header .nav>a:hover {
     font-weight: 500;
     padding: 10px 15px;
     display: inline-block;
+    border-bottom: 1px solid white;
 }
 .Sub1{
     cursor: pointer;
@@ -297,7 +298,11 @@ form h3{
     font-weight: 500;
     font-size: 1rem;
     margin: 40px 0 20px 0;
-
+    cursor: pointer;
+}
+.step1 .what>span:hover{
+    color: rgb(20, 20, 20);
+    font-weight: 600;
 }
 .step1 select,
 .step2 input,
@@ -335,6 +340,9 @@ form h3{
     justify-content: flex-end;
     margin-top: 20px;
 }
+.step1 .total span:first-child{
+    margin-right: 100px;
+}
 .nextBtn{
     display: flex;
     justify-content: flex-end;
@@ -368,18 +376,6 @@ form h3{
 .step3 .textBox{
     flex-direction: column;
 }
-.step3 .textBox div{
-    display: flex;
-    justify-content: space-between;
-}
-.step3 .textBox div span{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: rgb(60, 60, 60);
-    font-weight: 500;
-    font-size: 1rem;
-}
 .step3 .textBox label{
     color: rgb(20, 20, 20);
     font-weight: 500;
@@ -395,4 +391,19 @@ button.click,
 .main .step h1.click {
     color: white;
     background:  #205c40;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.Tcheck1,
+.Tcheck2{
+    word-break: keep-all;
+    overflow: auto;
+    height: 300px;
+    padding: 10px;
+    margin: 20px 0;
+    font-size: 0.8rem;
+    border: 1px solid #205c4048;
 }
