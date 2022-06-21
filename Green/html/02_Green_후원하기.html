@@ -122,12 +122,17 @@
         <div class="wrapTop">
             <h1>후원신청하기</h1>
             <div>
-                <p>후원 <span class="material-symbols-outlined">
+                <p class="Sub1">후원 <span class="material-symbols-outlined">
                         expand_more
                     </span></p>
-                <p>후원신청하기 <span class="material-symbols-outlined">
-                        expand_more
-                    </span></p>
+                <div class="menuSub1">
+                    <a href="#">초록우산</a>
+                    <a href="#">사업</a>
+                    <a href="#">후원</a>
+                    <a href="#">참여</a>
+                    <a href="#">소식</a>
+                </div>
+                <p>후원신청하기</p>
             </div>
         </div>
     </section>
@@ -143,7 +148,7 @@
             <dl>
                 <dt>Step1 후원정보</dt>
                 <dd class="Step1">
-                    <form method="get" class="step1">
+                    <form method="get" class="step1" name="step1">
                         <h3>후원방식</h3>
                         <div class="how">
                             <button type="button" class="how-click">정기후원</button>
@@ -172,13 +177,14 @@
                             <button type="button" class="much-click">200,000</button>
                             <button type="button" class="much-click"><input type="text" Placeholder="직접 입력하기"></button>
                         </div>
+                        <span></span>
                         <div class="total">
                             <span>총 후원금액</span>
                             <span></span>
                             <span>원</span>
                         </div>
                         <div class="nextBtn">
-                            <a class="next">다음단계로</a>
+                            <a class="next step1">다음단계로</a>
                         </div>
                     </form>
                 </dd>
@@ -192,14 +198,14 @@
                             <button type="button">외국인</button>
                         </div>
                         <h3>후원자 성함</h3>
-                        <input type="text">
+                        <input type="text" class="name">
                         <h3>성별</h3>
                         <div class="male">
                             <button type="button"> 여자 </button>
                             <button type="button"> 남자 </button>
                         </div>
                         <h3>생년월일</h3>
-                        <input type="date" id="birthdate">
+                        <input type="date" class="birthday">
                         <h3>휴대폰번호</h3>
                         <select>
                             <option value="1">010</option>
@@ -209,14 +215,13 @@
                             <option value="1">017</option>
                             <option value="1">016</option>
                         </select>
-                        <label><input type="text"></label>
-                        <label><input type="text"></label>
+                        <label><input type="text" class="phone1"></label>
+                        <label><input type="text" class="phone2"></label>
                         <h3>이메일</h3>
-                        <label><input type="text"></label>
+                        <label><input type="text" class="email"></label>
                         @
-                        <label><input type="text"></label>
-                        <select>
-                            <option>직접입력</option>
+                        <label id="result"><input type="text"></label>
+                        <select onchange="selectbox(this)">
                             <option>naver.com</option>
                             <option>hanmail.net</option>
                             <option>nate.com</option>
@@ -231,7 +236,7 @@
                             <button type="button"> 아니오</button>
                         </div>
                         <div class="nextBtn">
-                            <a class="next">다음단계로</a>
+                            <a class="next step2">다음단계로</a>
                         </div>
                     </form>
                 </dd>
@@ -247,13 +252,13 @@
                         <h3>이용약관, 개인정보 수집 이용 동의</h3>
                         <div class="textBox">
                             <div>
-                            <label><input type="checkbox"> 개인정보 수집 이용 동의</label>
+                            <label><input type="checkbox" class="check1"> 개인정보 수집 이용 동의</label>
                             <span>자세히보기<span class="material-symbols-outlined">
                                 arrow_right_alt
                             </span></span>
                         </div>
                         <div>
-                            <label><input type="checkbox"> 어린이재단 이용약관 동의</label>
+                            <label><input type="checkbox" class="check2"> 어린이재단 이용약관 동의</label>
                             <span>자세히보기<span class="material-symbols-outlined">
                                 arrow_right_alt
                             </span></span>
@@ -261,7 +266,7 @@
                             
                         </div>
                                 <div class="nextBtn">
-                                    <a class="next">결제하기</a>
+                                    <a class="next step3">결제하기</a>
                         </div>
                     </form>
                 </dd>

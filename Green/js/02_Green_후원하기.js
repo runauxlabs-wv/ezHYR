@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    //폼 열리고 닫히기, 상단 번호누르면 이동
     $(".main .step h1:first-child").addClass("click");
     $(".Step1").addClass('on');
 
@@ -27,40 +28,109 @@ $(document).ready(function () {
     $(document).on("click", ".main .step h1:last-child", function () {
         $(".step2 a").click()
     });
-    // $('button').click(function () {
-    //     $(this).addClass('click');
-    // });
-    // 다른 button클릭시 사라지지 않음, 다시눌러도 사라지지 않음
-
-    // $(document).on("click", "button", function () {
-    //     button = $('button'); 
-    //     button.toggle(
-    //         function(){button.addClass('click')}, //클릭하면 show클래스 적용되서 보이기
-
-    //         function(){button.removeClass('click')} //한 번 더 클릭하면 hide클래스가 숨기기
-
-    //       );
-    //   });
-    // toggle이기 때문에 아예 레이어가 사라짐
-
-    // $('button').each(function (index) {
-    //     $(this).attr('button-index', index);
-    // }).click(function () {
-    //     var index = $(this).attr('button-index');
-    //     $('button[button-index=' + index + ']').addClass('click');
-    //     $('button[button-index!=' + index + ']').removeClass('click');
-    // });
-    // index를 전체에 주어서 밑에 폼으로 내려갔을때 상단에 클릭효과가 적용되지 않음
-
-    // $(document).on("click", "div>button", function () {
-    //     $(this).removeClass('click');
-    //     $(this).addClass('click');
-    // });
-    // remove가 전체로 되어 위와 같이 내려갔을때 상단 클릭효과가 적용되지않음
-
+    $(document).on("click", ".next.step3", function () {
+        alert("해당페이지는 포트폴리오 사이트로 결제를 진행할 수 없습니다.");
+    });
+    //버튼클릭
     $(document).on("click", "div>button", function () {
         $(this).addClass('click').siblings().removeClass('click');
     });
-    //siblings로 해결 siblings:선택한 요소의 형제(sibling) 요소 중에서 지정한 선택자에 해당하는 요소를 모두 선택한다.
+    //전체 폼 입력확인
+    var named = RegExp(/^[가-힣]+$/);
+    $(".next.step1").click(function () {
+        if ($(".how-click").hasClass("click")) {} else {
+            alert("후원방식을 선택해주세요.");
+            return false;
+        }
+        if ($(".much-click").hasClass("click")) {} else {
+            alert("후원금액을 선택해주세요.");
+            return false;
+        }
+    });
+    $(".next.step2").click(function () {
+        if ($(".who button").hasClass("click")) {} else {
+            alert("회원유형을 선택해주세요.");
+            return false;
+        }
+        if ($(".name").val() == "") {
+            alert("후원자 성함을 입력해주세요");
+            $(".name").focus();
+            return false;
+        }else if (!named.test($(".name").val())) {
+            alert("후원자 성함을 형식에 맞게 입력해주세요");
+            $(".name").val("");
+            $(".name").focus();
+            return false;
+        }else {}
+        if ($(".male button").hasClass("click")) {} else {
+            alert("후원자 성별을 선택해주세요.");
+            return false;
+        }
+        if ($(".birthday").val() == "") {
+            alert("후원자 생년월일을 입력해주세요");
+            $(".birthday").focus();
+            return false;
+        } else {}
+        if ($(".phone1").val() == "") {
+            alert("후원자 휴대폰번호 가운데자리를 입력해주세요");
+            $(".phone1").focus();
+            return false;
+        } else {}
+        if ($(".phone2").val() == "") {
+            alert("후원자 휴대폰번호 마지막자리를 입력해주세요");
+            $(".phone2").focus();
+            return false;
+        } else {}
+        if ($(".email").val() == "") {
+            alert("후원자 이메일을 입력해주세요");
+            $(".email").focus();
+            return false;
+        }
+        else {}
+        if ($(".question button").hasClass("click")) {} else {
+            alert("기부금 영수증 발급여부를 선택해주세요.");
+            return false;
+        }
+    });
+    $(".next.step3").click(function () {
+        if ($(".credit button").hasClass("click")) {} else {
+            alert("결제방법을 선택해주세요.");
+            return false;
+        }
+        if ($(".check1").is(":checked")) {
+        }
+        else {
+            alert("후원을 위해 개인정보 수집이용에 동의해주세요.");
+            return false;
+        }
+        if ($(".check2").is(":checked")) {
+        }
+        else {
+            alert("후원을 위해 어린이재단 이용약관에 동의해주세요.");
+            return false;
+        }
+    });
+});
+// console.log(!$(".how button").hasClass("on"));
+
+//이메일 select 추출 후 가져오기
+function selectbox(e) {
+    const text = e.options[e.selectedIndex].text;
+    // e는 선택목록, 사용자가 선택한 선택목록을 가져온후 index값을 가져온다.
+    //해당 인덱스 번호에 맞는 텍스트값을 가져온다    
+    document.getElementById('result').innerText = text;
+    // 선택한 텍스트를 resultID에 innertext로 집어넣는다
+}
+//top 내부 메뉴 바 나오게하기
+$(".Sub1").click(function () {
+    $(".menuSub1").toggleClass("on");
 });
 
+//후원금 계산
+// function selectbutton(e) {
+//     const text = e.options[e.selectedIndex].text;
+//     // e는 선택목록, 사용자가 선택한 선택목록을 가져온후 index값을 가져온다.
+//     //해당 인덱스 번호에 맞는 텍스트값을 가져온다    
+//     document.getElementById('result').innerText = text;
+//     // 선택한 텍스트를 resultID에 innertext로 집어넣는다
+// }

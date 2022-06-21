@@ -83,7 +83,6 @@ header .button:hover {
     display: flex;
     justify-content: center;
     width: 100%;
-    /* display: none; */
 }
 
 .subNav>div {
@@ -201,7 +200,36 @@ header .nav>a:hover {
 .top div p:first-child {
     border-right: 1px solid rgba(255, 255, 255, 0.384);
 }
-
+.top .menuSub1{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: -219px;
+    right: 127px;
+    background: rgba(189, 189, 189, 0.301);
+    width: 89.39px;
+    height: 0;
+    overflow-y: hidden;
+}
+.top .menuSub1 a{
+    text-decoration: none;
+    color: rgb(60, 60, 60);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 15px;
+    display: inline-block;
+}
+.Sub1{
+    cursor: pointer;
+}
+.menuSub1.on {
+    height: fit-content;
+}
+.top .menuSub1 a:hover,
+.top .menuSub1 a:nth-child(3){
+    color: #205c40;
+    font-weight: 600;
+}
 .main .step {
     display: flex;
     justify-content: center;

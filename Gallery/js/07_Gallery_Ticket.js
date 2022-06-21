@@ -1,6 +1,4 @@
-$(function() {
-	console.log("ready!");
-});
+
 function Goods(){
 		this.arrAllGoods = new Array();//상품 목록
 		this.arrSelGoods = new Array();//선택한 상품 목록
