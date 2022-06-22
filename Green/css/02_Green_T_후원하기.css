@@ -8,19 +8,18 @@ header .nav {
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 15;
+    z-index: 10;
     flex-direction: column;
     background: #85a36a;
     padding-top: 18px;
     width: 100%;
     height: 100vh;
     align-items: flex-end;
-    transform: translateY(-100%);
-    transition: all 0.5s;
+    transform: translateX(150%);
+    transition: all 0.7s;
 }
 header .nav.on{
-    transform: translateY(0);
-    transition: all 0.5s;
+    transform: translateX(0);
 }
 header .nav>a{
     text-align: right;
@@ -46,42 +45,50 @@ header .button {
     margin-right: 80px;
 }
 header .nav>a::after {
-display: none;
+    display: none;
 }
 header .nav>a:hover {
     border-bottom: 1px solid #205c40;
 }
 .subNav {
-    height: 0;
-    overflow-y: hidden;
-    background: #f8f8f8ec;
-    position: absolute;
-    top: 80px;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
+    height: 650px;
+    background: none;
     width: 100%;
+    cursor: none;
+    pointer-events: none;
+    transition: all 0.7s;
 }
 
 .subNav>div {
-    display: flex;
-    flex-direction: column;
-    width: 150px;
-    margin: 0 10px;
-    padding: 0 0 20px 0;
-    border-right: 1px solid rgb(218, 218, 218);
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.384);;
+    text-align: right;
+    position: absolute;
+    padding-right: 80px;
+    width: 100%;
+    display: none;
 }
-
-.subNav>div:last-child {
-    border: none;
+.subNav>div:first-child{
+    top: 100px;
+    display: none;
 }
+.subNav>div:nth-child(2){
+    top: 170px;
+}
+.subNav>div:nth-child(3){
+    top: 225px;
+}
+.subNav>div:nth-child(4){
+    top: 305px;
 
+}
+.subNav>div:nth-child(5){
+    top: 370px;
+
+}
 .subNav div a {
-    font-size: 1rem;
-    padding: 10px 0 7px 0;
-    text-decoration: none;
-    color: rgb(20, 20, 20);
-    font-weight: 500;
+    color: white;
+    font-size: 1.1rem;
 }
 
 .subNav div .subMenu {
@@ -90,18 +97,17 @@ header .nav>a:hover {
 }
 
 .subNav div .subMenu a {
-    font-size: 0.8rem;
-    padding: 0 0 3px 5px;
-    color: rgb(80, 80, 80);
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: white;
 }
 
 .subNav div a:hover {
     color: #205c40;
     font-weight: 600;
 }
-.subNav.on {
-    display: flex;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-    transition: all 0.5s;
-    height: 560px;
+/* inner디자인 */
+.wrapTop {
+    width: auto;
+    margin: 0 80px;
 }
