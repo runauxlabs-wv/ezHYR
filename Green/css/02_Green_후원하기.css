@@ -153,7 +153,10 @@ header .nav>a:hover {
     transition: all 0.5s;
     height: 560px;
 }
-
+header .wrapHeader span,
+header .wrapHeader .nav span{
+    display: none;
+}
 /* inner 디자인 */
 .top {
     background: #85a36a url(../img/sub_bg.svg)no-repeat;
