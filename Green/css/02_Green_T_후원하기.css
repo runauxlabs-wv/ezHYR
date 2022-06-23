@@ -25,6 +25,7 @@ header .nav>a{
     text-align: right;
     padding: 20px 80px 20px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.384) ;
+    border-top: 1px solid rgba(255, 255, 255, 0.384);
     right: 0;
     width: 100%;
     color: white;
@@ -41,14 +42,15 @@ header .wrapHeader .nav span{
     color: #205c40;
     font-weight: 500;
 }
+header .wrapHeader .nav span{
+    color: white;
+    top: 25px;
+}
 header .button {
     margin-right: 80px;
 }
 header .nav>a::after {
     display: none;
-}
-header .nav>a:hover {
-    border-bottom: 1px solid #205c40;
 }
 .subNav {
     height: 650px;
@@ -61,7 +63,6 @@ header .nav>a:hover {
 
 .subNav>div {
     border-right: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.384);;
     text-align: right;
     position: absolute;
     padding-right: 80px;
@@ -70,7 +71,6 @@ header .nav>a:hover {
 }
 .subNav>div:first-child{
     top: 100px;
-    display: none;
 }
 .subNav>div:nth-child(2){
     top: 170px;

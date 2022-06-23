@@ -1,0 +1,128 @@
+@charset "UTF-8";
+/* header디자인 */
+header{
+    height: 70px;
+}
+header .wrapHeader {
+    margin: 0 20px;
+}
+header .wrapHeader span,
+header .wrapHeader .nav span{
+    right: 20px;
+}
+header .logo{
+    width: 133px;
+    height: 47px;
+}
+header .button {
+    margin-right: 60px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+header .nav>a {
+    padding: 13px 20px 13px 0;
+    font-size: 1.1rem;
+    margin: 0;
+}
+header .wrapHeader .nav span {
+    top: 13px;
+}
+header .nav a:nth-child(2) {
+    margin-top: 40px;
+}
+.subNav>div{
+    padding-right: 20px;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.subNav div a {
+    font-size: 0.9rem;
+    padding: 2px 0 2px 15px;
+    width: fit-content;
+}
+.subNav div .subMenu a{
+    display: none;
+}
+.subNav>div:first-child{
+    top: 40px;
+}
+.subNav>div:nth-child(2){
+    top: 90px;
+}
+.subNav>div:nth-child(3){
+    top: 145px;
+}
+.subNav>div:nth-child(4){
+    top: 196px;
+
+}
+.subNav>div:nth-child(5){
+    top: 250px;
+}
+/* inner 디자인 */
+.wrapTop {
+    margin: 0 20px;
+    height: 170px;
+}
+.top{
+    background-size: 722px;
+    background-position: bottom right;
+}
+.top h1 {
+    font-size: 1.8rem;
+    padding-top: 50px;
+}
+.top div p {
+    color: white;
+    font-size: 1rem;
+    padding: 8px 12px;
+}
+.top .menuSub1 {
+    bottom: -180px;
+    right: 112px;
+    width: 80px;
+    background: rgba(189, 189, 189, 0.7);
+}
+.top .menuSub1 a {
+    font-size: 0.9rem;
+    padding: 7px 12px;
+}
+.main {
+    margin: 20px;
+    width: auto;
+}
+.main .step h1 {
+    border: 2px solid #205c40;
+    padding: 11px 20px;
+    font-size: 1.3rem;
+}
+.main .step {
+    margin: 0 0 30px 0;
+}
+dt {
+    font-size: 1.3rem;
+}
+form h3 {
+    font-size: 1.1rem;
+    margin: 20px 0 10px 0;
+}
+.step1 .what>span {
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin: 30px 0 10px 0;
+}
+.step1 button, .step2 button, .step3 button {
+    font-size: 1rem;
+}
+.step1 .total span {
+    font-size: 1.1rem;
+}
+.nextBtn .next {
+    width: 35%;
+    margin-top: 15px;
+    font-size: 1rem;
+}
+.Tcheck1, .Tcheck2 {
+    height: 200px;
+}

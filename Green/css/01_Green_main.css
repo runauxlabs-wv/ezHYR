@@ -430,3 +430,14 @@ div[class^=img1]{
     background: url(../img/배너수정전4.jpg)  no-repeat;
 } */
 /* chart design */
+.chart .selectBox{
+    display: flex;
+    justify-content: center;
+}
+.chart h2{
+    text-align: center;
+}
+.chartWrap{
+    display: flex;
+    justify-content: center;
+}
