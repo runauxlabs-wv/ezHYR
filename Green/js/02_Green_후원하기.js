@@ -116,17 +116,12 @@ $(document).ready(function () {
         $("#money").text(t);
     });
 });
-// console.log(!$(".how button").hasClass("on"));
 
 //이메일 select 추출 후 가져오기
 function selectbox(e) {
-    const text = e.options[e.selectedIndex].text;
-    // e는 선택목록, 사용자가 선택한 선택목록을 가져온후 index값을 가져온다.
-    //해당 인덱스 번호에 맞는 텍스트값을 가져온다    
+    const text = e.options[e.selectedIndex].text;  
     document.getElementById('result').innerText = text;
-    // 선택한 텍스트를 resultID에 innertext로 집어넣는다
 }
-//input text내의 text따라 쓰여지기
 function printName()  {
     const name = document.getElementById('name').value;
     document.getElementById("money").innerText = name;
