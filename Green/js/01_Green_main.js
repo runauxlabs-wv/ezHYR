@@ -32,7 +32,7 @@ const chartBar = new Chart(chart, {
     datasets: [{
         label: '2021 국내 사업실적',
         data: [264826, 127134, 65560, 38217, 37442, 58364],
-        backgroundColor: ["rgb(12, 73, 46)", "#3c7058", "#7da08f", "#93ccb1", "#c1e6d4","#dff0e8"], //배경색상
+        backgroundColor: ["rgb(12, 73, 46)", "#3c7058", "#7da08f", "#93ccb1", "#c1e6d4", "#dff0e8"], //배경색상
       }
 
     ]
@@ -53,24 +53,27 @@ const chartBar = new Chart(chart, {
       yAxes: [{
         ticks: {
           beginAtZero: true,
-          fontColor : '#205c40',
-          fontSize : 12,
+          fontColor: '#205c40',
+          fontSize: 12,
           fontStyle: "bold"
         },
-        gridLines:{
+        gridLines: {
           color: "rgba(0,0,0,0)",
         }
       }],
       xAxes: [{
-        ticks:{
-          fontColor : 'rgba(12, 13, 13, 0.5)',
-          fontSize : 11
+        ticks: {
+          fontColor: 'rgba(12, 13, 13, 0.5)',
+          fontSize: 11
         },
-        gridLines:{
+        gridLines: {
           color: "rgba(0,0,0,0.1)",
           lineWidth: 1
         }
       }]
+    },
+    tooltips: {
+      backgroundColor: '#0a2e1d'
     }
   }
 });

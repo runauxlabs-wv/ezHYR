@@ -434,7 +434,8 @@ div[class^=img1]{
     display: flex;
     justify-content: center;
 }
-.chart h2{
+.chart h2,
+.chart h3{
     text-align: center;
 }
 .chartWrap{
