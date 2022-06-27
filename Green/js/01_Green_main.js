@@ -54,7 +54,7 @@ const chartBar = new Chart(chart, {
         ticks: {
           beginAtZero: true,
           fontColor: '#205c40',
-          fontSize: 12,
+          fontSize: 15,
           fontStyle: "bold"
         },
         gridLines: {
@@ -64,7 +64,7 @@ const chartBar = new Chart(chart, {
       xAxes: [{
         ticks: {
           fontColor: 'rgba(12, 13, 13, 0.5)',
-          fontSize: 11
+          fontSize: 12
         },
         gridLines: {
           color: "rgba(0,0,0,0.1)",
@@ -74,6 +74,38 @@ const chartBar = new Chart(chart, {
     },
     tooltips: {
       backgroundColor: '#0a2e1d'
+    }
+  }
+});
+//number count
+
+$(function() {
+  var count0 = count1 = 0;
+  timeCounter()
+
+  function timeCounter() {
+
+    id0 = setInterval(count0Fn, 4);
+
+    function count0Fn() {
+      count0++;
+      if (count0 > 543) {
+        clearInterval(id0);
+      } else {
+        $(".number").eq(0).text(count0);
+      }
+
+    }
+
+    id1 = setInterval(count1Fn, 5);
+
+    function count1Fn() {
+      count1++;
+      if (count1 > 216) {
+        clearInterval(id1);
+      } else {
+        $(".number2").eq(0).text(count1);
+      }
     }
   }
 });

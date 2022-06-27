@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/01_Green_main.css">
-    <link rel="stylesheet" type="text/css" media="all and (max-width: 1199px)" href="#">
-    <link rel="stylesheet" type="text/css" media="all and (max-width: 760px)" href="#">
+    <link rel="stylesheet" type="text/css" media="all and (max-width: 1199px)" href="../css/01_T_Green_main.css">
+    <link rel="stylesheet" type="text/css" media="all and (max-width: 760px)" href="../css/01_M_Green_main.css">
 
 </head>
 
@@ -17,18 +17,24 @@
     <header>
         <div class="wrapHeader">
             <a href="../html/01_Green_main.html" class="logo">초록우산 어린이재단</a>
+            <span id="open"class="material-symbols-outlined">
+                menu
+            </span>
             <div class="nav">
-                <a href="#">초록우산</a>
-                <a href="#">사업</a>
-                <a href="#">후원</a>
-                <a href="#">참여</a>
-                <a href="#">소식</a>
+                <span id="close" class="material-symbols-outlined">
+                    close
+                </span>
+                <a href="#" id="nav1">초록우산</a>
+                <a href="#" id="nav2">사업</a>
+                <a href="#" id="nav3">후원</a>
+                <a href="#" id="nav4">참여</a>
+                <a href="#" id="nav5">소식</a>
             </div>
             <a href="../html/02_Green_후원하기.html" class="button">후원하기</a>
         </div>
     </header>
     <div class="subNav">
-        <div>
+        <div id="menu1">
             <a href="#">어린이재단</a>
             <div class="subMenu">
                 <a href="#">어린이재단은</a>
@@ -57,7 +63,7 @@
                 <a href="#">사업소식</a>
             </div>
         </div>
-        <div>
+        <div id="menu2">
             <a href="#">국내사업</a>
             <div class="subMenu">
                 <a href="#">아동지원</a>
@@ -85,7 +91,7 @@
                 <a href="#">캠페인후기</a>
             </div>
         </div>
-        <div>
+        <div id="menu3">
             <a href="#">정기후원</a>
             <a href="#">일시후원</a>
             <a href="#">결연후원</a>
@@ -95,7 +101,7 @@
             <a href="#">명예의전당</a>
             <a href="#">후원신청하기</a>
         </div>
-        <div>
+        <div id="menu4">
             <a href="#">자원봉사</a>
             <div class="subMenu">
                 <a href="#">봉사활동안내</a>
@@ -106,7 +112,7 @@
             <a href="#">행사소식</a>
             <a href="#">공모사업</a>
         </div>
-        <div>
+        <div id="menu5">
             <a href="#">소식지</a>
 
             <a href="#">보고서</a>
@@ -123,22 +129,29 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="img1-1">
-                    찬스팔찌
+                    <h2>찬스팔찌로 후원하기</h2>
+                    <p>기회를 더하면 변화가 시작됩니다<br>
+                        찬스팔찌와 함께하는 우리의 손은 특별한 기회를 만들어줍니다</p>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="img1-2">
-                    우크라이나 후원하기
+                    <h2>우크라이나를 떠난 아이들</h2>
+                    <p>내일 무엇을 먹을 수 있을지, 일주일 뒤에 내가 살아 있을지<br>
+                        지금의 나는 무엇도 확신할 수 없어요. 내가 다시 꿈꿀 수 있을까요?</p>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="img1-3">
-                    한 목소리 캠페인
+                    <h2>한 목소리 캠페인</h2>
+                    <p>어린이날 100주년을 기념하며 100명의 어린이가 한 목소리로 외칩니다!<br>
+                        당신의 목소리를 들려주세요.</p>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="img1-4">
-                    날아
+                    <h2>날개를 펴고 날아</h2>
+                    <p>제 자신에게 말해주고 싶어요. 포기하지 말고 계속 나아가라고.</p>
                 </div>
             </div>
         </div>
@@ -157,16 +170,26 @@
             </a>
         </div>
         <div class="chart">
-            <div class="selectBox">
-                <h1>2021</h1>
-                <h1>년</h1>
-                <h1>국내사업성과</h1>
-            </div>
-            <!-- <canvas id="chartMap" style="width:100%;"></canvas> -->
-            <h2>10000</h2>
-            <h3>사업 분야별 성과</h3>
             <div class="chartWrap">
-            <canvas id="chartBar" style="width:50%"></canvas>
+                <canvas id="chartBar" style="width:60vw"></canvas>
+            </div>
+            <div class="countBox">
+            <div class="selectBox">
+                    <h1>2021년 국내사업성과</h1>
+                    <span>1,091,</span>
+                    <span class="number">543</span>
+                    <span class="material-symbols-outlined">
+                        arrow_drop_up
+                        </span>
+            </div>
+            <div class="selectBox">
+                    <h1>2021년 해외사업성과</h1>
+                    <span>398,</span>
+                    <span class="number2">216</span>
+                    <span class="material-symbols-outlined">
+                        arrow_drop_up
+                        </span>
+            </div>
         </div>
         </div>
     </section>
@@ -444,5 +467,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script src="../js/00_Green_nav.js"></script>
     <script src="../js/01_Green_main.js"></script>
-    
+
 </body>
