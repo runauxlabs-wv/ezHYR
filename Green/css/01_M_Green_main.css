@@ -1,0 +1,210 @@
+@charset "UTF-8";
+
+/* header디자인 */
+header {
+    height: 70px;
+}
+
+header .wrapHeader {
+    margin: 0 20px;
+}
+
+header .wrapHeader span,
+header .wrapHeader .nav span {
+    right: 20px;
+}
+
+header .logo {
+    width: 133px;
+    height: 47px;
+}
+
+header .button {
+    margin-right: 60px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+header .nav>a {
+    padding: 13px 20px 13px 0;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+header .wrapHeader .nav span {
+    top: 13px;
+}
+
+header .nav a:nth-child(2) {
+    margin-top: 40px;
+}
+
+.subNav>div {
+    padding-right: 20px;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.subNav div a {
+    font-size: 0.9rem;
+    padding: 2px 0 2px 15px;
+    width: fit-content;
+}
+
+.subNav div .subMenu a {
+    display: none;
+}
+
+.subNav>div:first-child {
+    top: 40px;
+}
+
+.subNav>div:nth-child(2) {
+    top: 90px;
+}
+
+.subNav>div:nth-child(3) {
+    top: 145px;
+}
+
+.subNav>div:nth-child(4) {
+    top: 196px;
+
+}
+
+.subNav>div:nth-child(5) {
+    top: 250px;
+}
+
+/* inner디자인 */
+.swiper.Swiper-main {
+    height: 300px;
+}
+
+.sec1 {
+    height: 420px;
+    padding: 20px 0;
+}
+
+.sec1-1 {
+    height: 400px;
+}
+
+.sec2 {
+    height: 150px;
+    padding: 20px 0;
+}
+
+.sec3 {
+    height: 580px;
+    margin: 20px 0;
+}
+
+.sec4 {
+    height: 420px;
+    flex-direction: column;
+}
+
+footer {
+    height: 180px;
+}
+
+.sec1,
+.sec2,
+.sec1-1 .Tbox1,
+.wrapSec3,
+footer .wrapFooter {
+    margin: 0 20px;
+}
+
+div[class^=img1] h2,
+div[class^=img1] p {
+    margin: 0px 20px;
+}
+
+div[class^=img1] h2 {
+    font-size: 1.3rem;
+    padding-bottom: 5px;
+}
+
+div[class^=img1] p {
+    margin-bottom: 25px;
+    font-size: 0.8rem;
+    word-break: keep-all;
+    font-weight: 600;
+}
+
+.sec1 .Tbox0 h1,
+.sec2 .Tbox2 h1,
+.sec3 h1,
+.sec4 h2,
+.sec1 .Tbox0 h2,
+.sec2 .Tbox2 h2,
+.sec3 .Tbox4 h2 {
+    font-size: 1.3rem;
+    word-break: keep-all;
+}
+.sec1 .Tbox0 a, .sec2 .Tbox2 a, .sec3 .Tbox4 a{
+    font-size: 0.9rem;
+}
+.chart .selectBox h1{
+    font-size: 1rem;
+    margin: 5px 10px 5px 0;
+}
+.countBox{
+    flex-direction: column;
+}
+.selectBox:first-child{
+    margin: 0;
+}
+.chart span{
+    font-size: 1.3rem;
+}
+.sec1-1 .Tbox1 div{
+    padding: 7px 10px;
+}
+.sec1-1 .Tbox1 h2{
+    font-size: 1.1rem;
+}
+.sec1-1 .Tbox1 h3{
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+.sec1-1 .Tbox1 p{
+    font-size: 0.8rem;
+}
+.Tbox3 p{
+    font-size: 0.8rem;
+    padding: 8px 10px;
+}
+.Tbox3 h2{
+    padding: 8px 10px;
+}
+.Swiper-section .swiper-button-next:after, .Swiper-section .swiper-button-prev:after {
+    font-size: 1rem;
+    padding: 4px 7px;
+    border-radius: 20px;
+}
+.Swiper-section .swiper-button-next{
+    right: 20px;
+}
+.Swiper-section .swiper-button-prev{
+    left: 20px;
+}
+.left,
+.right{
+    width: 100%;
+}
+.sec4 h2{
+    margin-bottom: 15px;
+}
+.wrapLeft, .wrapRight{
+    padding: 15px;
+}
+footer .wrapFooter{
+    padding: 15px 0;
+}
+footer .wrapFooter div a{
+    padding-right: 8px;
+}

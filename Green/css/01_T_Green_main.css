@@ -116,28 +116,20 @@ header .nav>a::after {
 }
 .sec1-1{
     height: 470px;
-    background: #a2be87;
 }
 .sec2{
     height: 150px;
-    padding: 30px 0;
+    padding: 20px 0;
 }
 .sec3{
-    height: 650px;
-    background: url(../img/bg.svg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin: 30px 0;
+    height: 560px;
+    margin: 20px 0;
 }
 .sec4{
-    height: 280px;
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
+    height: 260px;
 }
 footer{
-    height: 180px;
-    background: rgb(255, 255, 255);
+    height: 160px;
 }
 .sec1,
 .sec2,
@@ -167,9 +159,6 @@ div[class^=img1] p{
     word-break: keep-all;
     font-size: 1.2rem;
 }
-.chart span {
-    font-size: 1.3rem;
-}
 .sec1-1 .Tbox1 div {
     height: 50%;
     width: 50%;
@@ -186,4 +175,55 @@ div[class^=img1] p{
 }
 .sec1-1 .Tbox1 p{
     font-size: 0.9rem;
+}
+.sec1 .Tbox0, .sec1-1 .Tbox1, .sec2 .Tbox2,.sec3 .Tbox4 {
+    align-items: flex-start;
+    flex-direction: column;
+}
+.sec1 .Tbox0 a, .sec2 .Tbox2 a, .sec3 .Tbox4 a{
+    margin-top: 10px;
+}
+.sec3 .youtube{
+    margin-top: 30px;
+}
+.Swiper-section .swiper-wrapper .swiper-slide{
+    height: 285px;
+}
+.Tbox3 p{
+    font-size: 0.9rem;
+}
+.Tbox3 h2{
+    font-size: 1rem;
+    word-break: keep-all;
+}
+div[class^=img2]{
+    height: 130px;
+}
+.wrapLeft, .wrapRight{
+    width: auto;
+    padding: 30px;
+}
+.sec4 ul li p,
+.sec4 ul li span{
+    font-size: 0.8rem;
+    word-break: keep-all;
+}
+footer .wrapFooter div:nth-child(2){
+    margin-top: 30px;
+}
+footer .wrapFooter div a,
+footer .wrapFooter div p,
+footer .wrapFooter div span{
+    font-size: 0.7rem;
+}
+.Swiper-section .swiper-button-next:after, .Swiper-section .swiper-button-prev:after {
+    font-size: 1.2rem;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+.Swiper-section .swiper-button-next{
+    right: 80px;
+}
+.Swiper-section .swiper-button-prev{
+    left: 80px;
 }

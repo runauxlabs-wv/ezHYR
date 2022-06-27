@@ -11,8 +11,6 @@ var swiper = new Swiper(".Swiper-main", {
 });
 
 var swiper = new Swiper(".Swiper-section", {
-  slidesPerView: 4,
-  spaceBetween: 30,
   centeredSlides: true,
   navigation: {
     nextEl: ".swiper-button-next",
@@ -22,13 +20,31 @@ var swiper = new Swiper(".Swiper-section", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  breakpoints: {
+    // when window width is >= 320px
+    1199: {
+      slidesPerView: 4,
+      spaceBetween: 30
+    },
+    // when window width is >= 480px
+    760: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
+    // when window width is >= 640px
+    300: {
+      slidesPerView: 2,
+      spaceBetween: 10
+    }
+  }
 });
+
 //chart
 const chart = $('#chartBar');
 const chartBar = new Chart(chart, {
   type: 'horizontalBar',
   data: {
-    labels: ['교육과 여과문화', '가정환경과 대안양육', '기초보건과복지', '폭력으로부터의아동보호', '아동권리실현의기반', '기타'],
+    labels: ['교육 여과문화', '가정환경', '기초보건과복지', '아동보호', '아동권리실현', '기타'],
     datasets: [{
         label: '2021 국내 사업실적',
         data: [264826, 127134, 65560, 38217, 37442, 58364],
@@ -85,7 +101,7 @@ $(function() {
 
   function timeCounter() {
 
-    id0 = setInterval(count0Fn, 4);
+    id0 = setInterval(count0Fn, 7);
 
     function count0Fn() {
       count0++;
@@ -97,7 +113,7 @@ $(function() {
 
     }
 
-    id1 = setInterval(count1Fn, 5);
+    id1 = setInterval(count1Fn, 8);
 
     function count1Fn() {
       count1++;

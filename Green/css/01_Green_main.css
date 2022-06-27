@@ -69,7 +69,7 @@ header .button:hover{
 }
 .subNav{
     height: 0;
-    overflow-y: hidden;
+    overflow: hidden;
     background: #f8f8f8ec;
     position: absolute;
     top: 80px;
@@ -137,13 +137,19 @@ header .nav>a:hover {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
     transition: all 0.5s;
     height: 560px;
+    overflow: hidden;
+
+}
+header .wrapHeader span,
+header .wrapHeader .nav span{
+    display: none;
 }
 /* inner디자인 */
 .swiper.Swiper-main{
     height: 600px;
 }
 .sec1{
-    height: 700px;
+    height: 750px;
     padding: 30px 0;
 }
 .sec1-1{
@@ -218,9 +224,6 @@ footer .wrapFooter{
 .sec2 .Tbox2 a span
 .sec3 .Tbox4 a span{
     padding-left: 10px;
-}
-.chart{
-    height: 400px;
 }
 .sec1-1 .Tbox1 div{
     height: 100%;
