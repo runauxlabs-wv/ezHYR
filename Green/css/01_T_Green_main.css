@@ -21,10 +21,6 @@ header .nav {
     transition: all 0.7s;
 }
 
-header .nav.on {
-    transform: translateX(0);
-}
-
 header .nav>a {
     text-align: right;
     padding: 20px 80px 20px 0;
@@ -67,13 +63,7 @@ header .nav>a::after {
     display: none;
 }
 
-.subNav {
-    height: 650px;
-    background: #85a36a;
-    width: 100%;
-    transition: all 0.7s;
-    padding: 20px 0 0 0;
-}
+
 
 .subNav>div {
     border-right: none;
@@ -128,12 +118,22 @@ header .nav>a {
 }
 
 .subNav {
+    background: #85a36a;
+    width: 100%;
     position: absolute;
     top: 0;
     height: 100vh;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-end;
+    padding: 20px 0 0 0;
+    transform: translateX(150%);
+    transition: all 0.7s;
+}
+.subNav.on{
+    transform: translateX(0);
+    box-shadow: none;
+    height: 100vh;
 }
 
 .subNav>div:nth-child(3) div,
