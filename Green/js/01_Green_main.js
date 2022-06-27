@@ -21,17 +21,14 @@ var swiper = new Swiper(".Swiper-section", {
     clickable: true,
   },
   breakpoints: {
-    // when window width is >= 320px
     1199: {
       slidesPerView: 4,
       spaceBetween: 30
     },
-    // when window width is >= 480px
     760: {
       slidesPerView: 3,
       spaceBetween: 20
     },
-    // when window width is >= 640px
     300: {
       slidesPerView: 2,
       spaceBetween: 10
@@ -113,7 +110,7 @@ $(function() {
 
     }
 
-    id1 = setInterval(count1Fn, 8);
+    id1 = setInterval(count1Fn, 18);
 
     function count1Fn() {
       count1++;

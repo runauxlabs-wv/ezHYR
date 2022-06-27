@@ -111,3 +111,7 @@ header .nav>a::after {
     width: auto;
     margin: 0 80px;
 }
+body{
+    overflow-x: hidden;
+    overflow-y: auto;
+}

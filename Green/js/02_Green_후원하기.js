@@ -3,36 +3,36 @@ $(document).ready(function () {
     $(".main .step h1:first-child").addClass("click");
     $(".Step1").addClass('on');
 
-    $(document).on("click", ".step1 a", function () {
+    $(".step1 a").click(function () {
         $(".main .step h1").removeClass("click");
         $(".main .step .nth2").addClass("click");
         $("dd").removeClass('on');
         $(".Step2").addClass('on');
     });
-    $(document).on("click", ".step2 a", function () {
+    $(".step2 a").click(function () {
         $(".main .step h1").removeClass("click");
         $(".main .step h1:last-child").addClass("click");
         $("dd").removeClass('on');
         $(".Step3").addClass('on');
     });
-    $(document).on("click", ".main .step h1:first-child", function () {
+    $(".main .step h1:first-child").click(function () {
         $(".main .step h1").removeClass("click");
         $(".main .step h1:first-child").addClass("click");
         $("dd").removeClass('on');
         $(".Step1").addClass('on');
 
     });
-    $(document).on("click", ".main .nth2", function () {
+    $(".main .nth2").click(function () {
         $(".step1 a").click()
     });
-    $(document).on("click", ".main .step h1:last-child", function () {
+    $(".main .step h1:last-child").click(function () {
         $(".step2 a").click()
     });
-    $(document).on("click", ".next.step3", function () {
+    $(".next.step3").click(function () {
         alert("해당페이지는 포트폴리오 사이트로 결제를 진행할 수 없습니다.");
     });
     //버튼클릭
-    $(document).on("click", "div>button", function () {
+    $("div>button").click(function () {
         $(this).addClass('click').siblings().removeClass('click');
     });
     //전체 폼 입력확인

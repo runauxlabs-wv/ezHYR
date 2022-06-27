@@ -1,9 +1,11 @@
 @charset "UTF-8";
+
 /* header디자인 */
 header .wrapHeader {
     width: auto;
     margin: 0 80px;
 }
+
 header .nav {
     position: absolute;
     top: 0;
@@ -18,23 +20,26 @@ header .nav {
     transform: translateX(150%);
     transition: all 0.7s;
 }
-header .nav.on{
+
+header .nav.on {
     transform: translateX(0);
 }
-header .nav>a{
+
+header .nav>a {
     text-align: right;
     padding: 20px 80px 20px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.384) ;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.384);
     border-top: 1px solid rgba(255, 255, 255, 0.384);
     right: 0;
     width: 100%;
     color: white;
 }
-header .nav a:nth-child(2){
+
+header .nav a:nth-child(2) {
     margin-top: 80px;
 }
-header .wrapHeader span,
-header .wrapHeader .nav span{
+
+#open {
     display: block;
     position: absolute;
     right: 80px;
@@ -42,50 +47,41 @@ header .wrapHeader .nav span{
     color: #205c40;
     font-weight: 500;
 }
-header .wrapHeader .nav span{
+
+#close{
+    font-size: 2.3rem;
+    color: white;
+    font-weight: 500;
+    border: none;
+}
+header .wrapHeader .nav span {
     color: white;
     top: 25px;
 }
+
 header .button {
     margin-right: 80px;
 }
+
 header .nav>a::after {
     display: none;
 }
+
 .subNav {
     height: 650px;
-    background: none;
+    background: #85a36a;
     width: 100%;
-    cursor: none;
-    pointer-events: none;
     transition: all 0.7s;
+    padding: 20px 0 0 0;
 }
 
 .subNav>div {
     border-right: none;
     text-align: right;
-    position: absolute;
-    padding-right: 80px;
+    padding: 0;
     width: 100%;
-    display: none;
 }
-.subNav>div:first-child{
-    top: 100px;
-}
-.subNav>div:nth-child(2){
-    top: 170px;
-}
-.subNav>div:nth-child(3){
-    top: 225px;
-}
-.subNav>div:nth-child(4){
-    top: 305px;
 
-}
-.subNav>div:nth-child(5){
-    top: 370px;
-
-}
 .subNav div a {
     color: white;
     font-size: 1.1rem;
@@ -106,124 +102,205 @@ header .nav>a::after {
     color: #205c40;
     font-weight: 600;
 }
+
+.subNav span {
+    display: block;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 15px 80px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.subNav div div div,
+.subNav div a{
+    padding-right: 80px;
+}
+.subNav>div {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5)
+}
+.subNav div div{
+    height: 0;
+    overflow-y: hidden;
+}
+header .nav>a {
+    display: none;
+}
+
+.subNav {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.subNav>div:nth-child(3) div,
+.subNav>div:nth-child(4) div,
+.subNav>div:nth-child(5) div {
+    align-items: flex-end;
+}
+
 /* inner디자인 */
-.swiper.Swiper-main{
+.swiper.Swiper-main {
     height: 500px;
 }
-.sec1{
+
+.sec1 {
     height: 700px;
     padding: 20px 0;
 }
-.sec1-1{
+
+.sec1-1 {
     height: 470px;
 }
-.sec2{
+
+.sec2 {
     height: 150px;
     padding: 20px 0;
 }
-.sec3{
+
+.sec3 {
     height: 560px;
     margin: 20px 0;
 }
-.sec4{
+
+.sec4 {
     height: 260px;
 }
-footer{
+
+footer {
     height: 160px;
 }
+
 .sec1,
 .sec2,
 .sec1-1 .Tbox1,
 .wrapSec3,
-footer .wrapFooter{
+footer .wrapFooter {
     margin: 0 80px;
     width: auto;
 }
+
 div[class^=img1] h2,
-div[class^=img1] p{
+div[class^=img1] p {
     margin: 30px 80px;
     width: auto;
 }
-div[class^=img1] h2{
+
+div[class^=img1] h2 {
     font-size: 1.8rem;
     padding-bottom: 10px;
 }
-div[class^=img1] p{
+
+div[class^=img1] p {
     margin-top: 0px;
     margin-bottom: 40px;
     font-size: 1rem;
     font-weight: 600;
 }
 
-.chart .selectBox h1{
+.chart .selectBox h1 {
     word-break: keep-all;
     font-size: 1.2rem;
 }
+
 .sec1-1 .Tbox1 div {
     height: 50%;
     width: 50%;
     padding: 10px 15px;
 }
-.sec1-1 .Tbox1{
+
+.sec1-1 .Tbox1 {
     flex-wrap: wrap;
 }
+
 .sec1-1 .Tbox1 h2 {
     font-size: 2rem;
 }
+
 .sec1-1 .Tbox1 h3 {
     font-size: 1.3rem;
 }
-.sec1-1 .Tbox1 p{
+
+.sec1-1 .Tbox1 p {
     font-size: 0.9rem;
 }
-.sec1 .Tbox0, .sec1-1 .Tbox1, .sec2 .Tbox2,.sec3 .Tbox4 {
+
+.sec1 .Tbox0,
+.sec1-1 .Tbox1,
+.sec2 .Tbox2,
+.sec3 .Tbox4 {
     align-items: flex-start;
     flex-direction: column;
 }
-.sec1 .Tbox0 a, .sec2 .Tbox2 a, .sec3 .Tbox4 a{
+
+.sec1 .Tbox0 a,
+.sec2 .Tbox2 a,
+.sec3 .Tbox4 a {
     margin-top: 10px;
 }
-.sec3 .youtube{
+
+.sec3 .youtube {
     margin-top: 30px;
 }
-.Swiper-section .swiper-wrapper .swiper-slide{
+
+.Swiper-section .swiper-wrapper .swiper-slide {
     height: 285px;
 }
-.Tbox3 p{
+
+.Tbox3 p {
     font-size: 0.9rem;
 }
-.Tbox3 h2{
+
+.Tbox3 h2 {
     font-size: 1rem;
     word-break: keep-all;
 }
-div[class^=img2]{
+
+div[class^=img2] {
     height: 130px;
 }
-.wrapLeft, .wrapRight{
+
+.wrapLeft,
+.wrapRight {
     width: auto;
     padding: 30px;
 }
+
 .sec4 ul li p,
-.sec4 ul li span{
+.sec4 ul li span {
     font-size: 0.8rem;
     word-break: keep-all;
 }
-footer .wrapFooter div:nth-child(2){
+
+footer .wrapFooter div:nth-child(2) {
     margin-top: 30px;
 }
+
 footer .wrapFooter div a,
 footer .wrapFooter div p,
-footer .wrapFooter div span{
+footer .wrapFooter div span {
     font-size: 0.7rem;
 }
-.Swiper-section .swiper-button-next:after, .Swiper-section .swiper-button-prev:after {
+
+.Swiper-section .swiper-button-next:after,
+.Swiper-section .swiper-button-prev:after {
     font-size: 1.2rem;
     padding: 4px 10px;
     border-radius: 20px;
 }
-.Swiper-section .swiper-button-next{
+
+.Swiper-section .swiper-button-next {
     right: 80px;
 }
-.Swiper-section .swiper-button-prev{
+
+.Swiper-section .swiper-button-prev {
     left: 80px;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
 }

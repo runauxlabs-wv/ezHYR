@@ -79,12 +79,16 @@ header .button:hover{
     width: 100%;
 }
 .subNav>div{
-    display: flex;
-    flex-direction: column;
     width: 150px;
     margin: 0 10px;
     padding: 0 0 20px 0;
     border-right: 1px solid rgb(218, 218, 218);
+}
+.subNav>div:nth-child(3) div,
+.subNav>div:nth-child(4) div,
+.subNav>div:nth-child(5) div{
+    display: flex;
+    flex-direction: column;
 }
 .subNav>div:last-child{
     border: none;
@@ -95,6 +99,7 @@ header .button:hover{
     text-decoration: none;
     color: rgb(20, 20, 20);
     font-weight: 500;
+    display: inline-block;
 }
 .subNav div .subMenu{
     display: flex;
@@ -104,6 +109,7 @@ header .button:hover{
     font-size: 0.9rem;
     padding: 0 0 3px 5px;
     color: rgb(80, 80, 80);
+    font-weight: 400;
 }
 .subNav div a:hover{
     color: #0a2e1d;
@@ -119,7 +125,7 @@ header .nav>a::after {
     z-index: 20;
     margin-left: -80px;
 }
-header .nav>a:nth-child(1)::after{
+header .nav>a:nth-child(2)::after{
     margin-left: -110px;
 }
 
@@ -141,15 +147,17 @@ header .nav>a:hover {
 
 }
 header .wrapHeader span,
-header .wrapHeader .nav span{
+header .wrapHeader .nav span,
+.subNav span{
     display: none;
 }
+
 /* inner디자인 */
 .swiper.Swiper-main{
     height: 600px;
 }
 .sec1{
-    height: 750px;
+    height: 860px;
     padding: 30px 0;
 }
 .sec1-1{
@@ -430,8 +438,13 @@ div[class^=img1]{
     align-items: flex-end;
     justify-content: flex-end;
 }
-.swiper-slide .img1-1{
+.swiper-slide .img1-1
+{
     color:#205c40;
+}
+.swiper-slide .img1-2 h2,
+.swiper-slide .img1-2 p{
+    background: rgba(0, 0, 0, 0.2);
 }
 .swiper-slide .img1-1 h2{
     border-bottom: 2px solid #205c409d;
@@ -446,7 +459,7 @@ div[class^=img1]{
     background: url(../img/배너_한목소리캠페인.jpg)  no-repeat;
 }
 .img1-4{
-    background: url(../img/배너_날아.jpg)  no-repeat;
+    background: url(../img/배너_날아.png)  no-repeat;
 }
 div[class^=img1] h2,
 div[class^=img1] p{
@@ -462,7 +475,7 @@ div[class^=img1] h2{
     font-weight: 200;
 }
 div[class^=img1] p{
-    margin-top: 30px;
+    padding-top: 30px;
     margin-bottom: 50px;
     font-size: 1.1rem;
     font-weight: 500;
