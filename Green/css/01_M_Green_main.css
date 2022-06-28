@@ -7,10 +7,11 @@ header {
 
 header .wrapHeader {
     margin: 0 20px;
+    padding-top: 5px;
 }
 
-header .wrapHeader span,
-header .wrapHeader .nav span {
+#open,
+#close {
     right: 20px;
 }
 
@@ -40,10 +41,17 @@ header .nav a:nth-child(2) {
 }
 
 .subNav>div {
-    padding-right: 20px;
+    padding-right: 0;
     flex-direction: row;
     justify-content: flex-end;
     flex-wrap: wrap;
+}
+.subNav div div{
+    padding-right: 20px;
+}
+.subNav span{
+    padding: 10px 20px;
+    font-size: 1.3rem;
 }
 
 .subNav div a {
@@ -133,6 +141,7 @@ div[class^=img1] p {
     font-size: 0.8rem;
     word-break: keep-all;
     font-weight: 600;
+    padding-top: 8px;
 }
 
 .sec1 .Tbox0 h1,
@@ -160,6 +169,10 @@ div[class^=img1] p {
 }
 .chart span{
     font-size: 1.3rem;
+}
+.chartWrap{
+    margin: 20px 0;
+    width: 350px;
 }
 .sec1-1 .Tbox1 div{
     padding: 7px 10px;

@@ -22,6 +22,11 @@ $("#open").click(function () {
 $("#close").click(function () {
     $(".subNav").removeClass("on");
 });
-$(".subNav span").click(function () {
-    $("this>div").addClass("on");
+$(".subNav div span").click(function () {
+    $(".subNav div div").removeClass("on");
+    $(this).nextAll().addClass("on");
 });
+$(".subNav div a").click(function () {
+    $(this).next().addClass("on");
+});
+
