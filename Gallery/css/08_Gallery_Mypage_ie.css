@@ -1,0 +1,5 @@
+@charset "UTF-8";
+
+.is-ie .main{
+    padding-top: 200px;
+}

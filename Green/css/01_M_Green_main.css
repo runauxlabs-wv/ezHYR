@@ -91,7 +91,7 @@ header .nav a:nth-child(2) {
 }
 
 .sec1 {
-    height: 420px;
+    height: 700px;
     padding: 20px 0;
 }
 
@@ -161,14 +161,14 @@ div[class^=img1] p {
     font-size: 1rem;
     margin: 5px 10px 5px 0;
 }
+.map {
+    width: 345px;
+}
 .countBox{
     flex-direction: column;
 }
 .selectBox:first-child{
     margin: 0;
-}
-.chart span{
-    font-size: 1.3rem;
 }
 .chartWrap{
     margin: 20px 0;
@@ -187,6 +187,7 @@ div[class^=img1] p {
 .sec1-1 .Tbox1 p{
     font-size: 0.8rem;
 }
+
 .Tbox3 p{
     font-size: 0.8rem;
     padding: 8px 10px;
@@ -220,4 +221,37 @@ footer .wrapFooter{
 }
 footer .wrapFooter div a{
     padding-right: 8px;
+}
+.tooltipBubble span:first-child {
+    top: 5px;
+    left: 10px;
+}
+.tooltipBubble span:nth-child(2) {
+    top: 183px;
+    left: 60px;
+}
+.tooltipBubble span:nth-child(3) {
+    top: 39px;
+    left: 168px;
+}
+.tooltipBubble span:last-child {
+    top: 154px;
+    left: 210px;
+}
+.chart span{
+    font-size: 1.1rem;
+}
+.tooltipBubble span{
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+.tooltipBubble span:after{
+    top:30px;
+}
+.tooltipBubble span:nth-child(2):after,
+.tooltipBubble span:last-child:after {
+    border-top: 2px solid transparent;
+    border-bottom: 8px solid #0a2e1dab;
+    top: -10px;
+    left: 37px;
 }

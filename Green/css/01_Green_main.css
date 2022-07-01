@@ -157,7 +157,7 @@ header .wrapHeader .nav span,
     height: 600px;
 }
 .sec1{
-    height: 710px;
+    height: 625px;
     padding: 30px 0;
 }
 .sec1-1{
@@ -486,6 +486,7 @@ div[class^=img1] p{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
 }
 .chart span,
 .chart h3{
@@ -500,7 +501,6 @@ div[class^=img1] p{
     font-weight: 700;
     font-size: 1.5rem;
     color: #0a2e1d;
-
 }
 .chart{
     display: flex;
@@ -509,12 +509,77 @@ div[class^=img1] p{
 }
 .chartWrap{
     margin: 30px 0;
-    width: 800px;
+    width: 1200px;
+    height: 100%;
+    display: flex;
+}
+.bubbleWrap,
+.barWrap{
+    width: 50%;
 }
 .countBox{
     display: flex;
     justify-content: center;
 }
 .selectBox:first-child{
-    margin-right: 40px;
+    margin-right: 250px;
+}
+.map {
+    background: url(../img/세계지도.png) no-repeat;
+    background-size: contain;
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    z-index: -1;
+    text-indent: -9999px;
+    overflow: hidden;
+ }
+ .tooltipBubble{
+     position: relative;
+ }
+ .tooltipBubble span{
+     background: #0a2e1dab;
+     color: white;
+     font-size: 0.8rem;
+     padding: 7px 5px;
+     border-radius: 7px;
+    position: absolute;
+    animation: scale 0.6s ease-in 0s 1;
+    transform: scale(0.1);
+    animation-fill-mode: forwards;
+    width: 143px;
+ }
+@keyframes scale {
+    from {
+        transform: scale(0.1);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+ .tooltipBubble span:first-child{
+     top:46px;
+     left: 111px;
+ }
+ .tooltipBubble span:nth-child(2){
+    top: 163px;
+    left: 185px;
+}
+.tooltipBubble span:nth-child(3){
+    top: 94px;
+    left: 331px;
+}
+.tooltipBubble span:last-child{
+    top: 156px;
+    left: 397px;
+}
+ .tooltipBubble span:after {
+    border-top: 8px solid #0a2e1dab;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 2px solid transparent;
+    content: "";
+    position: absolute;
+    top: 33px;
+    left: 31px;
 }

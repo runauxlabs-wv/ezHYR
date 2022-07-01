@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+.is-ie section .wrap .main .poster::before{
+    background: url(../img/poster_david_bg.png) no-repeat;
+    background-size: cover;
+}

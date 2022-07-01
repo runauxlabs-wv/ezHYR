@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+.is-ie .main{
+    padding-top: 180px;
+}
+.is-ie .main .info .form #container ul li:nth-child(5) button{
+    width: 40px;
+}

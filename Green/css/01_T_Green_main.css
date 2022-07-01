@@ -146,7 +146,7 @@ header .nav>a {
 }
 
 .sec1 {
-    height: 640px;
+    height: 900px;
     padding: 20px 0;
 }
 
@@ -204,8 +204,38 @@ div[class^=img1] p {
     font-size: 1.2rem;
 }
 .chartWrap{
-    margin: 30px 0;
+    margin: 0 0;
     width: 550px;
+    flex-direction: column;
+}
+.bubbleWrap,
+.barWrap{
+    width: 100%;
+}
+.chart .selectBox{
+    margin-top: 0;
+}
+.barWrap{
+    margin-top: 100px;
+}
+.tooltipBubble span:first-child {
+    top: 36px;
+    left: 96px;
+}
+.tooltipBubble span:nth-child(2) {
+    top: 150px;
+    left: 182px;
+}
+.tooltipBubble span:nth-child(3) {
+    top: 85px;
+    left: 311px;
+}
+.tooltipBubble span:last-child {
+    top: 145px;
+    left: 375px;
+}
+.selectBox:first-child{
+    margin-right: 10px;
 }
 .sec1-1 .Tbox1 div {
     height: 50%;

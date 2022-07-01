@@ -20,7 +20,7 @@ var swiper = new Swiper(".slide", {
 window.addEventListener('wheel', function (event) {
     if (event.deltaY < 0) {
         swiper.mousewheel.enable();
-    } else if (event.deltaY > 0) { }
+    } else if (event.deltaY > 0) {}
 });
 
 // //버튼 클릭시 스크롤 이동
@@ -42,3 +42,4 @@ $(window).scroll(function () {
         $('#scroll').hide();
     }
 });
+

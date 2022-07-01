@@ -1,0 +1,5 @@
+@charset "UTF-8";
+
+.is-ie #scroll{
+    padding-bottom: 25px;
+}
