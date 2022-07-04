@@ -330,7 +330,6 @@ div[class^="sec"] .main .textbox p {
     background-size: 100% 160%;
     background-position: center center;
     height: 100%;
-    background-attachment: fixed;
 }
 
 .Sec6 .main .textbox {
