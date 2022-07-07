@@ -152,15 +152,59 @@ html {
     position: absolute;
     bottom: 30px;
     right: 120px;
+    letter-spacing: 1px;
 }
-.work h2{
-    font-size: 10rem;
+.work{
+    position: relative;
+    height: 800px;
+}
+.work span{
+    width: fit-content;
+    font-size: 6rem;
     color: rgba(255, 255, 255, 1);
     font-family: 'JSongMyung-Regular-KO';
-    color: auto;
     cursor: pointer;
     text-shadow: -2px 0 #3854A5, 0 2px #3854A5, 2px 0 #3854A5, 0 -2px #3854A5;
 }
-.work h2:hover{
+.tabs{
+    position: absolute;
+    left: 120px;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.work span:hover,
+.tabs .current{
     color: #3854A5;
+}
+.tab-content{
+    display: none;
+    margin: 50px 120px 0 600px;
+}
+.tab-content.current {
+    display: inherit;
+}
+.wrapFlex{
+    display: flex;
+    justify-content: space-between;
+}
+.wrapFlex span{
+    font-size: 1rem;
+    color: black;
+    text-shadow: none;
+}
+.wrapFlex p{
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+div[class^="uiuxImg"],
+div[class^="grapicImg"]{
+    height: 297px;
+    width: 210px;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 15px;
+}
+.uiuxImg1{
+    background: url(../img/Gallery.png)no-repeat;
 }
